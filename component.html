@@ -1,0 +1,3180 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title> Documentation - UI Elements</title>
+    <!-- Bootstrap styles -->
+    <!--<link href="assets/plugins/bootstrap/css/bootstrap.css" rel="stylesheet">-->
+
+    <!--<link href="assets/css/component.min.css" rel="stylesheet"/>-->
+    <!--<link href="assets/css/style.min.css" rel="stylesheet" />-->
+    <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+
+    <link href="assets/css/vendor.css" rel="stylesheet"/>
+    <link href="assets/css/app.css" rel="stylesheet"/>
+    <link href="assets/css/component.css" rel="stylesheet"/>
+    <link href="assets/plugins/bootstrap/css/bootstrap-responsive.css" rel="stylesheet"/>
+    <link href="assets/plugins/bootstrap/css/docs.css" rel="stylesheet"/>
+
+    <link href="assets/plugins/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="assets/crossbrowserjs/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body data-spy="scroll" data-target=".bs-docs-sidebar">
+<header class="jumbotron subhead" id="overview">
+    <div class="container">
+        <h1 class="text-center">UI Elements</h1>
+        <!--<p class="lead text-center">By AVC</p>-->
+    </div>
+</header>
+<div class="container">
+    <!--<div class="row">-->
+        <!--<div class="span12">-->
+            <!--<div class="well">-->
+                <!--<p>-->
+                    <!--<strong>-->
+                        <!--Created: 31/October/2014<br>-->
+                        <!--By: Sean Ngu<br>-->
+                        <!--Email: <a href="mailto:nguoksiong@live.co.uk">nguoksiong@live.co.uk</a>-->
+                    <!--</strong>-->
+                <!--</p>-->
+                <!--<p>Thanks so much!</p>-->
+            <!--</div>-->
+        <!--</div>&lt;!&ndash; end span12 &ndash;&gt;-->
+    <!--</div>&lt;!&ndash; end row &ndash;&gt;-->
+    <div class="row">
+        <div class="span3 bs-docs-sidebar">
+            <ul class="nav nav-list bs-docs-sidenav affix-top">
+                <li><a href="#general"><i class="icon-chevron-right"></i>General</a></li>
+                <li><a href="#widget-boxes"><i class="icon-chevron-right"></i>Widget Boxes</a></li>
+                <li><a href="#buttons"><i class="icon-chevron-right"></i>Buttons</a></li>
+                <li><a href="#form-elements"><i class="icon-chevron-right"></i>Form Elements</a></li>
+                <li><a href="#table"><i class="icon-chevron-right"></i>Tables</a></li>
+                <li><a href="#page-top-menu"><i class="icon-chevron-right"></i>Page Top Menu</a></li>
+                <li><a href="#page-content"><i class="icon-chevron-right"></i>Page Content</a></li>
+                <li><a href="#page-footer"><i class="icon-chevron-right"></i>Page Footer</a></li>
+                <li><a href="#panel-theme"><i class="icon-chevron-right"></i>Panel Theme</a></li>
+                <li><a href="#page-end"><i class="icon-chevron-right"></i>End of Page (Javascripts)</a></li>
+                <li><a href="#page-theme-options"><i class="icon-chevron-right"></i>Page Theme Options</a></li>
+                <li><a href="#page-options"><i class="icon-chevron-right"></i>Page Options <span
+                        class="label">NEW</span></a></li>
+                <li><a href="#plugins-resources"><i class="icon-chevron-right"></i>Plugins & Resources</a></li>
+                <li><a href="#references"><i class="icon-chevron-right"></i>References</a></li>
+                <li><a href="#change-log"><i class="icon-chevron-right"></i>Change Log</a></li>
+            </ul>
+        </div>
+        <div class="span8">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="page-header">
+                        <h3 id="general"><strong>A) General UI Elements</strong> - <a href="#top">top</a></h3>
+                    </div>
+                    <div class="well">
+                        <h4 class="m-t-0">Alerts</h4>
+                        <div class="alert alert-success fade in m-b-15">
+                            <strong>Success!</strong>
+                            Vivamus vestibulum posuere est eu tincidunt.
+                            <span class="close" data-dismiss="alert">&times;</span>
+                        </div>
+                        <div class="alert alert-info fade in m-b-15">
+                            <strong>Info!</strong>
+                            Morbi sed nibh ac tortor laoreet blandit sed eu ligula.
+                            <span class="close" data-dismiss="alert">&times;</span>
+                        </div>
+                        <div class="alert alert-warning fade in m-b-15">
+                            <strong>Warning!</strong>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            <span class="close" data-dismiss="alert">&times;</span>
+                        </div>
+                        <div class="alert alert-danger fade in m-b-15">
+                            <strong>Error!</strong>
+                            Morbi vitae arcu in neque luctus elementum.
+                            <span class="close" data-dismiss="alert">&times;</span>
+                        </div>
+                        <h4 class="m-t-20">Notes</h4>
+                        <div class="note note-success">
+                            <h4>Some header text here!</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Maecenas id gravida libero. Etiam semper id sem a ultricies. Donec id consequat magna.
+                                Suspendisse tincidunt blandit metus, eu pretium nibh tincidunt eget.
+                            </p>
+                        </div>
+                        <div class="note note-info">
+                            <h4>Some header text here!</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Maecenas id gravida libero. Etiam semper id sem a ultricies. Donec id consequat magna.
+                                Suspendisse tincidunt blandit metus, eu pretium nibh tincidunt eget.
+                            </p>
+                        </div>
+                        <h4 class="m-t-20">Labels & Badges</h4>
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th>Class</th>
+                                <th>Labels</th>
+                                <th>Badges</th>
+                                <th>Square Badges</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Default</td>
+                                <td><span class="label label-default">Default</span></td>
+                                <td><span class="badge badge-default">6</span></td>
+                                <td><span class="badge badge-default badge-square">6</span></td>
+                            </tr>
+                            <tr>
+                                <td>Danger</td>
+                                <td><span class="label label-danger">Danger</span></td>
+                                <td><span class="badge badge-danger">4</span></td>
+                                <td><span class="badge badge-danger badge-square">4</span></td>
+                            </tr>
+                            <tr>
+                                <td>Warning</td>
+                                <td><span class="label label-warning">Warning</span></td>
+                                <td><span class="badge badge-warning">7</span></td>
+                                <td><span class="badge badge-warning badge-square">7</span></td>
+                            </tr>
+                            <tr>
+                                <td>Success</td>
+                                <td><span class="label label-success">Success</span></td>
+                                <td><span class="badge badge-success">8</span></td>
+                                <td><span class="badge badge-success badge-square">8</span></td>
+                            </tr>
+                            <tr>
+                                <td>Info</td>
+                                <td><span class="label label-info">Info</span></td>
+                                <td><span class="badge badge-info">2</span></td>
+                                <td><span class="badge badge-info badge-square">2</span></td>
+                            </tr>
+                            <tr>
+                                <td>Primary</td>
+                                <td><span class="label label-primary">Primary</span></td>
+                                <td><span class="badge badge-primary">5</span></td>
+                                <td><span class="badge badge-primary badge-square">5</span></td>
+                            </tr>
+                            <tr>
+                                <td>Inverse</td>
+                                <td><span class="label label-inverse">Inverse</span></td>
+                                <td><span class="badge badge-inverse">12</span></td>
+                                <td><span class="badge badge-inverse badge-square">12</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <h4 class="m-t-20">Pagination & Pager</h4>
+                        <h5 class="m-t-0 m-b-15">Pagination</h5>
+                        <div>
+                            <ul class="pagination pagination-lg m-t-0 m-b-10">
+                                <li class="disabled"><a href="javascript:;">«</a></li>
+                                <li class="active"><a href="javascript:;">1</a></li>
+                                <li><a href="javascript:;">2</a></li>
+                                <li><a href="javascript:;">3</a></li>
+                                <li><a href="javascript:;">4</a></li>
+                                <li><a href="javascript:;">5</a></li>
+                                <li><a href="javascript:;">»</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="pagination m-t-0 m-b-10">
+                                <li class="disabled"><a href="javascript:;">«</a></li>
+                                <li class="active"><a href="javascript:;">1</a></li>
+                                <li><a href="javascript:;">2</a></li>
+                                <li><a href="javascript:;">3</a></li>
+                                <li><a href="javascript:;">4</a></li>
+                                <li><a href="javascript:;">5</a></li>
+                                <li><a href="javascript:;">»</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="pagination pagination-sm m-t-0 m-b-10">
+                                <li class="disabled"><a href="javascript:;">«</a></li>
+                                <li class="active"><a href="javascript:;">1</a></li>
+                                <li><a href="javascript:;">2</a></li>
+                                <li><a href="javascript:;">3</a></li>
+                                <li><a href="javascript:;">4</a></li>
+                                <li><a href="javascript:;">5</a></li>
+                                <li><a href="javascript:;">»</a></li>
+                            </ul>
+                        </div>
+                        <h5>Pager (Default & Aligned links)</h5>
+                        <ul class="pager">
+                            <li><a href="javascript:;">Previous</a></li>
+                            <li><a href="javascript:;">Next</a></li>
+                        </ul>
+                        <ul class="pager">
+                            <li class="previous disabled"><a href="javascript:;">&larr; Older</a></li>
+                            <li class="next"><a href="javascript:;">Newer &rarr;</a></li>
+                        </ul>
+                        <h4 class="m-t-20">Progress bar</h4>
+                        <div class="alert alert-info m-b-0">
+                            <h4 class="block">Cross-browser compatibility</h4>
+                            <p>
+                                Progress bars use CSS3 transitions and animations to achieve some of their effects. These features are not supported in Internet Explorer 9 and below or older versions of Firefox. Opera 12 does not support animations.
+                            </p>
+                        </div>
+                        <div class="row-fluid">
+                            <div class="span3">
+                                <h4>Basic</h4>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 80%">Default</div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-success" style="width: 70%">Success</div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-info" style="width: 60%">Info</div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-warning" style="width: 50%">Warning</div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-danger" style="width: 40%">Danger</div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-inverse" style="width: 30%">Inverse</div>
+                                </div>
+                            </div>
+                            <div class="span3">
+                                <h4>Striped</h4>
+                                <div class="progress progress-striped">
+                                    <div class="progress-bar" style="width: 80%">Default</div>
+                                </div>
+                                <div class="progress progress-striped">
+                                    <div class="progress-bar progress-bar-success" style="width: 70%">Success</div>
+                                </div>
+                                <div class="progress progress-striped">
+                                    <div class="progress-bar progress-bar-info" style="width: 60%">Info</div>
+                                </div>
+                                <div class="progress progress-striped">
+                                    <div class="progress-bar progress-bar-warning" style="width: 50%">Warning</div>
+                                </div>
+                                <div class="progress progress-striped">
+                                    <div class="progress-bar progress-bar-danger" style="width: 40%">Danger</div>
+                                </div>
+                                <div class="progress progress-striped">
+                                    <div class="progress-bar progress-bar-inverse" style="width: 30%">Inverse</div>
+                                </div>
+                            </div>
+                            <div class="span3">
+                                <h4>Animated</h4>
+                                <div class="progress progress-striped active">
+                                    <div class="progress-bar" style="width: 80%">Default</div>
+                                </div>
+                                <div class="progress progress-striped active">
+                                    <div class="progress-bar progress-bar-success" style="width: 70%">Success</div>
+                                </div>
+                                <div class="progress progress-striped active">
+                                    <div class="progress-bar progress-bar-info" style="width: 60%">Info</div>
+                                </div>
+                                <div class="progress progress-striped active">
+                                    <div class="progress-bar progress-bar-warning" style="width: 50%">Warning</div>
+                                </div>
+                                <div class="progress progress-striped active">
+                                    <div class="progress-bar progress-bar-danger" style="width: 40%">Danger</div>
+                                </div>
+                                <div class="progress progress-striped active">
+                                    <div class="progress-bar progress-bar-inverse" style="width: 30%">Inverse</div>
+                                </div>
+                            </div>
+                            <div class="span3">
+                                <h4>Stacked</h4>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-primary" style="width: 25%">25%</div>
+                                    <div class="progress-bar progress-bar-info" style="width: 25%">25%</div>
+                                    <div class="progress-bar progress-bar-success" style="width: 25%">25</div>
+                                </div>
+                                <div class="progress progress-striped">
+                                    <div class="progress-bar progress-bar-primary" style="width: 25%">25%</div>
+                                    <div class="progress-bar progress-bar-info" style="width: 25%">25%</div>
+                                    <div class="progress-bar progress-bar-success" style="width: 25%">25</div>
+                                </div>
+                                <div class="progress progress-striped active">
+                                    <div class="progress-bar progress-bar-primary" style="width: 25%">25%</div>
+                                    <div class="progress-bar progress-bar-info" style="width: 25%">25%</div>
+                                    <div class="progress-bar progress-bar-success" style="width: 25%">25</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <pre class="prettyprint linenums">
+&lt;!--Alerts--&gt;
+&lt;div class="alert alert-success fade in m-b-15"&gt;
+    &lt;strong&gt;Success!&lt;/strong&gt;
+    Vivamus vestibulum posuere est eu tincidunt.
+    &lt;span class="close" data-dismiss="alert"&gt;&times;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="alert alert-info fade in m-b-15"&gt;
+    &lt;strong&gt;Info!&lt;/strong&gt;
+    Morbi sed nibh ac tortor laoreet blandit sed eu ligula.
+    &lt;span class="close" data-dismiss="alert"&gt;&times;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="alert alert-warning fade in m-b-15"&gt;
+    &lt;strong&gt;Warning!&lt;/strong&gt;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    &lt;span class="close" data-dismiss="alert"&gt;&times;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="alert alert-danger fade in m-b-15"&gt;
+    &lt;strong&gt;Error!&lt;/strong&gt;
+    Morbi vitae arcu in neque luctus elementum.
+    &lt;span class="close" data-dismiss="alert"&gt;&times;&lt;/span&gt;
+&lt;/div&gt;
+&lt;!--End Alerts--&gt;
+
+&lt;!--Notes--&gt;
+&lt;div class="note note-success"&gt;
+    &lt;h4&gt;Some header text here!&lt;/h4&gt;
+    &lt;p&gt;
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Maecenas id gravida libero. Etiam semper id sem a ultricies. Donec id consequat magna.
+        Suspendisse tincidunt blandit metus, eu pretium nibh tincidunt eget.
+    &lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="note note-info"&gt;
+    &lt;h4&gt;Some header text here!&lt;/h4&gt;
+    &lt;p&gt;
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Maecenas id gravida libero. Etiam semper id sem a ultricies. Donec id consequat magna.
+        Suspendisse tincidunt blandit metus, eu pretium nibh tincidunt eget.
+    &lt;/p&gt;
+&lt;/div&gt;
+&lt;!--End Notes--&gt;
+
+&lt;!--Labels & Badges--&gt;
+&lt;table class="table table-bordered"&gt;
+    &lt;thead&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Class&lt;/th&gt;
+        &lt;th&gt;Labels&lt;/th&gt;
+        &lt;th&gt;Badges&lt;/th&gt;
+        &lt;th&gt;Square Badges&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Default&lt;/td&gt;
+        &lt;td&gt;&lt;span class="label label-default"&gt;Default&lt;/span&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;span class="badge badge-default"&gt;6&lt;/span&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;span class="badge badge-default badge-square"&gt;6&lt;/span&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Danger&lt;/td&gt;
+        &lt;td&gt;&lt;span class="label label-danger"&gt;Danger&lt;/span&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;span class="badge badge-danger"&gt;4&lt;/span&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;span class="badge badge-danger badge-square"&gt;4&lt;/span&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Warning&lt;/td&gt;
+        &lt;td&gt;&lt;span class="label label-warning"&gt;Warning&lt;/span&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;span class="badge badge-warning"&gt;7&lt;/span&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;span class="badge badge-warning badge-square"&gt;7&lt;/span&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Success&lt;/td&gt;
+        &lt;td&gt;&lt;span class="label label-success"&gt;Success&lt;/span&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;span class="badge badge-success"&gt;8&lt;/span&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;span class="badge badge-success badge-square"&gt;8&lt;/span&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Info&lt;/td&gt;
+        &lt;td&gt;&lt;span class="label label-info"&gt;Info&lt;/span&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;span class="badge badge-info"&gt;2&lt;/span&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;span class="badge badge-info badge-square"&gt;2&lt;/span&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Primary&lt;/td&gt;
+        &lt;td&gt;&lt;span class="label label-primary"&gt;Primary&lt;/span&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;span class="badge badge-primary"&gt;5&lt;/span&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;span class="badge badge-primary badge-square"&gt;5&lt;/span&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Inverse&lt;/td&gt;
+        &lt;td&gt;&lt;span class="label label-inverse"&gt;Inverse&lt;/span&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;span class="badge badge-inverse"&gt;12&lt;/span&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;span class="badge badge-inverse badge-square"&gt;12&lt;/span&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;!--End Labels & Badges--&gt;
+
+&lt;!--Pagination & Pager--&gt;
+&lt;h5 class="m-t-0 m-b-15"&gt;Pagination&lt;/h5&gt;
+&lt;div&gt;
+    &lt;ul class="pagination pagination-lg m-t-0 m-b-10"&gt;
+        &lt;li class="disabled"&gt;&lt;a href="javascript:;"&gt;«&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="active"&gt;&lt;a href="javascript:;"&gt;1&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="javascript:;"&gt;2&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="javascript:;"&gt;3&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="javascript:;"&gt;4&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="javascript:;"&gt;5&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="javascript:;"&gt;»&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div&gt;
+    &lt;ul class="pagination m-t-0 m-b-10"&gt;
+        &lt;li class="disabled"&gt;&lt;a href="javascript:;"&gt;«&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="active"&gt;&lt;a href="javascript:;"&gt;1&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="javascript:;"&gt;2&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="javascript:;"&gt;3&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="javascript:;"&gt;4&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="javascript:;"&gt;5&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="javascript:;"&gt;»&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div&gt;
+    &lt;ul class="pagination pagination-sm m-t-0 m-b-10"&gt;
+        &lt;li class="disabled"&gt;&lt;a href="javascript:;"&gt;«&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="active"&gt;&lt;a href="javascript:;"&gt;1&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="javascript:;"&gt;2&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="javascript:;"&gt;3&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="javascript:;"&gt;4&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="javascript:;"&gt;5&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="javascript:;"&gt;»&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;h5&gt;Pager (Default & Aligned links)&lt;/h5&gt;
+&lt;ul class="pager"&gt;
+    &lt;li&gt;&lt;a href="javascript:;"&gt;Previous&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="javascript:;"&gt;Next&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul class="pager"&gt;
+    &lt;li class="previous disabled"&gt;&lt;a href="javascript:;"&gt;&larr; Older&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="next"&gt;&lt;a href="javascript:;"&gt;Newer &rarr;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!--End Pagination & Pager--&gt;
+
+&lt;!--Progress bar--&gt;
+&lt;div class="alert alert-info m-b-0"&gt;
+    &lt;h4 class="block"&gt;Cross-browser compatibility&lt;/h4&gt;
+    &lt;p&gt;
+        Progress bars use CSS3 transitions and animations to achieve some of their effects. These features are not supported in Internet Explorer 9 and below or older versions of Firefox. Opera 12 does not support animations.
+    &lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+    &lt;div class="col-md-3"&gt;
+        &lt;h4&gt;Basic&lt;/h4&gt;
+        &lt;div class="progress"&gt;
+            &lt;div class="progress-bar" style="width: 80%"&gt;Default&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="progress"&gt;
+            &lt;div class="progress-bar progress-bar-success" style="width: 70%"&gt;Success&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="progress"&gt;
+            &lt;div class="progress-bar progress-bar-info" style="width: 60%"&gt;Info&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="progress"&gt;
+            &lt;div class="progress-bar progress-bar-warning" style="width: 50%"&gt;Warning&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="progress"&gt;
+            &lt;div class="progress-bar progress-bar-danger" style="width: 40%"&gt;Danger&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="progress"&gt;
+            &lt;div class="progress-bar progress-bar-inverse" style="width: 30%"&gt;Inverse&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-md-3"&gt;
+        &lt;h4&gt;Striped&lt;/h4&gt;
+        &lt;div class="progress progress-striped"&gt;
+            &lt;div class="progress-bar" style="width: 80%"&gt;Default&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="progress progress-striped"&gt;
+            &lt;div class="progress-bar progress-bar-success" style="width: 70%"&gt;Success&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="progress progress-striped"&gt;
+            &lt;div class="progress-bar progress-bar-info" style="width: 60%"&gt;Info&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="progress progress-striped"&gt;
+            &lt;div class="progress-bar progress-bar-warning" style="width: 50%"&gt;Warning&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="progress progress-striped"&gt;
+            &lt;div class="progress-bar progress-bar-danger" style="width: 40%"&gt;Danger&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="progress progress-striped"&gt;
+            &lt;div class="progress-bar progress-bar-inverse" style="width: 30%"&gt;Inverse&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-md-3"&gt;
+        &lt;h4&gt;Animated&lt;/h4&gt;
+        &lt;div class="progress progress-striped active"&gt;
+            &lt;div class="progress-bar" style="width: 80%"&gt;Default&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="progress progress-striped active"&gt;
+            &lt;div class="progress-bar progress-bar-success" style="width: 70%"&gt;Success&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="progress progress-striped active"&gt;
+            &lt;div class="progress-bar progress-bar-info" style="width: 60%"&gt;Info&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="progress progress-striped active"&gt;
+            &lt;div class="progress-bar progress-bar-warning" style="width: 50%"&gt;Warning&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="progress progress-striped active"&gt;
+            &lt;div class="progress-bar progress-bar-danger" style="width: 40%"&gt;Danger&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="progress progress-striped active"&gt;
+            &lt;div class="progress-bar progress-bar-inverse" style="width: 30%"&gt;Inverse&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-md-3"&gt;
+        &lt;h4&gt;Stacked&lt;/h4&gt;
+        &lt;div class="progress"&gt;
+            &lt;div class="progress-bar progress-bar-primary" style="width: 25%"&gt;25%&lt;/div&gt;
+            &lt;div class="progress-bar progress-bar-info" style="width: 25%"&gt;25%&lt;/div&gt;
+            &lt;div class="progress-bar progress-bar-success" style="width: 25%"&gt;25&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="progress progress-striped"&gt;
+            &lt;div class="progress-bar progress-bar-primary" style="width: 25%"&gt;25%&lt;/div&gt;
+            &lt;div class="progress-bar progress-bar-info" style="width: 25%"&gt;25%&lt;/div&gt;
+            &lt;div class="progress-bar progress-bar-success" style="width: 25%"&gt;25&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="progress progress-striped active"&gt;
+            &lt;div class="progress-bar progress-bar-primary" style="width: 25%"&gt;25%&lt;/div&gt;
+            &lt;div class="progress-bar progress-bar-info" style="width: 25%"&gt;25%&lt;/div&gt;
+            &lt;div class="progress-bar progress-bar-success" style="width: 25%"&gt;25&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!--End Progress bar--&gt;
+                    </pre>
+                </div><!-- end span12 -->
+            </div><!-- end row-fluid -->
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="page-header">
+                        <h3 id="widget-boxes"><strong>A) Widget Boxes</strong> - <a href="#top">top</a></h3>
+                    </div>
+                    <div class="row-fluid">
+                        <div class="span6">
+                            <div class="panel panel-inverse" data-sortable-id="ui-widget-1">
+                                <div class="panel-heading">
+                                    <div class="panel-heading-btn">
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-repeat"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
+                                    </div>
+                                    <h4 class="panel-title">Panel (Default)</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <p>Panel Content Here</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span6">
+                            <div class="panel panel-inverse" data-sortable-id="ui-widget-2">
+                                <div class="panel-heading">
+                                    <div class="btn-group pull-right">
+                                        <button type="button" class="btn btn-success btn-xs">Action</button>
+                                        <button type="button" class="btn btn-success btn-xs dropdown-toggle" data-toggle="dropdown">
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                        </ul>
+                                    </div>
+                                    <h4 class="panel-title">Panel Header with Dropdown</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <p>Panel Content Here</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-fluid">
+                        <div class="span6">
+                            <div class="panel panel-inverse" data-sortable-id="ui-widget-3">
+                                <div class="panel-heading">
+                                    <div class="btn-group pull-right" data-toggle="buttons">
+                                        <label class="btn btn-success btn-xs active">
+                                            <input type="radio" name="options" id="option1" checked /> Option 1
+                                        </label>
+                                        <label class="btn btn-success btn-xs">
+                                            <input type="radio" name="options" id="option2" /> Option 2
+                                        </label>
+                                    </div>
+                                    <h4 class="panel-title">Panel Header with Radio Button</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <p>Panel Content Here</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span6">
+                            <div class="panel panel-inverse" data-sortable-id="ui-widget-4">
+                            <div class="panel-heading">
+                                <div class="progress progress-striped progress-sm active pull-right m-t-5">
+                                    <div class="progress-bar progress-bar-success" style="width: 40%">40%</div>
+                                </div>
+                                <h4 class="panel-title">Panel Header with Progress Bar</h4>
+                            </div>
+                            <div class="panel-body">
+                                <p>Panel Content Here</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="row-fluid">
+                        <div class="span6">
+                            <div class="panel panel-inverse" data-sortable-id="ui-widget-5">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><span class="label label-success m-r-10 pull-left">NEW</span> Panel Header with Label</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <p>Panel Content Here</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span6">
+                            <div class="panel panel-inverse" data-sortable-id="ui-widget-6">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        Panel with Alert Box
+                                    </h4>
+                                </div>
+                                <div class="alert alert-success fade in">
+                                    <span class="close" data-dismiss="alert">×</span>
+                                    <i class="fa fa-check fa-2x pull-left"></i>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                                <div class="panel-body">
+                                    <p>Panel Content Here</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-fluid">
+                        <div class="span6">
+                            <div class="panel panel-inverse" data-sortable-id="ui-widget-7">
+                                <div class="panel-heading">
+                                    <div class="panel-heading-btn">
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-repeat"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
+                                    </div>
+                                    <h4 class="panel-title">Panel with Slimscroll(jquery.slimscroll.js)</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <div data-scrollbar="true" data-height="310px">
+                                        <p>
+									<span class="fa-stack fa-4x pull-left m-r-10 text-inverse">
+										<i class="fa fa-square-o fa-stack-2x"></i>
+										<i class="fa fa-twitter fa-stack-1x"></i>
+									</span>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed enim arcu.
+                                            Ut posuere in ligula quis ultricies. In in justo turpis. Donec ut dui at massa gravida
+                                            interdum nec vitae justo. Quisque ullamcorper vehicula dictum. Nullam hendrerit interdum eleifend.
+                                            Aenean luctus sed arcu laoreet scelerisque. Vivamus non ullamcorper mauris, id sagittis lorem.
+                                            Proin tincidunt mauris et dolor mattis imperdiet. Sed facilisis mattis diam elementum adipiscing.
+                                        </p>
+                                        <p>
+									<span class="fa-stack fa-4x pull-right m-l-10 text-inverse">
+										<i class="fa fa-square-o fa-stack-2x"></i>
+										<i class="fa fa-google-plus fa-stack-1x"></i>
+									</span>
+                                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                            Ut ante velit, pretium non nisi a, egestas placerat diam. Nullam aliquet iaculis ultricies.
+                                            Aliquam volutpat, sapien quis volutpat elementum, ligula purus auctor diam, at vestibulum nulla augue
+                                            vel purus. Praesent ac nisl a magna tincidunt interdum sed in turpis. Maecenas nec condimentum risus.
+                                            In congue pretium est, eget euismod tortor ornare quis.
+                                        </p>
+                                        <p>
+									<span class="fa-stack fa-4x pull-left m-r-10 text-inverse">
+										<i class="fa fa-square-o fa-stack-2x"></i>
+										<i class="fa fa-facebook fa-stack-1x"></i>
+									</span>
+                                            Praesent eu ultrices justo. Vestibulum ante
+                                            ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                                            Cras mattis ipsum quis sapien consectetur fringilla.
+                                            Etiam sagittis sem tempus purus elementum, vitae pretium sapien porta. Curabitur iaculis ante ut aliquam luctus.
+                                            Vivamus ullamcorper blandit imperdiet. Ut egestas, orci id rhoncus cursus, orci risus scelerisque enim, eget mattis eros lacus quis ligula.
+                                            Vivamus ullamcorper urna eget hendrerit laoreet.
+                                        </p>
+                                        <p>
+									<span class="fa-stack fa-4x pull-right m-l-10 text-inverse">
+										<i class="fa fa-square-o fa-stack-2x"></i>
+										<i class="fa fa-apple fa-stack-1x"></i>
+									</span>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                                            Morbi accumsan velit dolor. Donec convallis eleifend magna, at euismod tellus convallis a.
+                                            Curabitur in nisi dolor. Cras viverra scelerisque orci, sed interdum ligula volutpat non.
+                                            Nunc eu enim ac neque tempor feugiat. Duis posuere lacus non magna eleifend,
+                                            non dictum sem feugiat. Duis eleifend condimentum pulvinar.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span6">
+                            <div class="panel panel-inverse" data-sortable-id="ui-widget-8">
+                                <div class="panel-heading">
+                                    <div class="panel-heading-btn">
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-repeat"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
+                                    </div>
+                                    <h4 class="panel-title">Panel with Toolbar & Footer</h4>
+                                </div>
+                                <div class="panel-toolbar">
+                                    <div class="btn-group m-r-5">
+                                        <a class="btn btn-white" href="javascript:;"><i class="fa fa-bold"></i></a>
+                                        <a class="btn btn-white active" href="javascript:;"><i class="fa fa-italic"></i></a>
+                                        <a class="btn btn-white" href="javascript:;"><i class="fa fa-underline"></i></a>
+                                    </div>
+                                    <div class="btn-group">
+                                        <a class="btn btn-white" href="javascript:;"><i class="fa fa-align-left"></i></a>
+                                        <a class="btn btn-white active" href="javascript:;"><i class="fa fa-align-center"></i></a>
+                                        <a class="btn btn-white" href="javascript:;"><i class="fa fa-align-right"></i></a>
+                                        <a class="btn btn-white" href="javascript:;"><i class="fa fa-align-justify"></i></a>
+                                    </div>
+                                </div>
+                                <textarea class="form-control no-rounded-corner" rows="3">This is a form textarea.</textarea>
+                                <div class="panel-footer text-right">
+                                    <a href="javascript:;" class="btn btn-white btn-sm">Cancel</a>
+                                    <a href="javascript:;" class="btn btn-primary btn-sm m-l-5">Action</a>
+                                </div>
+                            </div>
+                            <div class="panel panel-default panel-with-tabs" data-sortable-id="ui-widget-9">
+                                <div class="panel-heading">
+                                    <ul id="myTab" class="nav nav-tabs pull-right">
+                                        <li class="active"><a href="#home" data-toggle="tab"><i class="fa fa-home"></i> <span class="hidden-xs">Home</span></a></li>
+                                        <li><a href="#profile" data-toggle="tab"><i class="fa fa-user"></i> <span class="hidden-xs">Profile</span></a></li>
+                                    </ul>
+                                    <h4 class="panel-title">Panel with Tabs</h4>
+                                </div>
+                                <div id="myTabContent" class="tab-content">
+                                    <div class="tab-pane fade in active" id="home">
+                                        <p>Raw denim you probably haven't heard of them jean shorts Austin.</p>
+                                    </div>
+                                    <div class="tab-pane fade" id="profile">
+                                        <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-fluid">
+                        <div class="span6">
+                            <div class="panel panel-default" data-sortable-id="ui-widget-10">
+                                <div class="panel-heading">
+                                    <div class="panel-heading-btn">
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-repeat"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
+                                    </div>
+                                    <h4 class="panel-title">Panel (Default)</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <p>Panel Content Here</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span6">
+                            <div class="panel panel-success" data-sortable-id="ui-widget-11">
+                                <div class="panel-heading">
+                                    <div class="panel-heading-btn">
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-repeat"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
+                                    </div>
+                                    <h4 class="panel-title">Panel Success</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <p>Panel Content Here</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-fluid">
+                        <div class="span6">
+                            <div class="panel panel-warning" data-sortable-id="ui-widget-12">
+                                <div class="panel-heading">
+                                    <div class="panel-heading-btn">
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-repeat"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
+                                    </div>
+                                    <h4 class="panel-title">Panel Warning</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <p>Panel Content Here</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span6">
+                            <div class="panel panel-danger" data-sortable-id="ui-widget-13">
+                                <div class="panel-heading">
+                                    <div class="panel-heading-btn">
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-repeat"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
+                                    </div>
+                                    <h4 class="panel-title">Panel Danger</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <p>Panel Content Here</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-fluid">
+                        <div class="span6">
+                            <div class="panel panel-inverse" data-sortable-id="ui-widget-14">
+                                <div class="panel-heading">
+                                    <div class="panel-heading-btn">
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-repeat"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
+                                    </div>
+                                    <h4 class="panel-title">Panel Inverse</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <p>Panel Content Here</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span6">
+                            <div class="panel panel-primary" data-sortable-id="ui-widget-15">
+                                <div class="panel-heading">
+                                    <div class="panel-heading-btn">
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-repeat"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
+                                    </div>
+                                    <h4 class="panel-title">Panel Primary</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <p>Panel Content Here</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-fluid">
+                        <div class="span6">
+                            <div class="panel panel-info" data-sortable-id="ui-widget-16">
+                                <div class="panel-heading">
+                                    <div class="panel-heading-btn">
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-repeat"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
+                                    </div>
+                                    <h4 class="panel-title">Panel Info</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <p>Panel Content Here</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span6">
+                            <div class="panel panel-inverse" data-sortable-id="ui-widget-16">
+                                <div class="panel-heading">
+                                    <div class="panel-heading-btn">
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-repeat"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
+                                    </div>
+                                    <h4 class="panel-title">Full Color Panel</h4>
+                                </div>
+                                <div class="panel-body bg-black">
+                                    <p>You can customize the panel body background by adding predefined background class. E.g <code>.bg-black</code>. Full list of available predefined background class can be found <a href="helper_css.html">here</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <pre class="prettyprint linenums">
+&lt;!--Default Panel--&gt;
+&lt;div class="panel panel-inverse" data-sortable-id="ui-widget-1"&gt;
+    &lt;div class="panel-heading"&gt;
+        &lt;div class="panel-heading-btn"&gt;
+            &lt;a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"&gt;&lt;i class="fa fa-expand"&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"&gt;&lt;i class="fa fa-repeat"&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"&gt;&lt;i class="fa fa-minus"&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;h4 class="panel-title"&gt;Panel (Default)&lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div class="panel-body"&gt;
+        &lt;p&gt;Panel Content Here&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!--End　Default Panel--&gt;
+
+&lt;!--Panel Header with Dropdown--&gt;
+&lt;div class="panel panel-inverse" data-sortable-id="ui-widget-2"&gt;
+    &lt;div class="panel-heading"&gt;
+        &lt;div class="btn-group pull-right"&gt;
+            &lt;button type="button" class="btn btn-success btn-xs"&gt;Action&lt;/button&gt;
+            &lt;button type="button" class="btn btn-success btn-xs dropdown-toggle" data-toggle="dropdown"&gt;
+                &lt;span class="caret"&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;ul class="dropdown-menu" role="menu"&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+                &lt;li class="divider"&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;h4 class="panel-title"&gt;Panel Header with Dropdown&lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div class="panel-body"&gt;
+        &lt;p&gt;Panel Content Here&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!--End　Panel Header with Dropdown--&gt;
+
+&lt;!--Panel Header with Radio Button--&gt;
+&lt;div class="panel panel-inverse" data-sortable-id="ui-widget-3"&gt;
+    &lt;div class="panel-heading"&gt;
+        &lt;div class="btn-group pull-right" data-toggle="buttons"&gt;
+            &lt;label class="btn btn-success btn-xs active"&gt;
+                &lt;input type="radio" name="options" id="option1" checked /&gt; Option 1
+            &lt;/label&gt;
+            &lt;label class="btn btn-success btn-xs"&gt;
+                &lt;input type="radio" name="options" id="option2" /&gt; Option 2
+            &lt;/label&gt;
+        &lt;/div&gt;
+        &lt;h4 class="panel-title"&gt;Panel Header with Radio Button&lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div class="panel-body"&gt;
+        &lt;p&gt;Panel Content Here&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!--End Panel Header with Radio Button--&gt;
+
+&lt;!--Panel Header with Progress Bar--&gt;
+&lt;div class="panel panel-inverse" data-sortable-id="ui-widget-4"&gt;
+    &lt;div class="panel-heading"&gt;
+        &lt;div class="progress progress-striped progress-sm active pull-right m-t-5"&gt;
+            &lt;div class="progress-bar progress-bar-success" style="width: 40%"&gt;40%&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;h4 class="panel-title"&gt;Panel Header with Progress Bar&lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div class="panel-body"&gt;
+        &lt;p&gt;Panel Content Here&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!--End Panel Header with Progress Bar--&gt;
+
+&lt;!--Panel Header with Label--&gt;
+&lt;div class="panel panel-inverse" data-sortable-id="ui-widget-5"&gt;
+    &lt;div class="panel-heading"&gt;
+        &lt;h4 class="panel-title"&gt;&lt;span class="label label-success m-r-10 pull-left"&gt;NEW&lt;/span&gt; Panel Header with Label&lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div class="panel-body"&gt;
+        &lt;p&gt;Panel Content Here&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!--End Panel Header with Label--&gt;
+
+&lt;!--Panel with Alert Box--&gt;
+&lt;div class="panel panel-inverse" data-sortable-id="ui-widget-6"&gt;
+    &lt;div class="panel-heading"&gt;
+        &lt;h4 class="panel-title"&gt;
+            Panel with Alert Box
+        &lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div class="alert alert-success fade in"&gt;
+        &lt;span class="close" data-dismiss="alert"&gt;×&lt;/span&gt;
+        &lt;i class="fa fa-check fa-2x pull-left"&gt;&lt;/i&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac posuere lacus, quis suscipit sem. Nulla sagittis aliquam erat non convallis.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="panel-body"&gt;
+        &lt;p&gt;Panel Content Here&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!--End Panel with Alert Box--&gt;
+
+&lt;!--Panel with Slimscroll--&gt;
+&lt;div class="panel panel-inverse" data-sortable-id="ui-widget-7"&gt;
+    &lt;div class="panel-heading"&gt;
+        &lt;div class="panel-heading-btn"&gt;
+            &lt;a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"&gt;&lt;i class="fa fa-expand"&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"&gt;&lt;i class="fa fa-repeat"&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"&gt;&lt;i class="fa fa-minus"&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;h4 class="panel-title"&gt;Panel with Slimscroll&lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div class="panel-body"&gt;
+        &lt;div data-scrollbar="true" data-height="280px"&gt;
+            &lt;p&gt;
+				&lt;span class="fa-stack fa-4x pull-left m-r-10 text-inverse"&gt;
+					&lt;i class="fa fa-square-o fa-stack-2x"&gt;&lt;/i&gt;
+					&lt;i class="fa fa-twitter fa-stack-1x"&gt;&lt;/i&gt;
+				&lt;/span&gt;
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed enim arcu.
+                Ut posuere in ligula quis ultricies. In in justo turpis. Donec ut dui at massa gravida
+                interdum nec vitae justo. Quisque ullamcorper vehicula dictum. Nullam hendrerit interdum eleifend.
+                Aenean luctus sed arcu laoreet scelerisque. Vivamus non ullamcorper mauris, id sagittis lorem.
+                Proin tincidunt mauris et dolor mattis imperdiet. Sed facilisis mattis diam elementum adipiscing.
+            &lt;/p&gt;
+            &lt;p&gt;
+				&lt;span class="fa-stack fa-4x pull-right m-l-10 text-inverse"&gt;
+					&lt;i class="fa fa-square-o fa-stack-2x"&gt;&lt;/i&gt;
+					&lt;i class="fa fa-google-plus fa-stack-1x"&gt;&lt;/i&gt;
+				&lt;/span&gt;
+                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                Ut ante velit, pretium non nisi a, egestas placerat diam. Nullam aliquet iaculis ultricies.
+                Aliquam volutpat, sapien quis volutpat elementum, ligula purus auctor diam, at vestibulum nulla augue
+                vel purus. Praesent ac nisl a magna tincidunt interdum sed in turpis. Maecenas nec condimentum risus.
+                In congue pretium est, eget euismod tortor ornare quis.
+            &lt;/p&gt;
+            &lt;p&gt;
+				&lt;span class="fa-stack fa-4x pull-left m-r-10 text-inverse"&gt;
+					&lt;i class="fa fa-square-o fa-stack-2x"&gt;&lt;/i&gt;
+					&lt;i class="fa fa-facebook fa-stack-1x"&gt;&lt;/i&gt;
+				&lt;/span&gt;
+                Praesent eu ultrices justo. Vestibulum ante
+                ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                Cras mattis ipsum quis sapien consectetur fringilla.
+                Etiam sagittis sem tempus purus elementum, vitae pretium sapien porta. Curabitur iaculis ante ut aliquam luctus.
+                Vivamus ullamcorper blandit imperdiet. Ut egestas, orci id rhoncus cursus, orci risus scelerisque enim, eget mattis eros lacus quis ligula.
+                Vivamus ullamcorper urna eget hendrerit laoreet.
+            &lt;/p&gt;
+            &lt;p&gt;
+				&lt;span class="fa-stack fa-4x pull-right m-l-10 text-inverse"&gt;
+					&lt;i class="fa fa-square-o fa-stack-2x"&gt;&lt;/i&gt;
+					&lt;i class="fa fa-apple fa-stack-1x"&gt;&lt;/i&gt;
+				&lt;/span&gt;
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                Morbi accumsan velit dolor. Donec convallis eleifend magna, at euismod tellus convallis a.
+                Curabitur in nisi dolor. Cras viverra scelerisque orci, sed interdum ligula volutpat non.
+                Nunc eu enim ac neque tempor feugiat. Duis posuere lacus non magna eleifend,
+                non dictum sem feugiat. Duis eleifend condimentum pulvinar.
+            &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!--End Panel with Slimscroll--&gt;
+
+&lt;!--Panel with Toolbar & Footer--&gt;
+&lt;div class="panel panel-inverse" data-sortable-id="ui-widget-8"&gt;
+    &lt;div class="panel-heading"&gt;
+        &lt;div class="panel-heading-btn"&gt;
+            &lt;a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"&gt;&lt;i class="fa fa-expand"&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"&gt;&lt;i class="fa fa-repeat"&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"&gt;&lt;i class="fa fa-minus"&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;h4 class="panel-title"&gt;Panel with Toolbar & Footer&lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div class="panel-toolbar"&gt;
+        &lt;div class="btn-group m-r-5"&gt;
+            &lt;a class="btn btn-white" href="javascript:;"&gt;&lt;i class="fa fa-bold"&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a class="btn btn-white active" href="javascript:;"&gt;&lt;i class="fa fa-italic"&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a class="btn btn-white" href="javascript:;"&gt;&lt;i class="fa fa-underline"&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class="btn-group"&gt;
+            &lt;a class="btn btn-white" href="javascript:;"&gt;&lt;i class="fa fa-align-left"&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a class="btn btn-white active" href="javascript:;"&gt;&lt;i class="fa fa-align-center"&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a class="btn btn-white" href="javascript:;"&gt;&lt;i class="fa fa-align-right"&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a class="btn btn-white" href="javascript:;"&gt;&lt;i class="fa fa-align-justify"&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;textarea class="form-control no-rounded-corner" rows="5"&gt;This is a form textarea.&lt;/textarea&gt;
+    &lt;div class="panel-footer text-right"&gt;
+        &lt;a href="javascript:;" class="btn btn-white btn-sm"&gt;Cancel&lt;/a&gt;
+        &lt;a href="javascript:;" class="btn btn-primary btn-sm m-l-5"&gt;Action&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!--End Panel with Toolbar & Footer--&gt;
+
+&lt;!--Panel with Tabs--&gt;
+&lt;div class="panel panel-default panel-with-tabs" data-sortable-id="ui-widget-9"&gt;
+    &lt;div class="panel-heading"&gt;
+        &lt;ul id="myTab" class="nav nav-tabs pull-right"&gt;
+            &lt;li class="active"&gt;&lt;a href="#home" data-toggle="tab"&gt;&lt;i class="fa fa-home"&gt;&lt;/i&gt; &lt;span class="hidden-xs"&gt;Home&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#profile" data-toggle="tab"&gt;&lt;i class="fa fa-user"&gt;&lt;/i&gt; &lt;span class="hidden-xs"&gt;Profile&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;h4 class="panel-title"&gt;Panel with Tabs&lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div id="myTabContent" class="tab-content"&gt;
+        &lt;div class="tab-pane fade in active" id="home"&gt;
+            &lt;p&gt;Raw denim you probably haven't heard of them jean shorts Austin.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class="tab-pane fade" id="profile"&gt;
+            &lt;p&gt;Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!--End Panel with Tabs--&gt;
+
+&lt;!--Panel (Default)--&gt;
+&lt;div class="panel panel-default" data-sortable-id="ui-widget-10"&gt;
+    &lt;div class="panel-heading"&gt;
+        &lt;div class="panel-heading-btn"&gt;
+            &lt;a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"&gt;&lt;i class="fa fa-expand"&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"&gt;&lt;i class="fa fa-repeat"&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"&gt;&lt;i class="fa fa-minus"&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;h4 class="panel-title"&gt;Panel (Default)&lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div class="panel-body"&gt;
+        &lt;p&gt;Panel Content Here&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!--End Panel (Default)--&gt;
+
+&lt;!--Panel Success--&gt;
+&lt;div class="panel panel-success" data-sortable-id="ui-widget-11"&gt;
+    &lt;div class="panel-heading"&gt;
+        &lt;div class="panel-heading-btn"&gt;
+            &lt;a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"&gt;&lt;i class="fa fa-expand"&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"&gt;&lt;i class="fa fa-repeat"&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"&gt;&lt;i class="fa fa-minus"&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;h4 class="panel-title"&gt;Panel Success&lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div class="panel-body"&gt;
+        &lt;p&gt;Panel Content Here&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!--End Panel Success--&gt;
+
+&lt;!--Panel Warning--&gt;
+&lt;div class="panel panel-warning" data-sortable-id="ui-widget-12"&gt;
+    &lt;div class="panel-heading"&gt;
+        &lt;div class="panel-heading-btn"&gt;
+            &lt;a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"&gt;&lt;i class="fa fa-expand"&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"&gt;&lt;i class="fa fa-repeat"&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"&gt;&lt;i class="fa fa-minus"&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;h4 class="panel-title"&gt;Panel Warning&lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div class="panel-body"&gt;
+        &lt;p&gt;Panel Content Here&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!--End Panel Warning--&gt;
+
+&lt;!--Panel Danger--&gt;
+&lt;div class="panel panel-danger" data-sortable-id="ui-widget-13"&gt;
+    &lt;div class="panel-heading"&gt;
+        &lt;div class="panel-heading-btn"&gt;
+            &lt;a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"&gt;&lt;i class="fa fa-expand"&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"&gt;&lt;i class="fa fa-repeat"&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"&gt;&lt;i class="fa fa-minus"&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;h4 class="panel-title"&gt;Panel Danger&lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div class="panel-body"&gt;
+        &lt;p&gt;Panel Content Here&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!--End Panel Danger--&gt;
+
+&lt;!--Panel Inverse--&gt;
+&lt;div class="panel panel-inverse" data-sortable-id="ui-widget-14"&gt;
+    &lt;div class="panel-heading"&gt;
+        &lt;div class="panel-heading-btn"&gt;
+            &lt;a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"&gt;&lt;i class="fa fa-expand"&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"&gt;&lt;i class="fa fa-repeat"&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"&gt;&lt;i class="fa fa-minus"&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;h4 class="panel-title"&gt;Panel Inverse&lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div class="panel-body"&gt;
+        &lt;p&gt;Panel Content Here&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!--End Panel Inverse--&gt;
+
+&lt;!--Panel Primary--&gt;
+&lt;div class="panel panel-primary" data-sortable-id="ui-widget-15"&gt;
+    &lt;div class="panel-heading"&gt;
+        &lt;div class="panel-heading-btn"&gt;
+            &lt;a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"&gt;&lt;i class="fa fa-expand"&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"&gt;&lt;i class="fa fa-repeat"&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"&gt;&lt;i class="fa fa-minus"&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;h4 class="panel-title"&gt;Panel Primary&lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div class="panel-body"&gt;
+        &lt;p&gt;Panel Content Here&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!--End Panel Primary--&gt;
+
+&lt;!--Panel Info--&gt;
+&lt;div class="panel panel-info" data-sortable-id="ui-widget-16"&gt;
+    &lt;div class="panel-heading"&gt;
+        &lt;div class="panel-heading-btn"&gt;
+            &lt;a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"&gt;&lt;i class="fa fa-expand"&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"&gt;&lt;i class="fa fa-repeat"&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"&gt;&lt;i class="fa fa-minus"&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;h4 class="panel-title"&gt;Panel Info&lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div class="panel-body"&gt;
+        &lt;p&gt;Panel Content Here&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!--End Panel Info--&gt;
+
+&lt;!--Full Color Panel--&gt;
+&lt;div class="panel panel-inverse" data-sortable-id="ui-widget-16"&gt;
+    &lt;div class="panel-heading"&gt;
+        &lt;div class="panel-heading-btn"&gt;
+            &lt;a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"&gt;&lt;i class="fa fa-expand"&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"&gt;&lt;i class="fa fa-repeat"&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"&gt;&lt;i class="fa fa-minus"&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;h4 class="panel-title"&gt;Full Color Panel&lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div class="panel-body bg-black"&gt;
+        &lt;p&gt;Panel Content Here&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!--End Full Color Panel--&gt;
+                 　 </pre>
+                </div><!-- end span12 -->
+            </div><!-- end row-fluid -->
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="page-header">
+                        <h3 id="buttons"><strong>A) Buttons</strong> - <a href="#top">top</a></h3>
+                    </div>
+                    <div class="well">
+                        <button type="button" class="btn btn-default m-r-5 m-b-5">Default</button>
+                        <button type="button" class="btn btn-primary m-r-5 m-b-5">Primary</button>
+                        <button type="button" class="btn btn-info m-r-5 m-b-5">Info</button>
+                        <button type="button" class="btn btn-success m-r-5 m-b-5">Success</button>
+                        <button type="button" class="btn btn-danger m-r-5 m-b-5">Danger</button>
+                        <button type="button" class="btn btn-warning m-r-5 m-b-5">Warning</button>
+                        <button type="button" class="btn btn-inverse m-r-5 m-b-5">Inverse</button>
+                        <button type="button" class="btn btn-white m-r-5 m-b-5">White</button>
+                        <button type="button" class="btn btn-link m-b-5">Link</button>
+                        <p></p>
+                        <div class="btn-group m-r-5 m-b-5">
+                            <a href="javascript:;" data-toggle="dropdown" class="btn btn-default dropdown-toggle">Action
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="javascript:;">Action 1</a></li>
+                                <li><a href="javascript:;">Action 2</a></li>
+                                <li><a href="javascript:;">Action 3</a></li>
+                                <li class="divider"></li>
+                                <li><a href="javascript:;">Action 4</a></li>
+                            </ul>
+                        </div>
+                        <div class="btn-group m-r-5 m-b-5">
+                            <a href="javascript:;" class="btn btn-success">Default</a>
+                            <a href="javascript:;" data-toggle="dropdown" class="btn btn-success dropdown-toggle">
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu pull-right">
+                                <li><a href="javascript:;">Action 1</a></li>
+                                <li><a href="javascript:;">Action 2</a></li>
+                                <li><a href="javascript:;">Action 3</a></li>
+                                <li class="divider"></li>
+                                <li><a href="javascript:;">Action 4</a></li>
+                            </ul>
+                        </div>
+                        <div class="btn-group dropup m-b-5">
+                            <a href="javascript:;" class="btn btn-warning">Dropup</a>
+                            <a href="javascript:;" data-toggle="dropdown" class="btn btn-warning dropdown-toggle">
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu pull-right">
+                                <li><a href="javascript:;">Action 1</a></li>
+                                <li><a href="javascript:;">Action 2</a></li>
+                                <li><a href="javascript:;">Action 3</a></li>
+                                <li class="divider"></li>
+                                <li><a href="javascript:;">Action 4</a></li>
+                            </ul>
+                        </div>
+                        <a href="javascript:;" class="btn btn-primary btn-lg m-r-5">Large Button</a>
+                        <a href="javascript:;" class="btn btn-primary m-r-5">Default Button</a>
+                        <a href="javascript:;" class="btn btn-primary btn-sm m-r-5">Small Button</a>
+                        <a href="javascript:;" class="btn btn-primary btn-xs m-r-5">Extra Small</a>
+                        <p></p>
+                        <a href="javascript:;" class="btn btn-danger disabled m-r-5">Disabled Button</a>
+                        <a href="javascript:;" class="btn btn-danger active m-r-5">Active Button</a>
+                        <div class="btn-group m-r-5">
+                            <button class="btn btn-white">Left</button>
+                            <button class="btn btn-white active">Middle</button>
+                            <button class="btn btn-white">Right</button>
+                        </div>
+                        <div class="btn-group m-r-5">
+                            <a class="btn btn-white" href="javascript:;"><i class="fa fa-align-left"></i></a>
+                            <a class="btn btn-white active" href="javascript:;"><i
+                                    class="fa fa-align-center"></i></a>
+                            <a class="btn btn-white" href="javascript:;"><i class="fa fa-align-right"></i></a>
+                            <a class="btn btn-white" href="javascript:;"><i class="fa fa-align-justify"></i></a>
+                        </div>
+                        <a class="btn btn-danger btn-icon btn-circle"><i class="fa fa-times"></i></a>
+                        <a class="btn btn-primary btn-icon btn-circle"><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-info btn-icon btn-circle"><i class="fa fa-twitter"></i></a>
+                        <a class="btn btn-inverse btn-icon btn-circle"><i class="fa fa-stack-overflow"></i></a>
+                    </div>
+                    <pre class="prettyprint linenums">
+&lt;!--Buttons--&gt;
+&lt;button type="button" class="btn btn-default m-r-5 m-b-5"&gt;Default&lt;/button&gt;
+&lt;button type="button" class="btn btn-primary m-r-5 m-b-5"&gt;Primary&lt;/button&gt;
+&lt;button type="button" class="btn btn-info m-r-5 m-b-5"&gt;Info&lt;/button&gt;
+&lt;button type="button" class="btn btn-success m-r-5 m-b-5"&gt;Success&lt;/button&gt;
+&lt;button type="button" class="btn btn-danger m-r-5 m-b-5"&gt;Danger&lt;/button&gt;
+&lt;button type="button" class="btn btn-warning m-r-5 m-b-5"&gt;Warning&lt;/button&gt;
+&lt;button type="button" class="btn btn-inverse m-r-5 m-b-5"&gt;Inverse&lt;/button&gt;
+&lt;button type="button" class="btn btn-white m-r-5 m-b-5"&gt;White&lt;/button&gt;
+&lt;button type="button" class="btn btn-link m-b-5"&gt;Link&lt;/button&gt;
+&lt;!--End Buttons--&gt;
+
+&lt;!--Button Dropdowns --&gt;
+&lt;div class="btn-group m-r-5 m-b-5"&gt;
+    &lt;a href="javascript:;" data-toggle="dropdown" class="btn btn-default dropdown-toggle"&gt;Action &lt;span class="caret"&gt;&lt;/span&gt;&lt;/a&gt;
+    &lt;ul class="dropdown-menu"&gt;
+       &lt;li&gt;&lt;a href="javascript:;"&gt;Action 1&lt;/a&gt;&lt;/li&gt;
+       &lt;li&gt;&lt;a href="javascript:;"&gt;Action 2&lt;/a&gt;&lt;/li&gt;
+       &lt;li&gt;&lt;a href="javascript:;"&gt;Action 3&lt;/a&gt;&lt;/li&gt;
+       &lt;li class="divider"&gt;&lt;/li&gt;
+       &lt;li&gt;&lt;a href="javascript:;"&gt;Action 4&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="btn-group m-r-5 m-b-5"&gt;
+  &lt;a href="javascript:;" class="btn btn-success"&gt;Default&lt;/a&gt;
+  &lt;a href="javascript:;" data-toggle="dropdown" class="btn btn-success dropdown-toggle"&gt;
+    &lt;span class="caret"&gt;&lt;/span&gt;
+  &lt;/a&gt;
+  &lt;ul class="dropdown-menu pull-right"&gt;
+    &lt;li&gt;&lt;a href="javascript:;"&gt;Action 1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="javascript:;"&gt;Action 2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="javascript:;"&gt;Action 3&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="divider"&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="javascript:;"&gt;Action 4&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="btn-group dropup m-b-5"&gt;
+  &lt;a href="javascript:;" class="btn btn-warning"&gt;Dropup&lt;/a&gt;
+  &lt;a href="javascript:;" data-toggle="dropdown" class="btn btn-warning dropdown-toggle"&gt;
+    &lt;span class="caret"&gt;&lt;/span&gt;
+  &lt;/a&gt;
+  &lt;ul class="dropdown-menu pull-right"&gt;
+    &lt;li&gt;&lt;a href="javascript:;"&gt;Action 1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="javascript:;"&gt;Action 2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="javascript:;"&gt;Action 3&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="divider"&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="javascript:;"&gt;Action 4&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+&lt;!--End Button Dropdowns --&gt;
+
+&lt;!--Button Sizes --&gt;
+&lt;a href="javascript:;" class="btn btn-primary btn-lg m-r-5"&gt;Large Button&lt;/a&gt;
+&lt;a href="javascript:;" class="btn btn-primary m-r-5"&gt;Default Button&lt;/a&gt;
+&lt;a href="javascript:;" class="btn btn-primary btn-sm m-r-5"&gt;Small Button&lt;/a&gt;
+&lt;a href="javascript:;" class="btn btn-primary btn-xs m-r-5"&gt;Extra Small&lt;/a&gt;
+&lt;!--End Button Sizes --&gt;
+
+&lt;!--Button State --&gt;
+&lt;a href="javascript:;" class="btn btn-danger disabled m-r-5"&gt;Disabled Button&lt;/a&gt;
+&lt;a href="javascript:;" class="btn btn-danger active m-r-5"&gt;Active Button&lt;/a&gt;
+&lt;!--End Button State --&gt;
+
+&lt;!--Button Group --&gt;
+&lt;div class="btn-group m-r-5"&gt;
+  &lt;button class="btn btn-white"&gt;Left&lt;/button&gt;
+  &lt;button class="btn btn-white active"&gt;Middle&lt;/button&gt;
+  &lt;button class="btn btn-white"&gt;Right&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class="btn-group m-r-5"&gt;
+  &lt;a class="btn btn-white" href="javascript:;"&gt;&lt;i class="fa fa-align-left"&gt;&lt;/i&gt;&lt;/a&gt;
+  &lt;a class="btn btn-white active" href="javascript:;"&gt;&lt;i class="fa fa-align-center"&gt;&lt;/i&gt;&lt;/a&gt;
+  &lt;a class="btn btn-white" href="javascript:;"&gt;&lt;i class="fa fa-align-right"&gt;&lt;/i&gt;&lt;/a&gt;
+  &lt;a class="btn btn-white" href="javascript:;"&gt;&lt;i class="fa fa-align-justify"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;!--End Button Group --&gt;
+
+&lt;!--Button Icon --&gt;
+&lt;a class="btn btn-danger btn-icon btn-circle"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a class="btn btn-primary btn-icon btn-circle"&gt;&lt;i class="fa fa-facebook"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a class="btn btn-info btn-icon btn-circle"&gt;&lt;i class="fa fa-twitter"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a class="btn btn-inverse btn-icon btn-circle"&gt;&lt;i class="fa fa-stack-overflow"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;!--End Button Icon --&gt;
+                    </pre>
+                </div><!-- end span12 -->
+            </div><!-- end row-fluid -->
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="page-header">
+                        <h3 id="form-elements"><strong>B) Form Elements</strong> - <a href="#top">top</a></h3>
+                    </div>
+                    <div class="well">
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">Default Input</label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" placeholder="Default input"/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">Disabled Input</label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" placeholder="Disabled input" disabled/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">Select</label>
+                                <div class="col-md-9">
+                                    <select class="form-control">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">Select (multiple)</label>
+                                <div class="col-md-9">
+                                    <select multiple class="form-control">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">Textarea</label>
+                                <div class="col-md-9">
+                                    <textarea class="form-control" placeholder="Textarea" rows="5"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">Checkbox</label>
+                                <div class="col-md-9">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" value=""/>
+                                            Checkbox Label 1
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" value=""/>
+                                            Checkbox Label 2
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">Inline Checkbox</label>
+                                <div class="col-md-9">
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value=""/>
+                                        Checkbox Label 1
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value=""/>
+                                        Checkbox Label 2
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">Radio Button</label>
+                                <div class="col-md-9">
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="optionsRadios" value="option1" checked/>
+                                            Radio option 1
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="optionsRadios" value="option2"/>
+                                            Radio option 2
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">Inline Radio Button</label>
+                                <div class="col-md-9">
+                                    <label class="radio-inline">
+                                        <input type="radio" name="optionsRadios" value="option1" checked/>
+                                        Radio option 1
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="optionsRadios" value="option2"/>
+                                        Radio option 2
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group has-success has-feedback">
+                                <label class="col-md-3 control-label">Input with Success</label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control"/>
+                                    <span class="fa fa-check form-control-feedback"></span>
+                                </div>
+                            </div>
+                            <div class="form-group has-warning has-feedback">
+                                <label class="col-md-3 control-label">Input with Warning</label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control"/>
+                                    <span class="fa fa-warning form-control-feedback"></span>
+                                </div>
+                            </div>
+                            <div class="form-group has-error has-feedback">
+                                <label class="col-md-3 control-label">Input with Error</label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control"/>
+                                    <span class="fa fa-times form-control-feedback"></span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">Submit</label>
+                                <div class="col-md-9">
+                                    <button type="submit" class="btn btn-sm btn-success">Submit Button</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <pre class="prettyprint linenums">
+&lt;form class="form-horizontal"&gt;
+    &lt;div class="form-group"&gt;
+        &lt;label class="col-md-3 control-label"&gt;Default Input&lt;/label&gt;
+        &lt;div class="col-md-9"&gt;
+            &lt;input type="text" class="form-control" placeholder="Default input"/&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="form-group"&gt;
+        &lt;label class="col-md-3 control-label"&gt;Disabled Input&lt;/label&gt;
+        &lt;div class="col-md-9"&gt;
+            &lt;input type="text" class="form-control" placeholder="Disabled input" disabled/&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="form-group"&gt;
+        &lt;label class="col-md-3 control-label"&gt;Select&lt;/label&gt;
+        &lt;div class="col-md-9"&gt;
+            &lt;select class="form-control"&gt;
+                &lt;option&gt;1&lt;/option&gt;
+                &lt;option&gt;2&lt;/option&gt;
+                &lt;option&gt;3&lt;/option&gt;
+                &lt;option&gt;4&lt;/option&gt;
+                &lt;option&gt;5&lt;/option&gt;
+            &lt;/select&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="form-group"&gt;
+        &lt;label class="col-md-3 control-label"&gt;Select (multiple)&lt;/label&gt;
+        &lt;div class="col-md-9"&gt;
+            &lt;select multiple class="form-control"&gt;
+                &lt;option&gt;1&lt;/option&gt;
+                &lt;option&gt;2&lt;/option&gt;
+                &lt;option&gt;3&lt;/option&gt;
+                &lt;option&gt;4&lt;/option&gt;
+                &lt;option&gt;5&lt;/option&gt;
+            &lt;/select&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="form-group"&gt;
+        &lt;label class="col-md-3 control-label"&gt;Textarea&lt;/label&gt;
+        &lt;div class="col-md-9"&gt;
+            &lt;textarea class="form-control" placeholder="Textarea" rows="5"&gt;&lt;/textarea&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="form-group"&gt;
+        &lt;label class="col-md-3 control-label"&gt;Checkbox&lt;/label&gt;
+        &lt;div class="col-md-9"&gt;
+            &lt;div class="checkbox"&gt;
+                &lt;label&gt;
+                    &lt;input type="checkbox" value=""/&gt;
+                    Checkbox Label 1
+                &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class="checkbox"&gt;
+                &lt;label&gt;
+                    &lt;input type="checkbox" value=""/&gt;
+                    Checkbox Label 2
+                &lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="form-group"&gt;
+        &lt;label class="col-md-3 control-label"&gt;Inline Checkbox&lt;/label&gt;
+        &lt;div class="col-md-9"&gt;
+            &lt;label class="checkbox-inline"&gt;
+                &lt;input type="checkbox" value=""/&gt;
+                Checkbox Label 1
+            &lt;/label&gt;
+            &lt;label class="checkbox-inline"&gt;
+                &lt;input type="checkbox" value=""/&gt;
+                Checkbox Label 2
+            &lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="form-group"&gt;
+        &lt;label class="col-md-3 control-label"&gt;Radio Button&lt;/label&gt;
+        &lt;div class="col-md-9"&gt;
+            &lt;div class="radio"&gt;
+                &lt;label&gt;
+                    &lt;input type="radio" name="optionsRadios" value="option1" checked/&gt;
+                    Radio option 1
+                &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class="radio"&gt;
+                &lt;label&gt;
+                    &lt;input type="radio" name="optionsRadios" value="option2"/&gt;
+                    Radio option 2
+                &lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="form-group"&gt;
+        &lt;label class="col-md-3 control-label"&gt;Inline Radio Button&lt;/label&gt;
+        &lt;div class="col-md-9"&gt;
+            &lt;label class="radio-inline"&gt;
+                &lt;input type="radio" name="optionsRadios" value="option1" checked/&gt;
+                Radio option 1
+            &lt;/label&gt;
+            &lt;label class="radio-inline"&gt;
+                &lt;input type="radio" name="optionsRadios" value="option2"/&gt;
+                Radio option 2
+            &lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="form-group has-success has-feedback"&gt;
+        &lt;label class="col-md-3 control-label"&gt;Input with Success&lt;/label&gt;
+        &lt;div class="col-md-9"&gt;
+            &lt;input type="text" class="form-control"/&gt;
+            &lt;span class="fa fa-check form-control-feedback"&gt;&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="form-group has-warning has-feedback"&gt;
+        &lt;label class="col-md-3 control-label"&gt;Input with Warning&lt;/label&gt;
+        &lt;div class="col-md-9"&gt;
+            &lt;input type="text" class="form-control"/&gt;
+            &lt;span class="fa fa-warning form-control-feedback"&gt;&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="form-group has-error has-feedback"&gt;
+        &lt;label class="col-md-3 control-label"&gt;Input with Error&lt;/label&gt;
+        &lt;div class="col-md-9"&gt;
+            &lt;input type="text" class="form-control"/&gt;
+            &lt;span class="fa fa-times form-control-feedback"&gt;&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="form-group"&gt;
+        &lt;label class="col-md-3 control-label"&gt;Submit&lt;/label&gt;
+        &lt;div class="col-md-9"&gt;
+            &lt;button type="submit" class="btn btn-sm btn-success"&gt;Submit Button&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+                    </pre>
+                    <div class="well">
+                        <h4 class="m-t-0">Input Sizing</h4>
+                        <input class="form-control input-lg" type="text" placeholder=".input-lg"/>
+                        <p></p>
+                        <input class="form-control" type="text" placeholder="Default input"/>
+                        <p></p>
+                        <input class="form-control input-sm" type="text" placeholder=".input-sm"/>
+                        <p></p>
+                        <select class="form-control input-lg">
+                            <option>.input-lg</option>
+                        </select>
+                        <p></p>
+                        <select class="form-control">
+                            <option>default input</option>
+                        </select>
+                        <p></p>
+                        <select class="form-control input-sm">
+                            <option>.input-sm</option>
+                        </select>
+                        <h4 class="m-t-20">Input Group</h4>
+                        <div class="input-group">
+                            <span class="input-group-addon">@</span>
+                            <input type="text" class="form-control" placeholder="Username"/>
+                        </div>
+                        <p></p>
+                        <div class="input-group">
+                            <input type="text" class="form-control"/>
+                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                        </div>
+                        <p></p>
+                        <div class="input-group">
+                            <span class="input-group-addon">$</span>
+                            <input type="text" class="form-control"/>
+                            <span class="input-group-addon">.00</span>
+                        </div>
+                        <p></p>
+                        <div class="input-group">
+                                <span class="input-group-addon">
+                                    <input type="checkbox"/>
+                                </span>
+                            <input type="text" class="form-control" placeholder="Checkbox add on"/>
+                        </div>
+                        <p></p>
+                        <div class="input-group">
+                                <span class="input-group-addon">
+                                    <input type="radio"/>
+                                </span>
+                            <input type="text" class="form-control" placeholder="Radio button add on"/>
+                        </div>
+                        <p></p>
+                        <div class="input-group">
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-primary">Action</button>
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </div>
+                            <input type="text" class="form-control"/>
+                            <div class="input-group-btn">
+                                <ul class="dropdown-menu pull-right">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+                                    <span class="caret"></span>
+                                </button>
+                                <button type="button" class="btn btn-success">Action</button>
+                            </div>
+                        </div>
+                        <h4 class="m-t-20">Input Group Sizing</h4>
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon">@</span>
+                            <input type="text" class="form-control" placeholder="Username"/>
+                        </div>
+                        <p></p>
+                        <div class="input-group">
+                            <span class="input-group-addon">@</span>
+                            <input type="text" class="form-control" placeholder="Username"/>
+                        </div>
+                        <p></p>
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-addon">@</span>
+                            <input type="text" class="form-control" placeholder="Username"/>
+                        </div>
+                        <h4 class="m-t-20">Default Style</h4>
+                        <form action="/" method="POST">
+                            <fieldset>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"/>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"/> Check me out
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn btn-sm btn-primary m-r-5">Login</button>
+                                <button type="submit" class="btn btn-sm btn-default">Cancel</button>
+                            </fieldset>
+                        </form>
+                        <h4 class="m-t-20">Form Horizontal</h4>
+                        <form class="form-horizontal" action="/" method="POST">
+                            <fieldset>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">Email address</label>
+                                    <div class="col-md-8">
+                                        <input type="email" class="form-control" placeholder="Enter email" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">Password</label>
+                                    <div class="col-md-8">
+                                        <input type="password" class="form-control" placeholder="Password" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-md-8 col-md-offset-4">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" /> Check me out
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-md-8 col-md-offset-4">
+                                        <button type="submit" class="btn btn-sm btn-primary m-r-5">Login</button>
+                                        <button type="submit" class="btn btn-sm btn-default">Cancel</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <h4 class="m-t-20">Inline Form</h4>
+                        <form class="form-inline" action="/" method="POST">
+                            <div class="form-group m-r-10">
+                                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email" />
+                            </div>
+                            <div class="form-group m-r-10">
+                                <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" />
+                            </div>
+                            <div class="checkbox m-r-10">
+                                <label>
+                                    <input type="checkbox" /> Remember me
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-sm btn-primary m-r-5">Sign in</button>
+                            <button type="submit" class="btn btn-sm btn-default">Register</button>
+                        </form>
+                    </div>
+                    <pre class="prettyprint linenums">
+&lt;!--Input Sizing--&gt;
+&lt;input class="form-control input-lg" type="text" placeholder=".input-lg"/&gt;
+&lt;input class="form-control" type="text" placeholder="Default input"/&gt;
+&lt;input class="form-control input-sm" type="text" placeholder=".input-sm"/&gt;
+&lt;select class="form-control input-lg"&gt;
+    &lt;option&gt;.input-lg&lt;/option&gt;
+&lt;/select&gt;
+&lt;select class="form-control"&gt;
+    &lt;option&gt;default input&lt;/option&gt;
+&lt;/select&gt;
+&lt;select class="form-control input-sm"&gt;
+    &lt;option&gt;.input-sm&lt;/option&gt;
+&lt;/select&gt;
+&lt;!--End Input Sizing--&gt;
+
+&lt;!--Input Group--&gt;
+&lt;div class="input-group"&gt;
+    &lt;span class="input-group-addon"&gt;@&lt;/span&gt;
+    &lt;input type="text" class="form-control" placeholder="Username"/&gt;
+&lt;/div&gt;
+&lt;div class="input-group"&gt;
+    &lt;input type="text" class="form-control"/&gt;
+    &lt;span class="input-group-addon"&gt;&lt;i class="fa fa-calendar"&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="input-group"&gt;
+    &lt;span class="input-group-addon"&gt;$&lt;/span&gt;
+    &lt;input type="text" class="form-control"/&gt;
+    &lt;span class="input-group-addon"&gt;.00&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="input-group"&gt;
+    &lt;span class="input-group-addon"&gt;
+        &lt;input type="checkbox"/&gt;
+    &lt;/span&gt;
+    &lt;input type="text" class="form-control" placeholder="Checkbox add on"/&gt;
+&lt;/div&gt;
+&lt;div class="input-group"&gt;
+    &lt;span class="input-group-addon"&gt;
+        &lt;input type="radio"/&gt;
+    &lt;/span&gt;
+    &lt;input type="text" class="form-control" placeholder="Radio button add on"/&gt;
+&lt;/div&gt;
+&lt;div class="input-group"&gt;
+    &lt;div class="input-group-btn"&gt;
+        &lt;button type="button" class="btn btn-primary"&gt;Action&lt;/button&gt;
+        &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"&gt;
+            &lt;span class="caret"&gt;&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;ul class="dropdown-menu"&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="divider"&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;input type="text" class="form-control"/&gt;
+    &lt;div class="input-group-btn"&gt;
+        &lt;ul class="dropdown-menu pull-right"&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="divider"&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"&gt;
+            &lt;span class="caret"&gt;&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;button type="button" class="btn btn-success"&gt;Action&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!--End Input Group--&gt;
+
+&lt;!--Input Group Sizing--&gt;
+&lt;div class="input-group input-group-lg"&gt;
+    &lt;span class="input-group-addon"&gt;@&lt;/span&gt;
+    &lt;input type="text" class="form-control" placeholder="Username"/&gt;
+&lt;/div&gt;
+&lt;div class="input-group"&gt;
+    &lt;span class="input-group-addon"&gt;@&lt;/span&gt;
+    &lt;input type="text" class="form-control" placeholder="Username"/&gt;
+&lt;/div&gt;
+&lt;div class="input-group input-group-sm"&gt;
+    &lt;span class="input-group-addon"&gt;@&lt;/span&gt;
+    &lt;input type="text" class="form-control" placeholder="Username"/&gt;
+&lt;/div&gt;
+&lt;!--End Input Group Sizing--&gt;
+
+&lt;!--Default Style--&gt;
+&lt;form action="/" method="POST"&gt;
+    &lt;fieldset&gt;
+        &lt;div class="form-group"&gt;
+            &lt;label for="exampleInputEmail1"&gt;Email address&lt;/label&gt;
+            &lt;input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email"/&gt;
+        &lt;/div&gt;
+        &lt;div class="form-group"&gt;
+            &lt;label for="exampleInputPassword1"&gt;Password&lt;/label&gt;
+            &lt;input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"/&gt;
+        &lt;/div&gt;
+        &lt;div class="checkbox"&gt;
+            &lt;label&gt;
+                &lt;input type="checkbox"/&gt; Check me out
+            &lt;/label&gt;
+        &lt;/div&gt;
+        &lt;button type="submit" class="btn btn-sm btn-primary m-r-5"&gt;Login&lt;/button&gt;
+        &lt;button type="submit" class="btn btn-sm btn-default"&gt;Cancel&lt;/button&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;
+&lt;!--End Default Style--&gt;
+
+&lt;!--Form Horizontal--&gt;
+&lt;form class="form-horizontal" action="/" method="POST"&gt;
+    &lt;fieldset&gt;
+        &lt;div class="form-group"&gt;
+            &lt;label class="col-md-4 control-label"&gt;Email address&lt;/label&gt;
+            &lt;div class="col-md-8"&gt;
+                &lt;input type="email" class="form-control" placeholder="Enter email" /&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="form-group"&gt;
+            &lt;label class="col-md-4 control-label"&gt;Password&lt;/label&gt;
+            &lt;div class="col-md-8"&gt;
+                &lt;input type="password" class="form-control" placeholder="Password" /&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="form-group"&gt;
+            &lt;div class="col-md-8 col-md-offset-4"&gt;
+                &lt;div class="checkbox"&gt;
+                    &lt;label&gt;
+                        &lt;input type="checkbox" /&gt; Check me out
+                    &lt;/label&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="form-group"&gt;
+            &lt;div class="col-md-8 col-md-offset-4"&gt;
+                &lt;button type="submit" class="btn btn-sm btn-primary m-r-5"&gt;Login&lt;/button&gt;
+                &lt;button type="submit" class="btn btn-sm btn-default"&gt;Cancel&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;
+&lt;!--End　Form Horizontal--&gt;
+
+&lt;!--Inline Form--&gt;
+&lt;form class="form-inline" action="/" method="POST"&gt;
+    &lt;div class="form-group m-r-10"&gt;
+        &lt;input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email" /&gt;
+    &lt;/div&gt;
+    &lt;div class="form-group m-r-10"&gt;
+        &lt;input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" /&gt;
+    &lt;/div&gt;
+    &lt;div class="checkbox m-r-10"&gt;
+        &lt;label&gt;
+            &lt;input type="checkbox" /&gt; Remember me
+        &lt;/label&gt;
+    &lt;/div&gt;
+    &lt;button type="submit" class="btn btn-sm btn-primary m-r-5"&gt;Sign in&lt;/button&gt;
+    &lt;button type="submit" class="btn btn-sm btn-default"&gt;Register&lt;/button&gt;
+&lt;/form&gt;
+&lt;!--End　Inline Form--&gt;
+                    </pre>
+                </div><!-- end span12 -->
+            </div><!-- end row-fluid -->
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="page-header">
+                        <h3 id="table"><strong>C) Tables</strong> - <a href="#top">top</a></h3>
+                    </div>
+                    <div class="well">
+                        <h4 class="m-t-0">Default Table</h4>
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Username</th>
+                                <th>Email Address</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Nicky Almera</td>
+                                <td>nicky@hotmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Edmund Wong</td>
+                                <td>edmund@yahoo.com</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Harvinder Singh</td>
+                                <td>harvinder@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Terry Khoo</td>
+                                <td>terry@gmail.com</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <h4 class="m-t-20">Hover Table</h4>
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Username</th>
+                                <th>Email Address</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Nicky Almera</td>
+                                <td>nicky@hotmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Edmund Wong</td>
+                                <td>edmund@yahoo.com</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Harvinder Singh</td>
+                                <td>harvinder@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Terry Khoo</td>
+                                <td>terry@gmail.com</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <h4 class="m-t-20">Condensed Table</h4>
+                        <table class="table table-condensed">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Username</th>
+                                <th>Email Address</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Nicky Almera</td>
+                                <td>nicky@hotmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Edmund Wong</td>
+                                <td>edmund@yahoo.com</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Harvinder Singh</td>
+                                <td>harvinder@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Terry Khoo</td>
+                                <td>terry@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Camryn Wong</td>
+                                <td>camryn@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Lelouch Wong</td>
+                                <td>lelouch@gmail.com</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <h4 class="m-t-20">Table Striped</h4>
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Username</th>
+                                <th>Email Address</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Nicky Almera</td>
+                                <td>nicky@hotmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Edmund Wong</td>
+                                <td>edmund@yahoo.com</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Harvinder Singh</td>
+                                <td>harvinder@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Terry Khoo</td>
+                                <td>terry@gmail.com</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <h4 class="m-t-20">Bordered Table</h4>
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Username</th>
+                                <th>Email Address</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Nicky Almera</td>
+                                <td>nicky@hotmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Edmund Wong</td>
+                                <td>edmund@yahoo.com</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Harvinder Singh</td>
+                                <td>harvinder@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Terry Khoo</td>
+                                <td>terry@gmail.com</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <h4 class="m-t-20">Table Row Classes</h4>
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Username</th>
+                                <th>Email Address</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="active">
+                                <td>1</td>
+                                <td>Nicky Almera</td>
+                                <td>nicky@hotmail.com</td>
+                            </tr>
+                            <tr class="info">
+                                <td>2</td>
+                                <td>Terry Khoo</td>
+                                <td>terry@gmail.com</td>
+                            </tr>
+                            <tr class="success">
+                                <td>3</td>
+                                <td>Edmund Wong</td>
+                                <td>edmund@yahoo.com</td>
+                            </tr>
+                            <tr class="warning">
+                                <td>4</td>
+                                <td>Harvinder Singh</td>
+                                <td>harvinder@gmail.com</td>
+                            </tr>
+                            <tr class="danger">
+                                <td>5</td>
+                                <td>Terry Khoo</td>
+                                <td>terry@gmail.com</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <h4 class="m-t-20">Responsive Table</h4>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Table heading</th>
+                                    <th>Table heading</th>
+                                    <th>Table heading</th>
+                                    <th>Table heading</th>
+                                    <th>Table heading</th>
+                                    <th>Table heading</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Table cell</td>
+                                    <td>Table cell</td>
+                                    <td>Table cell</td>
+                                    <td>Table cell</td>
+                                    <td>Table cell</td>
+                                    <td>Table cell</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Table cell</td>
+                                    <td>Table cell</td>
+                                    <td>Table cell</td>
+                                    <td>Table cell</td>
+                                    <td>Table cell</td>
+                                    <td>Table cell</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Table cell</td>
+                                    <td>Table cell</td>
+                                    <td>Table cell</td>
+                                    <td>Table cell</td>
+                                    <td>Table cell</td>
+                                    <td>Table cell</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Table heading</th>
+                                    <th>Table heading</th>
+                                    <th>Table heading</th>
+                                    <th>Table heading</th>
+                                    <th>Table heading</th>
+                                    <th>Table heading</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Table cell</td>
+                                    <td>Table cell</td>
+                                    <td>Table cell</td>
+                                    <td>Table cell</td>
+                                    <td>Table cell</td>
+                                    <td>Table cell</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Table cell</td>
+                                    <td>Table cell</td>
+                                    <td>Table cell</td>
+                                    <td>Table cell</td>
+                                    <td>Table cell</td>
+                                    <td>Table cell</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Table cell</td>
+                                    <td>Table cell</td>
+                                    <td>Table cell</td>
+                                    <td>Table cell</td>
+                                    <td>Table cell</td>
+                                    <td>Table cell</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <pre class="prettyprint linenums">
+&lt;!--Default Table--&gt;
+&lt;table class="table"&gt;
+    &lt;thead&gt;
+    &lt;tr&gt;
+        &lt;th&gt;#&lt;/th&gt;
+        &lt;th&gt;Username&lt;/th&gt;
+        &lt;th&gt;Email Address&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+    &lt;tr&gt;
+        &lt;td&gt;1&lt;/td&gt;
+        &lt;td&gt;Nicky Almera&lt;/td&gt;
+        &lt;td&gt;nicky@hotmail.com&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;2&lt;/td&gt;
+        &lt;td&gt;Edmund Wong&lt;/td&gt;
+        &lt;td&gt;edmund@yahoo.com&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;3&lt;/td&gt;
+        &lt;td&gt;Harvinder Singh&lt;/td&gt;
+        &lt;td&gt;harvinder@gmail.com&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;4&lt;/td&gt;
+        &lt;td&gt;Terry Khoo&lt;/td&gt;
+        &lt;td&gt;terry@gmail.com&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;!--End Default Table--&gt;
+
+&lt;!--Hover Table--&gt;
+&lt;table class="table table-hover"&gt;
+    &lt;thead&gt;
+    &lt;tr&gt;
+        &lt;th&gt;#&lt;/th&gt;
+        &lt;th&gt;Username&lt;/th&gt;
+        &lt;th&gt;Email Address&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+    &lt;tr&gt;
+        &lt;td&gt;1&lt;/td&gt;
+        &lt;td&gt;Nicky Almera&lt;/td&gt;
+        &lt;td&gt;nicky@hotmail.com&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;2&lt;/td&gt;
+        &lt;td&gt;Edmund Wong&lt;/td&gt;
+        &lt;td&gt;edmund@yahoo.com&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;3&lt;/td&gt;
+        &lt;td&gt;Harvinder Singh&lt;/td&gt;
+        &lt;td&gt;harvinder@gmail.com&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;4&lt;/td&gt;
+        &lt;td&gt;Terry Khoo&lt;/td&gt;
+        &lt;td&gt;terry@gmail.com&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;!--End Hover Table--&gt;
+
+&lt;!--Condensed Table--&gt;
+&lt;table class="table table-condensed"&gt;
+    &lt;thead&gt;
+    &lt;tr&gt;
+        &lt;th&gt;#&lt;/th&gt;
+        &lt;th&gt;Username&lt;/th&gt;
+        &lt;th&gt;Email Address&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+    &lt;tr&gt;
+        &lt;td&gt;1&lt;/td&gt;
+        &lt;td&gt;Nicky Almera&lt;/td&gt;
+        &lt;td&gt;nicky@hotmail.com&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;2&lt;/td&gt;
+        &lt;td&gt;Edmund Wong&lt;/td&gt;
+        &lt;td&gt;edmund@yahoo.com&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;3&lt;/td&gt;
+        &lt;td&gt;Harvinder Singh&lt;/td&gt;
+        &lt;td&gt;harvinder@gmail.com&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;4&lt;/td&gt;
+        &lt;td&gt;Terry Khoo&lt;/td&gt;
+        &lt;td&gt;terry@gmail.com&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;5&lt;/td&gt;
+        &lt;td&gt;Camryn Wong&lt;/td&gt;
+        &lt;td&gt;camryn@gmail.com&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;6&lt;/td&gt;
+        &lt;td&gt;Lelouch Wong&lt;/td&gt;
+        &lt;td&gt;lelouch@gmail.com&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;!--End Condensed Table--&gt;
+
+&lt;!--Table Striped--&gt;
+&lt;table class="table table-striped"&gt;
+    &lt;thead&gt;
+    &lt;tr&gt;
+        &lt;th&gt;#&lt;/th&gt;
+        &lt;th&gt;Username&lt;/th&gt;
+        &lt;th&gt;Email Address&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+    &lt;tr&gt;
+        &lt;td&gt;1&lt;/td&gt;
+        &lt;td&gt;Nicky Almera&lt;/td&gt;
+        &lt;td&gt;nicky@hotmail.com&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;2&lt;/td&gt;
+        &lt;td&gt;Edmund Wong&lt;/td&gt;
+        &lt;td&gt;edmund@yahoo.com&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;3&lt;/td&gt;
+        &lt;td&gt;Harvinder Singh&lt;/td&gt;
+        &lt;td&gt;harvinder@gmail.com&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;4&lt;/td&gt;
+        &lt;td&gt;Terry Khoo&lt;/td&gt;
+        &lt;td&gt;terry@gmail.com&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;!--End Table Striped--&gt;
+
+&lt;!--Bordered Table--&gt;
+&lt;table class="table table-bordered"&gt;
+    &lt;thead&gt;
+    &lt;tr&gt;
+        &lt;th&gt;#&lt;/th&gt;
+        &lt;th&gt;Username&lt;/th&gt;
+        &lt;th&gt;Email Address&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+    &lt;tr&gt;
+        &lt;td&gt;1&lt;/td&gt;
+        &lt;td&gt;Nicky Almera&lt;/td&gt;
+        &lt;td&gt;nicky@hotmail.com&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;2&lt;/td&gt;
+        &lt;td&gt;Edmund Wong&lt;/td&gt;
+        &lt;td&gt;edmund@yahoo.com&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;3&lt;/td&gt;
+        &lt;td&gt;Harvinder Singh&lt;/td&gt;
+        &lt;td&gt;harvinder@gmail.com&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;4&lt;/td&gt;
+        &lt;td&gt;Terry Khoo&lt;/td&gt;
+        &lt;td&gt;terry@gmail.com&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;!--End Bordered Table--&gt;
+
+&lt;!--Table Row Classes--&gt;
+&lt;table class="table"&gt;
+    &lt;thead&gt;
+    &lt;tr&gt;
+        &lt;th&gt;#&lt;/th&gt;
+        &lt;th&gt;Username&lt;/th&gt;
+        &lt;th&gt;Email Address&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+    &lt;tr class="active"&gt;
+        &lt;td&gt;1&lt;/td&gt;
+        &lt;td&gt;Nicky Almera&lt;/td&gt;
+        &lt;td&gt;nicky@hotmail.com&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class="info"&gt;
+        &lt;td&gt;2&lt;/td&gt;
+        &lt;td&gt;Terry Khoo&lt;/td&gt;
+        &lt;td&gt;terry@gmail.com&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class="success"&gt;
+        &lt;td&gt;3&lt;/td&gt;
+        &lt;td&gt;Edmund Wong&lt;/td&gt;
+        &lt;td&gt;edmund@yahoo.com&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class="warning"&gt;
+        &lt;td&gt;4&lt;/td&gt;
+        &lt;td&gt;Harvinder Singh&lt;/td&gt;
+        &lt;td&gt;harvinder@gmail.com&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class="danger"&gt;
+        &lt;td&gt;5&lt;/td&gt;
+        &lt;td&gt;Terry Khoo&lt;/td&gt;
+        &lt;td&gt;terry@gmail.com&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;!--End Table Row Classes--&gt;
+
+&lt;!--Responsive Table--&gt;
+&lt;div class="table-responsive"&gt;
+    &lt;table class="table"&gt;
+        &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;#&lt;/th&gt;
+            &lt;th&gt;Table heading&lt;/th&gt;
+            &lt;th&gt;Table heading&lt;/th&gt;
+            &lt;th&gt;Table heading&lt;/th&gt;
+            &lt;th&gt;Table heading&lt;/th&gt;
+            &lt;th&gt;Table heading&lt;/th&gt;
+            &lt;th&gt;Table heading&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;1&lt;/td&gt;
+            &lt;td&gt;Table cell&lt;/td&gt;
+            &lt;td&gt;Table cell&lt;/td&gt;
+            &lt;td&gt;Table cell&lt;/td&gt;
+            &lt;td&gt;Table cell&lt;/td&gt;
+            &lt;td&gt;Table cell&lt;/td&gt;
+            &lt;td&gt;Table cell&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;2&lt;/td&gt;
+            &lt;td&gt;Table cell&lt;/td&gt;
+            &lt;td&gt;Table cell&lt;/td&gt;
+            &lt;td&gt;Table cell&lt;/td&gt;
+            &lt;td&gt;Table cell&lt;/td&gt;
+            &lt;td&gt;Table cell&lt;/td&gt;
+            &lt;td&gt;Table cell&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;3&lt;/td&gt;
+            &lt;td&gt;Table cell&lt;/td&gt;
+            &lt;td&gt;Table cell&lt;/td&gt;
+            &lt;td&gt;Table cell&lt;/td&gt;
+            &lt;td&gt;Table cell&lt;/td&gt;
+            &lt;td&gt;Table cell&lt;/td&gt;
+            &lt;td&gt;Table cell&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/div&gt;
+&lt;div class="table-responsive"&gt;
+    &lt;table class="table table-bordered"&gt;
+        &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;#&lt;/th&gt;
+            &lt;th&gt;Table heading&lt;/th&gt;
+            &lt;th&gt;Table heading&lt;/th&gt;
+            &lt;th&gt;Table heading&lt;/th&gt;
+            &lt;th&gt;Table heading&lt;/th&gt;
+            &lt;th&gt;Table heading&lt;/th&gt;
+            &lt;th&gt;Table heading&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;1&lt;/td&gt;
+            &lt;td&gt;Table cell&lt;/td&gt;
+            &lt;td&gt;Table cell&lt;/td&gt;
+            &lt;td&gt;Table cell&lt;/td&gt;
+            &lt;td&gt;Table cell&lt;/td&gt;
+            &lt;td&gt;Table cell&lt;/td&gt;
+            &lt;td&gt;Table cell&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;2&lt;/td&gt;
+            &lt;td&gt;Table cell&lt;/td&gt;
+            &lt;td&gt;Table cell&lt;/td&gt;
+            &lt;td&gt;Table cell&lt;/td&gt;
+            &lt;td&gt;Table cell&lt;/td&gt;
+            &lt;td&gt;Table cell&lt;/td&gt;
+            &lt;td&gt;Table cell&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;3&lt;/td&gt;
+            &lt;td&gt;Table cell&lt;/td&gt;
+            &lt;td&gt;Table cell&lt;/td&gt;
+            &lt;td&gt;Table cell&lt;/td&gt;
+            &lt;td&gt;Table cell&lt;/td&gt;
+            &lt;td&gt;Table cell&lt;/td&gt;
+            &lt;td&gt;Table cell&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/div&gt;
+&lt;!--End Responsive Table--&gt;
+                    </pre>
+                </div><!-- end span12 -->
+            </div><!-- end row-fluid -->
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="page-header">
+                        <h3 id="page-top-menu"><strong>D) Top Menu</strong> - <a href="#top">top</a></h3>
+                    </div>
+                    <pre class="prettyprint linenums">
+&lt;!-- begin #header --&gt;
+&lt;div id="header" class="header navbar navbar-transparent navbar-fixed-top"&gt;
+  &lt;!-- begin container --&gt;
+  &lt;div class="container"&gt;
+    &lt;!-- begin navbar-header --&gt;
+    &lt;div class="navbar-header"&gt;
+      &lt;button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-navbar"&gt;
+        &lt;span class="icon-bar"&gt;&lt;/span&gt;
+        &lt;span class="icon-bar"&gt;&lt;/span&gt;
+        &lt;span class="icon-bar"&gt;&lt;/span&gt;
+      &lt;/button&gt;
+      &lt;a href="index.html" class="navbar-brand"&gt;
+        &lt;span class="brand-logo"&gt;&lt;/span&gt;
+        &lt;span class="brand-text"&gt;
+          &lt;span class="text-theme"&gt;Color&lt;/span&gt; Admin
+        &lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;!-- end navbar-header --&gt;
+    &lt;!-- begin navbar-collapse --&gt;
+    &lt;div class="collapse navbar-collapse" id="header-navbar"&gt;
+      &lt;ul class="nav navbar-nav navbar-right"&gt;
+        &lt;li class="active dropdown"&gt;
+          &lt;a href="#home" data-click="scroll-to-target" data-toggle="dropdown"&gt;HOME &lt;b class="caret"&gt;&lt;/b&gt;&lt;/a&gt;
+          &lt;ul class="dropdown-menu dropdown-menu-left animated fadeInDown"&gt;
+            &lt;li&gt;&lt;a href="index.html"&gt;Page with Transparent Header&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="index_inverse_header.html"&gt;Page with Inverse Header&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="index_default_header.html"&gt;Page with White Header&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="extra_element.html"&gt;Extra Element&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a href="#about" data-click="scroll-to-target"&gt;ABOUT&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#team" data-click="scroll-to-target"&gt;TEAM&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#service" data-click="scroll-to-target"&gt;SERVICES&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#work" data-click="scroll-to-target"&gt;WORK&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#client" data-click="scroll-to-target"&gt;CLIENT&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#pricing" data-click="scroll-to-target"&gt;PRICING&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#contact" data-click="scroll-to-target"&gt;CONTACT&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;!-- end navbar-collapse --&gt;
+  &lt;/div&gt;
+  &lt;!-- end container --&gt;
+&lt;/div&gt;
+&lt;!-- end #header --&gt;
+</pre>
+                </div><!-- end span12 -->
+            </div><!-- end row-fluid -->
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="page-header">
+                        <h3 id="page-content"><strong>E) Page Content</strong> - <a href="#top">top</a></h3>
+                    </div>
+                    <p>
+                        There have 2 options of page content. HTML code of Content container as shown below:
+                    </p>
+                    <h4>Page Content with Background</h4>
+                    <pre class="prettyprint linenums">
+&lt;!-- begin content --&gt;
+&lt;div class="content has-bg"&gt;
+  &lt;!-- begin content-bg --&gt;
+  &lt;div class="content-bg"&gt;
+    &lt;img src="assets/img/home-bg.jpg" alt="" /&gt;
+  &lt;/div&gt;
+  &lt;!-- end content-bg --&gt;
+  &lt;!-- begin container --&gt;
+  &lt;div class="container"&gt;
+      &lt;h2 class="content-title"&gt;
+        &lt;!-- content title here ---&gt;
+      &lt;/h2&gt;
+      &lt;p class="content-desc"&gt;
+        &lt;!-- content desc here ---&gt;
+      &lt;/p&gt;
+    &lt;!-- your content here --&gt;
+  &lt;/div&gt;
+  &lt;!-- end container --&gt;
+&lt;/div&gt;
+&lt;!-- end content --&gt;
+</pre>
+                    <h4>Page Content without Background</h4>
+                    <pre class="prettyprint linenums">
+&lt;!-- begin content --&gt;
+&lt;div class="content"&gt;
+  &lt;!-- begin container --&gt;
+  &lt;div class="container"&gt;
+      &lt;h2 class="content-title"&gt;
+        &lt;!-- content title here ---&gt;
+      &lt;/h2&gt;
+      &lt;p class="content-desc"&gt;
+        &lt;!-- content desc here ---&gt;
+      &lt;/p&gt;
+    &lt;!-- your content here --&gt;
+  &lt;/div&gt;
+  &lt;!-- end container --&gt;
+&lt;/div&gt;
+&lt;!-- end content --&gt;
+</pre>
+                </div><!-- end span12 -->
+            </div><!-- end row-fluid -->
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="page-header">
+                        <h3 id="page-footer"><strong>F) Page Footer</strong> - <a href="#top">top</a></h3>
+                    </div>
+                    <pre class="prettyprint linenums">
+&lt;!-- begin #footer --&gt;
+&lt;div id="footer" class="footer"&gt;
+  &lt;div class="container"&gt;
+    &lt;div class="footer-brand"&gt;
+      &lt;div class="footer-brand-logo"&gt;&lt;/div&gt;
+      Color Admin
+    &lt;/div&gt;
+    &lt;p&gt;
+                        &copy; Copyright Color Admin 2014 &lt;br /&gt;
+      An admin & front end theme with serious impact. Created by &lt;a href="#"&gt;SeanTheme&lt;/a&gt;
+    &lt;/p&gt;
+    &lt;p class="social-list"&gt;
+      &lt;a href="#"&gt;&lt;i class="fa fa-facebook fa-fw"&gt;&lt;/i&gt;&lt;/a&gt;
+      &lt;a href="#"&gt;&lt;i class="fa fa-instagram fa-fw"&gt;&lt;/i&gt;&lt;/a&gt;
+      &lt;a href="#"&gt;&lt;i class="fa fa-twitter fa-fw"&gt;&lt;/i&gt;&lt;/a&gt;
+      &lt;a href="#"&gt;&lt;i class="fa fa-google-plus fa-fw"&gt;&lt;/i&gt;&lt;/a&gt;
+      &lt;a href="#"&gt;&lt;i class="fa fa-dribbble fa-fw"&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- end #footer --&gt;
+</pre>
+                </div><!-- end span12 -->
+            </div><!-- end row-fluid -->
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="page-header">
+                        <h3 id="panel-theme"><strong>G) Panel Theme</strong> - <a href="#top">top</a></h3>
+                    </div>
+                    <p>
+                        Panel Theme used to customize the overall layout options.
+                    </p>
+                    <pre class="prettyprint linenums">
+&lt;!-- begin theme-panel --&gt;
+&lt;div class="theme-panel"&gt;
+  &lt;a href="javascript:;" data-click="theme-panel-expand" class="theme-collapse-btn"&gt;&lt;i class="fa fa-cog"&gt;&lt;/i&gt;&lt;/a&gt;
+  &lt;div class="theme-panel-content"&gt;
+    &lt;ul class="theme-list clearfix"&gt;
+      &lt;li&gt;
+        &lt;a href="javascript:;" class="bg-purple" 
+          data-theme="purple" 
+          data-click="theme-selector" 
+          data-toggle="tooltip" 
+          data-trigger="hover" 
+          data-container="body" 
+          data-title="Purple"&gt;&nbsp;&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href="javascript:;" class="bg-blue" 
+          data-theme="blue" 
+          data-click="theme-selector" 
+          data-toggle="tooltip" 
+          data-trigger="hover" 
+          data-container="body" 
+          data-title="Blue"&gt;&nbsp;&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class="active"&gt;
+        &lt;a href="javascript:;" class="bg-green" 
+          data-theme="default" 
+          data-click="theme-selector" 
+          data-toggle="tooltip" 
+          data-trigger="hover" 
+          data-container="body" 
+          data-title="Default"&gt;&nbsp;&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href="javascript:;" class="bg-orange" 
+          data-theme="orange" 
+          data-click="theme-selector" 
+          data-toggle="tooltip" 
+          data-trigger="hover" 
+          data-container="body" 
+          data-title="Orange"&gt;&nbsp;&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href="javascript:;" class="bg-red" 
+          data-theme="red" 
+          data-click="theme-selector" 
+          data-toggle="tooltip" 
+          data-trigger="hover" 
+          data-container="body" 
+          data-title="Red"&gt;&nbsp;&lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- end theme-panel --&gt;
+</pre>
+                </div><!-- end span12 -->
+            </div><!-- end row-fluid -->
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="page-header">
+                        <h3 id="page-end"><strong>H) End of Page (Javascript)</strong> - <a href="#top">top</a></h3>
+                    </div>
+                    <p>
+                        Javascript files loaded in the end of page. This will reduce page load time.
+                    </p>
+                    <pre class="prettyprint linenums">
+  &lt;!-- ================== BEGIN BASE JS ================== --&gt;
+  &lt;script src="assets/plugins/jquery/jquery-1.9.1.min.js"&gt;&lt;/script&gt;
+  &lt;script src="assets/plugins/jquery/jquery-migrate-1.1.0.min.js"&gt;&lt;/script&gt;
+  &lt;script src="assets/plugins/bootstrap/js/bootstrap.min.js"&gt;&lt;/script&gt;
+  &lt;!--[if lt IE 9]&gt;
+    &lt;script src="assets/crossbrowserjs/html5shiv.js"&gt;&lt;/script&gt;
+    &lt;script src="assets/crossbrowserjs/respond.min.js"&gt;&lt;/script&gt;
+    &lt;script src="assets/crossbrowserjs/excanvas.min.js"&gt;&lt;/script&gt;
+  &lt;![endif]--&gt;
+  &lt;script src="assets/plugins/scrollMonitor/scrollMonitor.js"&gt;&lt;/script&gt;
+  &lt;script src="assets/js/apps.min.js"&gt;&lt;/script&gt;
+  &lt;!-- ================== END BASE JS ================== --&gt;
+  
+  &lt;script&gt;  
+    $(document).ready(function() {
+    App.init();
+    });
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+                </div>
+            </div><!-- end row-fluid -->
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="page-header">
+                        <h3 id="page-theme-options"><strong>I) Page Theme Options</strong> - <a href="#top">top</a></h3>
+                    </div>
+                    <p>Select the css theme from the <code>assets/css/theme/</code> folder.</p>
+                    <h4>Available Theme Options</h4>
+                    <pre class="prettyprint linenums">
+&lt;!-- DEFAULT - GREEN --&gt;
+&lt;link href="assets/css/theme/default.css" rel="stylesheet" /&gt;
+&lt;!-- BLUE --&gt;
+&lt;link href="assets/css/theme/blue.css" rel="stylesheet" /&gt;
+&lt;!-- PURPLE --&gt;
+&lt;link href="assets/css/theme/purple.css" rel="stylesheet" /&gt;
+&lt;!-- RED --&gt;
+&lt;link href="assets/css/theme/red.css" rel="stylesheet" /&gt;
+&lt;!-- ORANGE --&gt;
+&lt;link href="assets/css/theme/orange.css" rel="stylesheet" /&gt;
+</pre>
+                </div><!-- end span12 -->
+            </div><!-- end row-fluid -->
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="page-header">
+                        <h3 id="page-options"><strong>J) Page Options</strong> - <a href="#top">top</a></h3>
+                    </div>
+                    <p>Here is the general structure for the each case of page options.</p>
+                    <h4>Page with default small header navigation</h4>
+                    <pre class="prettyprint linenums">
+&lt;body class="page-navbar-fixed-top-sm"&gt;
+</pre>
+                </div><!-- end span12 -->
+            </div><!-- end row-fluid -->
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="page-header">
+                        <h3 id="plugins-resources"><strong>K) Plugins & Resources</strong> - <a href="#top">top</a></h3>
+                    </div>
+                    <p>
+                        Below is the list of all plugins and external resources used to power this template.
+                    </p>
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th style="width:100px;">Name</th>
+                            <th>CSS Files</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>jQuery v1.9.1</td>
+                            <td>
+                                <p><b>Required JS File</b></p>
+                                <pre class="prettyprint linenums">
+&lt;script src="assets/plugins/jquery/jquery-1.9.1.min.js"&gt;&lt;/script&gt;
+&lt;script src="assets/plugins/jquery/jquery-migrate-1.1.0.min.js"&gt;&lt;/script&gt;
+</pre>
+                                <p><b>Official Link:</b><br/> <a href="http://jquery.com/">http://jquery.com/</a></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Bootstrap</td>
+                            <td>
+                                <p><b>Required CSS File</b></p>
+                                <pre class="prettyprint linenums">
+&lt;link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css" /&gt;
+</pre>
+                                <p><b>Required JS File</b></p>
+                                <pre class="prettyprint linenums">
+&lt;script src="assets/plugins/bootstrap/js/bootstrap.min.js"&gt;&lt;/script&gt;
+</pre>
+                                <p><b>Official Link:</b><br/> <a href="http://getbootstrap.com/">http://getbootstrap.com/</a>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Font Awesome</td>
+                            <td>
+                                <p><b>Required CSS File</b></p>
+                                <pre class="prettyprint linenums">
+&lt;link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css" /&gt;
+</pre>
+                                <p><b>Official Link:</b><br/> <a href="http://fortawesome.github.io/Font-Awesome/">http://fortawesome.github.io/Font-Awesome/</a>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Animate.css</td>
+                            <td>
+                                <p><b>Required CSS File</b></p>
+                                <pre class="prettyprint linenums">
+&lt;link rel="stylesheet" href="assets/css/animate.min.css" /&gt;
+</pre>
+                                <p><b>Official Link:</b><br/> <a href="http://daneden.github.io/animate.css/">http://daneden.github.io/animate.css/</a>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>jQuery Cookie</td>
+                            <td>
+                                <p><b>Required JS File</b></p>
+                                <pre class="prettyprint linenums">
+&lt;script src="assets/plugins/jquery-cookie/jquery.cookie.js"&gt;&lt;/script&gt;
+</pre>
+                                <p><b>Official Link:</b><br/> <a href="https://github.com/carhartl/jquery-cookie">https://github.com/carhartl/jquery-cookie</a>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>scrollMonitor</td>
+                            <td>
+                                <p><b>Required JS File</b></p>
+                                <pre class="prettyprint linenums">
+&lt;script src="assets/plugins/scrollMonitor/scrollMonitor.js"&gt;&lt;/script&gt;
+</pre>
+                                <p><b>Official Link:</b><br/> <a href="https://github.com/sakabako/scrollMonitor">https://github.com/sakabako/scrollMonitor</a>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Pace</td>
+                            <td>
+                                <p><b>Required JS File</b></p>
+                                <pre class="prettyprint linenums">
+&lt;script src="assets/plugins/pace/pace.min.js"&gt;&lt;/script&gt;
+</pre>
+                                <p><b>Official Link:</b><br/> <a href="http://github.hubspot.com/pace/">http://github.hubspot.com/pace/</a>
+                                </p>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div><!-- end row-fluid -->
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="page-header">
+                        <h3 id="references"><strong>L) References</strong> - <a href="#top">top</a></h3>
+                    </div>
+                    <p>
+                        I've used the following images, icons or other files as listed.
+                    </p>
+                    <p><b>jQuery Plugins</b></p>
+                    <ol>
+                        <li><b>jQuery</b>:<a href="http://jquery.com/">http://jquery.com/</a></li>
+                        <li><b>jQuery UI</b>:<a href="http://jqueryui.com/">http://jqueryui.com/</a></li>
+                        <li><b>Bootstrap</b>:<a href="http://getbootstrap.com/">http://getbootstrap.com/</a></li>
+                        <li><b>Font Awesome</b>:<a href="http://fortawesome.github.io/Font-Awesome/">http://fortawesome.github.io/Font-Awesome/</a>
+                        </li>
+                        <li><b>Animate.css</b>:<a href="http://daneden.github.io/animate.css/">http://daneden.github.io/animate.css/</a>
+                        </li>
+                        <li><b>scrollMonitor</b>:<a href="https://github.com/sakabako/scrollMonitor">https://github.com/sakabako/scrollMonitor</a>
+                        </li>
+                        <li><b>Pace</b>:<a href="http://github.hubspot.com/pace/">http://github.hubspot.com/pace/</a>
+                        </li>
+                        <li><b>jQuery Cookie</b>:<a href="https://github.com/carhartl/jquery-cookie">https://github.com/carhartl/jquery-cookie</a>
+                        </li>
+                    </ol>
+                </div>
+            </div><!-- end row-fluid -->
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="page-header">
+                        <h3 id="change-log"><strong>M) Change Log</strong> - <a href="#top">top</a></h3>
+                    </div>
+                    <h5>Version 2.0.0 - 30 April 2016</h5>
+                    <ul>
+                        <li>
+                            UPDATE: Bootstrap 3.3.5 to Bootstrap 3.3.6
+                            <ul>
+                                <li>Updated Directory: <code>/assets/plugins/bootstrap/</code></li>
+                            </ul>
+                        </li>
+                        <li>
+                            UPDATE: FontAwesome 4.3.0 to 4.6.1
+                            <ul>
+                                <li>Updated Directory: <code>/assets/plugins/bootstrap/</code></li>
+                            </ul>
+                        </li>
+                        <li>
+                            FIX: Missing Panel Styling in LESS file
+                            <ul>
+                                <li>Updated Directory: <code>/assets/less/</code></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h5>Version 1.8.0 - 30 June 2015</h5>
+                    <ul>
+                        <li>
+                            FIX: Youtube video full screen issues
+                            <ul>
+                                <li>Modified CSS Files: <code>/assets/css/style.css</code></li>
+                                <li>Modified CSS Files: <code>/assets/css/style.min.css</code></li>
+                                <li>Modified JS Files: <code>/assets/js/apps.css</code></li>
+                                <li>Modified JS Files: <code>/assets/js/apps.min.css</code></li>
+                            </ul>
+                        </li>
+                        <li>
+                            UPDATE: Include Bootstrap LESS
+                            <ul>
+                                <li>Added Directory: <code>/assets/less/bootstrap/</code></li>
+                            </ul>
+                        </li>
+                        <li>
+                            UPDATE: Bootstrap 3.3.4 to Bootstrap 3.3.5
+                            <ul>
+                                <li>Updated Directory: <code>/assets/plugins/bootstrap/</code></li>
+                            </ul>
+                        </li>
+                        <li>
+                            UPDATE: Less 1.7.4 to Less 2.5.1
+                            <ul>
+                                <li>Updated Directory: <code>/assets/plugins/less/</code></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h5>Version 1.7.0 - 1 May 2015</h5>
+                    <ul>
+                        <li>
+                            UPDATE: Bootstrap 3.3.3 to Bootstrap 3.3.4
+                            <ul>
+                                <li>Updated Directory: <code>/assets/plugins/bootstrap/</code></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h5>Version 1.6.0 - 23 January 2015</h5>
+                    <ul>
+                        <li>
+                            UPDATE: Bootstrap 3.3.1 to Bootstrap 3.3.2
+                            <ul>
+                                <li>Updated Directory: <code>/assets/plugins/bootstrap/</code></li>
+                            </ul>
+                        </li>
+                        <li>
+                            UPDATE: FontAwesome 4.2.0 to Bootstrap 4.3.0
+                            <ul>
+                                <li>Updated Directory: <code>/assets/plugins/font-awesome/</code></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h5>Version 1.5.0 - 30 November 2014</h5>
+                    <ul>
+                        <li>
+                            UPDATE: Bootstrap 3.2.0 to Bootstrap 3.3.1
+                            <ul>
+                                <li>Modified Directory files: <code>/assets/plugins/bootstrap-3.2.0/</code> to <code>/assets/plugins/bootstrap/</code>
+                                </li>
+                                <li>Modified CSS Files: <code>/assets/plugins/bootstrap/css/bootstrap.min.js</code></li>
+                                <li>Modified JS Files: <code>/assets/plugins/bootstrap/js/bootstrap.min.js</code></li>
+                            </ul>
+                        </li>
+                        <li>
+                            UPDATE: jQuery 1.8.2 to jQuery 1.9.1
+                            <ul>
+                                <li>Modified Directory files: <code>/assets/plugins/jquery-1.8.1/</code> to <code>/assets/plugins/jquery</code>
+                                </li>
+                                <li>Added JS Files: <code>/assets/plugins/jquery/jquery-1.9.1.js</code></li>
+                                <li>Added JS Files: <code>/assets/plugins/jquery/jquery-1.9.1.min.js</code></li>
+                                <li>Added JS Files: <code>/assets/plugins/jquery/jquery-migrate-1.1.0.js</code></li>
+                                <li>Added JS Files: <code>/assets/plugins/jquery/jquery-migrate-1.1.0.min.js</code></li>
+                            </ul>
+                        </li>
+                        <li>
+                            MODIFY: FontAwesome Directory
+                            <ul>
+                                <li>Modified Directory files: <code>/assets/plugins/font-awesome-4.2.0/</code> to <code>/assets/plugins/font-awesome/</code>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h5>Version 1.4.0 - 31 October 2014</h5>
+                    <ul>
+                        <li>
+                            Initial Released
+                        </li>
+                    </ul>
+                </div>
+            </div><!-- end row-fluid -->
+
+
+        </div><!-- end span12 -->
+    </div><!-- end row-fluid -->
+</div><!-- end container -->
+
+<footer class="footer">
+    <div class="container text-left">
+        <p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you
+            if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have
+            a more general question relating to the themes, you might consider visiting the forums and asking your
+            question via <a href="mailTo:nguoksiong@live.co.uk">email</a>.</p>
+        <br/>
+        <p class="append-bottom alt large"><strong>Sean Ngu</strong></p>
+        <p><a href="#top">Go To Table of Contents</a></p>
+    </div>
+</footer><!-- end footer -->
+
+<script src="assets/plugins/jquery/jquery-1.9.1.min.js"></script>
+<script src="assets/plugins/jquery-ui/jquery-ui.js"></script>
+<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/plugins/bootstrap/js/bootstrap-affix.js"></script>
+<script src="assets/plugins/google-code-prettify/prettify.js"></script>
+<script src="assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+<script src="assets/plugins/bootstrap/js/bootstrap-scrollspy.js"></script>
+<script src="assets/plugins/bootstrap/js/bootstrap-typeahead.js"></script>
+<script src="assets/js/application.js"></script>
+<script src="assets/js/component.js"></script>
+<script>
+    $(document).ready(function () {
+        App.init();
+    });
+</script>
+</body>
+</html>
