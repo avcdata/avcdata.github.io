@@ -11,11 +11,12 @@
 
     <link href="assets/css/vendor.css" rel="stylesheet"/>
     <link href="assets/css/app.css" rel="stylesheet"/>
-    <link href="assets/css/component.css" rel="stylesheet"/>
+
     <link href="assets/plugins/bootstrap/css/bootstrap-responsive.css" rel="stylesheet"/>
     <link href="assets/plugins/bootstrap/css/docs.css" rel="stylesheet"/>
 
     <link href="assets/plugins/google-code-prettify/prettify.css" rel="stylesheet">
+    <link href="assets/css/component.css" rel="stylesheet"/>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -31,18 +32,18 @@
 </header>
 <div class="container">
     <!--<div class="row">-->
-        <!--<div class="span12">-->
-            <!--<div class="well">-->
-                <!--<p>-->
-                    <!--<strong>-->
-                        <!--Created: 31/October/2014<br>-->
-                        <!--By: Sean Ngu<br>-->
-                        <!--Email: <a href="mailto:nguoksiong@live.co.uk">nguoksiong@live.co.uk</a>-->
-                    <!--</strong>-->
-                <!--</p>-->
-                <!--<p>Thanks so much!</p>-->
-            <!--</div>-->
-        <!--</div>&lt;!&ndash; end span12 &ndash;&gt;-->
+    <!--<div class="span12">-->
+    <!--<div class="well">-->
+    <!--<p>-->
+    <!--<strong>-->
+    <!--Created: 31/October/2014<br>-->
+    <!--By: Sean Ngu<br>-->
+    <!--Email: <a href="mailto:nguoksiong@live.co.uk">nguoksiong@live.co.uk</a>-->
+    <!--</strong>-->
+    <!--</p>-->
+    <!--<p>Thanks so much!</p>-->
+    <!--</div>-->
+    <!--</div>&lt;!&ndash; end span12 &ndash;&gt;-->
     <!--</div>&lt;!&ndash; end row &ndash;&gt;-->
     <div class="row">
         <div class="span3 bs-docs-sidebar">
@@ -51,18 +52,11 @@
                 <li><a href="#widget-boxes"><i class="icon-chevron-right"></i>Widget Boxes</a></li>
                 <li><a href="#buttons"><i class="icon-chevron-right"></i>Buttons</a></li>
                 <li><a href="#form-elements"><i class="icon-chevron-right"></i>Form Elements</a></li>
+                <!--<li><a href="#form-plugins"><i class="icon-chevron-right"></i>Form Plugins</a></li>-->
                 <li><a href="#table"><i class="icon-chevron-right"></i>Tables</a></li>
-                <li><a href="#page-top-menu"><i class="icon-chevron-right"></i>Page Top Menu</a></li>
-                <li><a href="#page-content"><i class="icon-chevron-right"></i>Page Content</a></li>
-                <li><a href="#page-footer"><i class="icon-chevron-right"></i>Page Footer</a></li>
-                <li><a href="#panel-theme"><i class="icon-chevron-right"></i>Panel Theme</a></li>
-                <li><a href="#page-end"><i class="icon-chevron-right"></i>End of Page (Javascripts)</a></li>
-                <li><a href="#page-theme-options"><i class="icon-chevron-right"></i>Page Theme Options</a></li>
-                <li><a href="#page-options"><i class="icon-chevron-right"></i>Page Options <span
-                        class="label">NEW</span></a></li>
-                <li><a href="#plugins-resources"><i class="icon-chevron-right"></i>Plugins & Resources</a></li>
-                <li><a href="#references"><i class="icon-chevron-right"></i>References</a></li>
-                <li><a href="#change-log"><i class="icon-chevron-right"></i>Change Log</a></li>
+                <li><a href="#tab-accordion"><i class="icon-chevron-right"></i>Tabs & Accordions</a></li>
+                <li><a href="#icons"><i class="icon-chevron-right"></i>Icons</a></li>
+                <li><a href="#predefined-css"><i class="icon-chevron-right"></i>Predefined CSS Class</a></li>
             </ul>
         </div>
         <div class="span8">
@@ -213,7 +207,9 @@
                         <div class="alert alert-info m-b-0">
                             <h4 class="block">Cross-browser compatibility</h4>
                             <p>
-                                Progress bars use CSS3 transitions and animations to achieve some of their effects. These features are not supported in Internet Explorer 9 and below or older versions of Firefox. Opera 12 does not support animations.
+                                Progress bars use CSS3 transitions and animations to achieve some of their effects.
+                                These features are not supported in Internet Explorer 9 and below or older versions of
+                                Firefox. Opera 12 does not support animations.
                             </p>
                         </div>
                         <div class="row-fluid">
@@ -447,95 +443,83 @@
 &lt;!--End Pagination & Pager--&gt;
 
 &lt;!--Progress bar--&gt;
-&lt;div class="alert alert-info m-b-0"&gt;
-    &lt;h4 class="block"&gt;Cross-browser compatibility&lt;/h4&gt;
-    &lt;p&gt;
-        Progress bars use CSS3 transitions and animations to achieve some of their effects. These features are not supported in Internet Explorer 9 and below or older versions of Firefox. Opera 12 does not support animations.
-    &lt;/p&gt;
+&lt;!--Basic--&gt;
+&lt;div class="progress"&gt;
+   &lt;div class="progress-bar" style="width: 80%"&gt;Default&lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="row"&gt;
-    &lt;div class="col-md-3"&gt;
-        &lt;h4&gt;Basic&lt;/h4&gt;
-        &lt;div class="progress"&gt;
-            &lt;div class="progress-bar" style="width: 80%"&gt;Default&lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class="progress"&gt;
-            &lt;div class="progress-bar progress-bar-success" style="width: 70%"&gt;Success&lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class="progress"&gt;
-            &lt;div class="progress-bar progress-bar-info" style="width: 60%"&gt;Info&lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class="progress"&gt;
-            &lt;div class="progress-bar progress-bar-warning" style="width: 50%"&gt;Warning&lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class="progress"&gt;
-            &lt;div class="progress-bar progress-bar-danger" style="width: 40%"&gt;Danger&lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class="progress"&gt;
-            &lt;div class="progress-bar progress-bar-inverse" style="width: 30%"&gt;Inverse&lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="col-md-3"&gt;
-        &lt;h4&gt;Striped&lt;/h4&gt;
-        &lt;div class="progress progress-striped"&gt;
-            &lt;div class="progress-bar" style="width: 80%"&gt;Default&lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class="progress progress-striped"&gt;
-            &lt;div class="progress-bar progress-bar-success" style="width: 70%"&gt;Success&lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class="progress progress-striped"&gt;
-            &lt;div class="progress-bar progress-bar-info" style="width: 60%"&gt;Info&lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class="progress progress-striped"&gt;
-            &lt;div class="progress-bar progress-bar-warning" style="width: 50%"&gt;Warning&lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class="progress progress-striped"&gt;
-            &lt;div class="progress-bar progress-bar-danger" style="width: 40%"&gt;Danger&lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class="progress progress-striped"&gt;
-            &lt;div class="progress-bar progress-bar-inverse" style="width: 30%"&gt;Inverse&lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="col-md-3"&gt;
-        &lt;h4&gt;Animated&lt;/h4&gt;
-        &lt;div class="progress progress-striped active"&gt;
-            &lt;div class="progress-bar" style="width: 80%"&gt;Default&lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class="progress progress-striped active"&gt;
-            &lt;div class="progress-bar progress-bar-success" style="width: 70%"&gt;Success&lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class="progress progress-striped active"&gt;
-            &lt;div class="progress-bar progress-bar-info" style="width: 60%"&gt;Info&lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class="progress progress-striped active"&gt;
-            &lt;div class="progress-bar progress-bar-warning" style="width: 50%"&gt;Warning&lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class="progress progress-striped active"&gt;
-            &lt;div class="progress-bar progress-bar-danger" style="width: 40%"&gt;Danger&lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class="progress progress-striped active"&gt;
-            &lt;div class="progress-bar progress-bar-inverse" style="width: 30%"&gt;Inverse&lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="col-md-3"&gt;
-        &lt;h4&gt;Stacked&lt;/h4&gt;
-        &lt;div class="progress"&gt;
-            &lt;div class="progress-bar progress-bar-primary" style="width: 25%"&gt;25%&lt;/div&gt;
-            &lt;div class="progress-bar progress-bar-info" style="width: 25%"&gt;25%&lt;/div&gt;
-            &lt;div class="progress-bar progress-bar-success" style="width: 25%"&gt;25&lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class="progress progress-striped"&gt;
-            &lt;div class="progress-bar progress-bar-primary" style="width: 25%"&gt;25%&lt;/div&gt;
-            &lt;div class="progress-bar progress-bar-info" style="width: 25%"&gt;25%&lt;/div&gt;
-            &lt;div class="progress-bar progress-bar-success" style="width: 25%"&gt;25&lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class="progress progress-striped active"&gt;
-            &lt;div class="progress-bar progress-bar-primary" style="width: 25%"&gt;25%&lt;/div&gt;
-            &lt;div class="progress-bar progress-bar-info" style="width: 25%"&gt;25%&lt;/div&gt;
-            &lt;div class="progress-bar progress-bar-success" style="width: 25%"&gt;25&lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
+&lt;div class="progress"&gt;
+   &lt;div class="progress-bar progress-bar-success" style="width: 70%"&gt;Success&lt;/div&gt;
 &lt;/div&gt;
+&lt;div class="progress"&gt;
+　　&lt;div class="progress-bar progress-bar-info" style="width: 60%"&gt;Info&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress"&gt;
+   &lt;div class="progress-bar progress-bar-warning" style="width: 50%"&gt;Warning&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress"&gt;
+   &lt;div class="progress-bar progress-bar-danger" style="width: 40%"&gt;Danger&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress"&gt;
+   &lt;div class="progress-bar progress-bar-inverse" style="width: 30%"&gt;Inverse&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!--Striped--&gt;
+&lt;div class="progress progress-striped"&gt;
+   &lt;div class="progress-bar" style="width: 80%"&gt;Default&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress progress-striped"&gt;
+   &lt;div class="progress-bar progress-bar-success" style="width: 70%"&gt;Success&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress progress-striped"&gt;
+   &lt;div class="progress-bar progress-bar-info" style="width: 60%"&gt;Info&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress progress-striped"&gt;
+   &lt;div class="progress-bar progress-bar-warning" style="width: 50%"&gt;Warning&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress progress-striped"&gt;
+   &lt;div class="progress-bar progress-bar-danger" style="width: 40%"&gt;Danger&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress progress-striped"&gt;
+   &lt;div class="progress-bar progress-bar-inverse" style="width: 30%"&gt;Inverse&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!--Animated--&gt;
+&lt;div class="progress progress-striped active"&gt;
+   &lt;div class="progress-bar" style="width: 80%"&gt;Default&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress progress-striped active"&gt;
+   &lt;div class="progress-bar progress-bar-success" style="width: 70%"&gt;Success&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress progress-striped active"&gt;
+   &lt;div class="progress-bar progress-bar-info" style="width: 60%"&gt;Info&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress progress-striped active"&gt;
+   &lt;div class="progress-bar progress-bar-warning" style="width: 50%"&gt;Warning&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress progress-striped active"&gt;
+   &lt;div class="progress-bar progress-bar-danger" style="width: 40%"&gt;Danger&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress progress-striped active"&gt;
+   &lt;div class="progress-bar progress-bar-inverse" style="width: 30%"&gt;Inverse&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!--Stacked--&gt;
+&lt;div class="progress"&gt;
+   &lt;div class="progress-bar progress-bar-primary" style="width: 25%"&gt;25%&lt;/div&gt;
+   &lt;div class="progress-bar progress-bar-info" style="width: 25%"&gt;25%&lt;/div&gt;
+   &lt;div class="progress-bar progress-bar-success" style="width: 25%"&gt;25&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress progress-striped"&gt;
+   &lt;div class="progress-bar progress-bar-primary" style="width: 25%"&gt;25%&lt;/div&gt;
+   &lt;div class="progress-bar progress-bar-info" style="width: 25%"&gt;25%&lt;/div&gt;
+   &lt;div class="progress-bar progress-bar-success" style="width: 25%"&gt;25&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress progress-striped active"&gt;
+   &lt;div class="progress-bar progress-bar-primary" style="width: 25%"&gt;25%&lt;/div&gt;
+   &lt;div class="progress-bar progress-bar-info" style="width: 25%"&gt;25%&lt;/div&gt;
+   &lt;div class="progress-bar progress-bar-success" style="width: 25%"&gt;25&lt;/div&gt;
+&lt;/div&gt;
+
 &lt;!--End Progress bar--&gt;
                     </pre>
                 </div><!-- end span12 -->
@@ -550,10 +534,14 @@
                             <div class="panel panel-inverse" data-sortable-id="ui-widget-1">
                                 <div class="panel-heading">
                                     <div class="panel-heading-btn">
-                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
-                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-repeat"></i></a>
-                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
-                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default"
+                                           data-click="panel-expand"><i class="fa fa-expand"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success"
+                                           data-click="panel-reload"><i class="fa fa-repeat"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning"
+                                           data-click="panel-collapse"><i class="fa fa-minus"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger"
+                                           data-click="panel-remove"><i class="fa fa-times"></i></a>
                                     </div>
                                     <h4 class="panel-title">Panel (Default)</h4>
                                 </div>
@@ -567,7 +555,8 @@
                                 <div class="panel-heading">
                                     <div class="btn-group pull-right">
                                         <button type="button" class="btn btn-success btn-xs">Action</button>
-                                        <button type="button" class="btn btn-success btn-xs dropdown-toggle" data-toggle="dropdown">
+                                        <button type="button" class="btn btn-success btn-xs dropdown-toggle"
+                                                data-toggle="dropdown">
                                             <span class="caret"></span>
                                         </button>
                                         <ul class="dropdown-menu" role="menu">
@@ -592,10 +581,10 @@
                                 <div class="panel-heading">
                                     <div class="btn-group pull-right" data-toggle="buttons">
                                         <label class="btn btn-success btn-xs active">
-                                            <input type="radio" name="options" id="option1" checked /> Option 1
+                                            <input type="radio" name="options" id="option1" checked/> Option 1
                                         </label>
                                         <label class="btn btn-success btn-xs">
-                                            <input type="radio" name="options" id="option2" /> Option 2
+                                            <input type="radio" name="options" id="option2"/> Option 2
                                         </label>
                                     </div>
                                     <h4 class="panel-title">Panel Header with Radio Button</h4>
@@ -607,23 +596,25 @@
                         </div>
                         <div class="span6">
                             <div class="panel panel-inverse" data-sortable-id="ui-widget-4">
-                            <div class="panel-heading">
-                                <div class="progress progress-striped progress-sm active pull-right m-t-5">
-                                    <div class="progress-bar progress-bar-success" style="width: 40%">40%</div>
+                                <div class="panel-heading">
+                                    <div class="progress progress-striped progress-sm active pull-right m-t-5">
+                                        <div class="progress-bar progress-bar-success" style="width: 40%">40%</div>
+                                    </div>
+                                    <h4 class="panel-title">Panel Header with Progress Bar</h4>
                                 </div>
-                                <h4 class="panel-title">Panel Header with Progress Bar</h4>
+                                <div class="panel-body">
+                                    <p>Panel Content Here</p>
+                                </div>
                             </div>
-                            <div class="panel-body">
-                                <p>Panel Content Here</p>
-                            </div>
-                        </div>
                         </div>
                     </div>
                     <div class="row-fluid">
                         <div class="span6">
                             <div class="panel panel-inverse" data-sortable-id="ui-widget-5">
                                 <div class="panel-heading">
-                                    <h4 class="panel-title"><span class="label label-success m-r-10 pull-left">NEW</span> Panel Header with Label</h4>
+                                    <h4 class="panel-title"><span
+                                            class="label label-success m-r-10 pull-left">NEW</span> Panel Header with
+                                        Label</h4>
                                 </div>
                                 <div class="panel-body">
                                     <p>Panel Content Here</p>
@@ -653,10 +644,14 @@
                             <div class="panel panel-inverse" data-sortable-id="ui-widget-7">
                                 <div class="panel-heading">
                                     <div class="panel-heading-btn">
-                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
-                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-repeat"></i></a>
-                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
-                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default"
+                                           data-click="panel-expand"><i class="fa fa-expand"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success"
+                                           data-click="panel-reload"><i class="fa fa-repeat"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning"
+                                           data-click="panel-collapse"><i class="fa fa-minus"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger"
+                                           data-click="panel-remove"><i class="fa fa-times"></i></a>
                                     </div>
                                     <h4 class="panel-title">Panel with Slimscroll(jquery.slimscroll.js)</h4>
                                 </div>
@@ -667,21 +662,30 @@
 										<i class="fa fa-square-o fa-stack-2x"></i>
 										<i class="fa fa-twitter fa-stack-1x"></i>
 									</span>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed enim arcu.
-                                            Ut posuere in ligula quis ultricies. In in justo turpis. Donec ut dui at massa gravida
-                                            interdum nec vitae justo. Quisque ullamcorper vehicula dictum. Nullam hendrerit interdum eleifend.
-                                            Aenean luctus sed arcu laoreet scelerisque. Vivamus non ullamcorper mauris, id sagittis lorem.
-                                            Proin tincidunt mauris et dolor mattis imperdiet. Sed facilisis mattis diam elementum adipiscing.
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed
+                                            enim arcu.
+                                            Ut posuere in ligula quis ultricies. In in justo turpis. Donec ut dui at
+                                            massa gravida
+                                            interdum nec vitae justo. Quisque ullamcorper vehicula dictum. Nullam
+                                            hendrerit interdum eleifend.
+                                            Aenean luctus sed arcu laoreet scelerisque. Vivamus non ullamcorper mauris,
+                                            id sagittis lorem.
+                                            Proin tincidunt mauris et dolor mattis imperdiet. Sed facilisis mattis diam
+                                            elementum adipiscing.
                                         </p>
                                         <p>
 									<span class="fa-stack fa-4x pull-right m-l-10 text-inverse">
 										<i class="fa fa-square-o fa-stack-2x"></i>
 										<i class="fa fa-google-plus fa-stack-1x"></i>
 									</span>
-                                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                                            Ut ante velit, pretium non nisi a, egestas placerat diam. Nullam aliquet iaculis ultricies.
-                                            Aliquam volutpat, sapien quis volutpat elementum, ligula purus auctor diam, at vestibulum nulla augue
-                                            vel purus. Praesent ac nisl a magna tincidunt interdum sed in turpis. Maecenas nec condimentum risus.
+                                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                                            inceptos himenaeos.
+                                            Ut ante velit, pretium non nisi a, egestas placerat diam. Nullam aliquet
+                                            iaculis ultricies.
+                                            Aliquam volutpat, sapien quis volutpat elementum, ligula purus auctor diam,
+                                            at vestibulum nulla augue
+                                            vel purus. Praesent ac nisl a magna tincidunt interdum sed in turpis.
+                                            Maecenas nec condimentum risus.
                                             In congue pretium est, eget euismod tortor ornare quis.
                                         </p>
                                         <p>
@@ -692,8 +696,10 @@
                                             Praesent eu ultrices justo. Vestibulum ante
                                             ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
                                             Cras mattis ipsum quis sapien consectetur fringilla.
-                                            Etiam sagittis sem tempus purus elementum, vitae pretium sapien porta. Curabitur iaculis ante ut aliquam luctus.
-                                            Vivamus ullamcorper blandit imperdiet. Ut egestas, orci id rhoncus cursus, orci risus scelerisque enim, eget mattis eros lacus quis ligula.
+                                            Etiam sagittis sem tempus purus elementum, vitae pretium sapien porta.
+                                            Curabitur iaculis ante ut aliquam luctus.
+                                            Vivamus ullamcorper blandit imperdiet. Ut egestas, orci id rhoncus cursus,
+                                            orci risus scelerisque enim, eget mattis eros lacus quis ligula.
                                             Vivamus ullamcorper urna eget hendrerit laoreet.
                                         </p>
                                         <p>
@@ -701,9 +707,13 @@
 										<i class="fa fa-square-o fa-stack-2x"></i>
 										<i class="fa fa-apple fa-stack-1x"></i>
 									</span>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                                            Morbi accumsan velit dolor. Donec convallis eleifend magna, at euismod tellus convallis a.
-                                            Curabitur in nisi dolor. Cras viverra scelerisque orci, sed interdum ligula volutpat non.
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+                                            habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                                            egestas.
+                                            Morbi accumsan velit dolor. Donec convallis eleifend magna, at euismod
+                                            tellus convallis a.
+                                            Curabitur in nisi dolor. Cras viverra scelerisque orci, sed interdum ligula
+                                            volutpat non.
                                             Nunc eu enim ac neque tempor feugiat. Duis posuere lacus non magna eleifend,
                                             non dictum sem feugiat. Duis eleifend condimentum pulvinar.
                                         </p>
@@ -715,10 +725,14 @@
                             <div class="panel panel-inverse" data-sortable-id="ui-widget-8">
                                 <div class="panel-heading">
                                     <div class="panel-heading-btn">
-                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
-                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-repeat"></i></a>
-                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
-                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default"
+                                           data-click="panel-expand"><i class="fa fa-expand"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success"
+                                           data-click="panel-reload"><i class="fa fa-repeat"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning"
+                                           data-click="panel-collapse"><i class="fa fa-minus"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger"
+                                           data-click="panel-remove"><i class="fa fa-times"></i></a>
                                     </div>
                                     <h4 class="panel-title">Panel with Toolbar & Footer</h4>
                                 </div>
@@ -729,13 +743,17 @@
                                         <a class="btn btn-white" href="javascript:;"><i class="fa fa-underline"></i></a>
                                     </div>
                                     <div class="btn-group">
-                                        <a class="btn btn-white" href="javascript:;"><i class="fa fa-align-left"></i></a>
-                                        <a class="btn btn-white active" href="javascript:;"><i class="fa fa-align-center"></i></a>
-                                        <a class="btn btn-white" href="javascript:;"><i class="fa fa-align-right"></i></a>
+                                        <a class="btn btn-white" href="javascript:;"><i
+                                                class="fa fa-align-left"></i></a>
+                                        <a class="btn btn-white active" href="javascript:;"><i
+                                                class="fa fa-align-center"></i></a>
+                                        <a class="btn btn-white" href="javascript:;"><i
+                                                class="fa fa-align-right"></i></a>
                                         <a class="btn btn-white" href="javascript:;"><i class="fa fa-align-justify"></i></a>
                                     </div>
                                 </div>
-                                <textarea class="form-control no-rounded-corner" rows="3">This is a form textarea.</textarea>
+                                <textarea class="form-control no-rounded-corner"
+                                          rows="3">This is a form textarea.</textarea>
                                 <div class="panel-footer text-right">
                                     <a href="javascript:;" class="btn btn-white btn-sm">Cancel</a>
                                     <a href="javascript:;" class="btn btn-primary btn-sm m-l-5">Action</a>
@@ -744,8 +762,10 @@
                             <div class="panel panel-default panel-with-tabs" data-sortable-id="ui-widget-9">
                                 <div class="panel-heading">
                                     <ul id="myTab" class="nav nav-tabs pull-right">
-                                        <li class="active"><a href="#home" data-toggle="tab"><i class="fa fa-home"></i> <span class="hidden-xs">Home</span></a></li>
-                                        <li><a href="#profile" data-toggle="tab"><i class="fa fa-user"></i> <span class="hidden-xs">Profile</span></a></li>
+                                        <li class="active"><a href="#home" data-toggle="tab"><i class="fa fa-home"></i>
+                                            <span class="hidden-xs">Home</span></a></li>
+                                        <li><a href="#profile" data-toggle="tab"><i class="fa fa-user"></i> <span
+                                                class="hidden-xs">Profile</span></a></li>
                                     </ul>
                                     <h4 class="panel-title">Panel with Tabs</h4>
                                 </div>
@@ -754,7 +774,9 @@
                                         <p>Raw denim you probably haven't heard of them jean shorts Austin.</p>
                                     </div>
                                     <div class="tab-pane fade" id="profile">
-                                        <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee.</p>
+                                        <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin
+                                            coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next
+                                            level wes anderson artisan four loko farm-to-table craft beer twee.</p>
                                     </div>
                                 </div>
                             </div>
@@ -765,10 +787,14 @@
                             <div class="panel panel-default" data-sortable-id="ui-widget-10">
                                 <div class="panel-heading">
                                     <div class="panel-heading-btn">
-                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
-                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-repeat"></i></a>
-                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
-                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default"
+                                           data-click="panel-expand"><i class="fa fa-expand"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success"
+                                           data-click="panel-reload"><i class="fa fa-repeat"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning"
+                                           data-click="panel-collapse"><i class="fa fa-minus"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger"
+                                           data-click="panel-remove"><i class="fa fa-times"></i></a>
                                     </div>
                                     <h4 class="panel-title">Panel (Default)</h4>
                                 </div>
@@ -781,10 +807,14 @@
                             <div class="panel panel-success" data-sortable-id="ui-widget-11">
                                 <div class="panel-heading">
                                     <div class="panel-heading-btn">
-                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
-                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-repeat"></i></a>
-                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
-                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default"
+                                           data-click="panel-expand"><i class="fa fa-expand"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success"
+                                           data-click="panel-reload"><i class="fa fa-repeat"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning"
+                                           data-click="panel-collapse"><i class="fa fa-minus"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger"
+                                           data-click="panel-remove"><i class="fa fa-times"></i></a>
                                     </div>
                                     <h4 class="panel-title">Panel Success</h4>
                                 </div>
@@ -799,10 +829,14 @@
                             <div class="panel panel-warning" data-sortable-id="ui-widget-12">
                                 <div class="panel-heading">
                                     <div class="panel-heading-btn">
-                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
-                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-repeat"></i></a>
-                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
-                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default"
+                                           data-click="panel-expand"><i class="fa fa-expand"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success"
+                                           data-click="panel-reload"><i class="fa fa-repeat"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning"
+                                           data-click="panel-collapse"><i class="fa fa-minus"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger"
+                                           data-click="panel-remove"><i class="fa fa-times"></i></a>
                                     </div>
                                     <h4 class="panel-title">Panel Warning</h4>
                                 </div>
@@ -815,10 +849,14 @@
                             <div class="panel panel-danger" data-sortable-id="ui-widget-13">
                                 <div class="panel-heading">
                                     <div class="panel-heading-btn">
-                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
-                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-repeat"></i></a>
-                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
-                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default"
+                                           data-click="panel-expand"><i class="fa fa-expand"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success"
+                                           data-click="panel-reload"><i class="fa fa-repeat"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning"
+                                           data-click="panel-collapse"><i class="fa fa-minus"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger"
+                                           data-click="panel-remove"><i class="fa fa-times"></i></a>
                                     </div>
                                     <h4 class="panel-title">Panel Danger</h4>
                                 </div>
@@ -833,10 +871,14 @@
                             <div class="panel panel-inverse" data-sortable-id="ui-widget-14">
                                 <div class="panel-heading">
                                     <div class="panel-heading-btn">
-                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
-                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-repeat"></i></a>
-                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
-                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default"
+                                           data-click="panel-expand"><i class="fa fa-expand"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success"
+                                           data-click="panel-reload"><i class="fa fa-repeat"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning"
+                                           data-click="panel-collapse"><i class="fa fa-minus"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger"
+                                           data-click="panel-remove"><i class="fa fa-times"></i></a>
                                     </div>
                                     <h4 class="panel-title">Panel Inverse</h4>
                                 </div>
@@ -849,10 +891,14 @@
                             <div class="panel panel-primary" data-sortable-id="ui-widget-15">
                                 <div class="panel-heading">
                                     <div class="panel-heading-btn">
-                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
-                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-repeat"></i></a>
-                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
-                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default"
+                                           data-click="panel-expand"><i class="fa fa-expand"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success"
+                                           data-click="panel-reload"><i class="fa fa-repeat"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning"
+                                           data-click="panel-collapse"><i class="fa fa-minus"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger"
+                                           data-click="panel-remove"><i class="fa fa-times"></i></a>
                                     </div>
                                     <h4 class="panel-title">Panel Primary</h4>
                                 </div>
@@ -867,10 +913,14 @@
                             <div class="panel panel-info" data-sortable-id="ui-widget-16">
                                 <div class="panel-heading">
                                     <div class="panel-heading-btn">
-                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
-                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-repeat"></i></a>
-                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
-                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default"
+                                           data-click="panel-expand"><i class="fa fa-expand"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success"
+                                           data-click="panel-reload"><i class="fa fa-repeat"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning"
+                                           data-click="panel-collapse"><i class="fa fa-minus"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger"
+                                           data-click="panel-remove"><i class="fa fa-times"></i></a>
                                     </div>
                                     <h4 class="panel-title">Panel Info</h4>
                                 </div>
@@ -883,15 +933,21 @@
                             <div class="panel panel-inverse" data-sortable-id="ui-widget-16">
                                 <div class="panel-heading">
                                     <div class="panel-heading-btn">
-                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
-                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-repeat"></i></a>
-                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
-                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default"
+                                           data-click="panel-expand"><i class="fa fa-expand"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success"
+                                           data-click="panel-reload"><i class="fa fa-repeat"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning"
+                                           data-click="panel-collapse"><i class="fa fa-minus"></i></a>
+                                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger"
+                                           data-click="panel-remove"><i class="fa fa-times"></i></a>
                                     </div>
                                     <h4 class="panel-title">Full Color Panel</h4>
                                 </div>
                                 <div class="panel-body bg-black">
-                                    <p>You can customize the panel body background by adding predefined background class. E.g <code>.bg-black</code>. Full list of available predefined background class can be found <a href="helper_css.html">here</a>.</p>
+                                    <p>You can customize the panel body background by adding predefined background
+                                        class. E.g <code>.bg-black</code>. Full list of available predefined background
+                                        class can be found <a href="#predefined-css">here</a>.</p>
                                 </div>
                             </div>
                         </div>
@@ -1787,11 +1843,13 @@
                             <fieldset>
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Email address</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email"/>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                           placeholder="Enter email"/>
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputPassword1">Password</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"/>
+                                    <input type="password" class="form-control" id="exampleInputPassword1"
+                                           placeholder="Password"/>
                                 </div>
                                 <div class="checkbox">
                                     <label>
@@ -1808,20 +1866,20 @@
                                 <div class="form-group">
                                     <label class="col-md-4 control-label">Email address</label>
                                     <div class="col-md-8">
-                                        <input type="email" class="form-control" placeholder="Enter email" />
+                                        <input type="email" class="form-control" placeholder="Enter email"/>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-md-4 control-label">Password</label>
                                     <div class="col-md-8">
-                                        <input type="password" class="form-control" placeholder="Password" />
+                                        <input type="password" class="form-control" placeholder="Password"/>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="col-md-8 col-md-offset-4">
                                         <div class="checkbox">
                                             <label>
-                                                <input type="checkbox" /> Check me out
+                                                <input type="checkbox"/> Check me out
                                             </label>
                                         </div>
                                     </div>
@@ -1837,14 +1895,16 @@
                         <h4 class="m-t-20">Inline Form</h4>
                         <form class="form-inline" action="/" method="POST">
                             <div class="form-group m-r-10">
-                                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email" />
+                                <input type="email" class="form-control" id="exampleInputEmail2"
+                                       placeholder="Enter email"/>
                             </div>
                             <div class="form-group m-r-10">
-                                <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" />
+                                <input type="password" class="form-control" id="exampleInputPassword2"
+                                       placeholder="Password"/>
                             </div>
                             <div class="checkbox m-r-10">
                                 <label>
-                                    <input type="checkbox" /> Remember me
+                                    <input type="checkbox"/> Remember me
                                 </label>
                             </div>
                             <button type="submit" class="btn btn-sm btn-primary m-r-5">Sign in</button>
@@ -2015,6 +2075,22 @@
                     </pre>
                 </div><!-- end span12 -->
             </div><!-- end row-fluid -->
+            <!--<div class="row-fluid">-->
+            <!--<div class="span12">-->
+            <!--<div class="page-header">-->
+            <!--<h3 id="form-plugins"><strong>B) Form Plugins</strong> - <a href="#top">top</a></h3>-->
+            <!--</div>-->
+            <!--<div class="well">-->
+            <!--<h4 class="m-t-0">Bootstrap Date Time Picker</h4>-->
+            <!---->
+            <!--<h4 class="m-t-20"></h4>-->
+            <!--<h4 class="m-t-20"></h4>-->
+            <!--<h4 class="m-t-20"></h4>-->
+            <!--</div>-->
+            <!--<pre class="prettyprint linenums">-->
+            <!--</pre>-->
+            <!--</div>&lt;!&ndash; end span12 &ndash;&gt;-->
+            <!--</div>&lt;!&ndash; end row-fluid &ndash;&gt;-->
             <div class="row-fluid">
                 <div class="span12">
                     <div class="page-header">
@@ -2634,512 +2710,1449 @@
             <div class="row-fluid">
                 <div class="span12">
                     <div class="page-header">
-                        <h3 id="page-top-menu"><strong>D) Top Menu</strong> - <a href="#top">top</a></h3>
+                        <h3 id="tab-accordion"><strong>D) Tabs & Accordions</strong> - <a href="#top">top</a></h3>
+                    </div>
+                    <div>
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#default-tab-1" data-toggle="tab">Default Tab 1</a></li>
+                            <li class=""><a href="#default-tab-2" data-toggle="tab">Default Tab 2</a></li>
+                            <li class=""><a href="#default-tab-3" data-toggle="tab">Default Tab 3</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade active in" id="default-tab-1">
+                                <h3 class="m-t-10"><i class="fa fa-cog"></i> Lorem ipsum dolor sit amet</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Integer ac dui eu felis hendrerit lobortis. Phasellus elementum, nibh eget
+                                    adipiscing porttitor,
+                                    est diam sagittis orci, a ornare nisi quam elementum tortor.
+                                </p>
+                                <p class="text-right m-b-0">
+                                    <a href="javascript:;" class="btn btn-white m-r-5">Default</a>
+                                    <a href="javascript:;" class="btn btn-primary">Primary</a>
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="default-tab-2">
+                                <blockquote>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+                                </blockquote>
+                                <h4>Lorem ipsum dolor sit amet</h4>
+                                <p>
+                                    Nullam ac sapien justo.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="default-tab-3">
+                                <p>
+								<span class="fa-stack fa-3x pull-left m-r-10">
+									<i class="fa fa-square-o fa-stack-2x"></i>
+									<i class="fa fa-twitter fa-stack-1x"></i>
+								</span>
+                                    Praesent tincidunt nulla ut elit vestibulum viverra. Sed placerat magna eget eros
+                                    accumsan elementum.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis lobortis neque.
+                                    Maecenas justo odio, bibendum fringilla quam nec, commodo rutrum quam.
+                                    Donec cursus erat in lacus congue sodales. Nunc bibendum id augue sit amet placerat.
+                                </p>
+                            </div>
+                        </div>
+                        <ul class="nav nav-pills">
+                            <li class="active"><a href="#nav-pills-tab-1" data-toggle="tab">Pills Tab 1</a></li>
+                            <li><a href="#nav-pills-tab-2" data-toggle="tab">Pills Tab 2</a></li>
+                            <li><a href="#nav-pills-tab-3" data-toggle="tab">Pills Tab 3</a></li>
+                            <li><a href="#nav-pills-tab-4" data-toggle="tab">Pills Tab 4</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade active in" id="nav-pills-tab-1">
+                                <h3 class="m-t-10">Nav Pills Tab 1</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Integer ac dui eu felis hendrerit lobortis. Phasellus elementum, nibh eget
+                                    adipiscing porttitor,
+                                    est diam sagittis orci, a ornare nisi quam elementum tortor.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="nav-pills-tab-2">
+                                <h3 class="m-t-10">Nav Pills Tab 2</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Integer ac dui eu felis hendrerit lobortis. Phasellus elementum, nibh eget
+                                    adipiscing porttitor,
+                                    est diam sagittis orci, a ornare nisi quam elementum tortor.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="nav-pills-tab-3">
+                                <h3 class="m-t-10">Nav Pills Tab 3</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Integer ac dui eu felis hendrerit lobortis. Phasellus elementum, nibh eget
+                                    adipiscing porttitor,
+                                    est diam sagittis orci, a ornare nisi quam elementum tortor.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="nav-pills-tab-4">
+                                <h3 class="m-t-10">Nav Pills Tab 4</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Integer ac dui eu felis hendrerit lobortis. Phasellus elementum, nibh eget
+                                    adipiscing porttitor,
+                                    est diam sagittis orci, a ornare nisi quam elementum tortor.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="panel-group" id="accordion">
+                            <div class="panel panel-inverse overflow-hidden">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">
+                                        <a class="accordion-toggle accordion-toggle-styled" data-toggle="collapse"
+                                           data-parent="#accordion" href="#collapseOne">
+                                            <i class="fa fa-plus-circle pull-right"></i>
+                                            Collapsible Group Item #1
+                                        </a>
+                                    </h3>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                        brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-inverse overflow-hidden">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">
+                                        <a class="accordion-toggle accordion-toggle-styled collapsed"
+                                           data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                            <i class="fa fa-plus-circle pull-right"></i>
+                                            Collapsible Group Item #2
+                                        </a>
+                                    </h3>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                        brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-inverse overflow-hidden">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">
+                                        <a class="accordion-toggle accordion-toggle-styled collapsed"
+                                           data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                            <i class="fa fa-plus-circle pull-right"></i>
+                                            Collapsible Group Item #3
+                                        </a>
+                                    </h3>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                        brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-inverse overflow-hidden">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">
+                                        <a class="accordion-toggle accordion-toggle-styled collapsed"
+                                           data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                                            <i class="fa fa-plus-circle pull-right"></i>
+                                            Collapsible Group Item #4
+                                        </a>
+                                    </h3>
+                                </div>
+                                <div id="collapseFour" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                        brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <pre class="prettyprint linenums">
-&lt;!-- begin #header --&gt;
-&lt;div id="header" class="header navbar navbar-transparent navbar-fixed-top"&gt;
-  &lt;!-- begin container --&gt;
-  &lt;div class="container"&gt;
-    &lt;!-- begin navbar-header --&gt;
-    &lt;div class="navbar-header"&gt;
-      &lt;button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-navbar"&gt;
-        &lt;span class="icon-bar"&gt;&lt;/span&gt;
-        &lt;span class="icon-bar"&gt;&lt;/span&gt;
-        &lt;span class="icon-bar"&gt;&lt;/span&gt;
-      &lt;/button&gt;
-      &lt;a href="index.html" class="navbar-brand"&gt;
-        &lt;span class="brand-logo"&gt;&lt;/span&gt;
-        &lt;span class="brand-text"&gt;
-          &lt;span class="text-theme"&gt;Color&lt;/span&gt; Admin
-        &lt;/span&gt;
-      &lt;/a&gt;
+&lt;!--Default tab--&gt;
+&lt;ul class="nav nav-tabs"&gt;
+    &lt;li class="active"&gt;&lt;a href="#default-tab-1" data-toggle="tab"&gt;Default Tab 1&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=""&gt;&lt;a href="#default-tab-2" data-toggle="tab"&gt;Default Tab 2&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=""&gt;&lt;a href="#default-tab-3" data-toggle="tab"&gt;Default Tab 3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="tab-content"&gt;
+    &lt;div class="tab-pane fade active in" id="default-tab-1"&gt;
+        &lt;h3 class="m-t-10"&gt;&lt;i class="fa fa-cog"&gt;&lt;/i&gt; Lorem ipsum dolor sit amet&lt;/h3&gt;
+        &lt;p&gt;
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Integer ac dui eu felis hendrerit lobortis. Phasellus elementum, nibh eget adipiscing porttitor,
+            est diam sagittis orci, a ornare nisi quam elementum tortor.
+        &lt;/p&gt;
+        &lt;p class="text-right m-b-0"&gt;
+            &lt;a href="javascript:;" class="btn btn-white m-r-5"&gt;Default&lt;/a&gt;
+            &lt;a href="javascript:;" class="btn btn-primary"&gt;Primary&lt;/a&gt;
+        &lt;/p&gt;
     &lt;/div&gt;
-    &lt;!-- end navbar-header --&gt;
-    &lt;!-- begin navbar-collapse --&gt;
-    &lt;div class="collapse navbar-collapse" id="header-navbar"&gt;
-      &lt;ul class="nav navbar-nav navbar-right"&gt;
-        &lt;li class="active dropdown"&gt;
-          &lt;a href="#home" data-click="scroll-to-target" data-toggle="dropdown"&gt;HOME &lt;b class="caret"&gt;&lt;/b&gt;&lt;/a&gt;
-          &lt;ul class="dropdown-menu dropdown-menu-left animated fadeInDown"&gt;
-            &lt;li&gt;&lt;a href="index.html"&gt;Page with Transparent Header&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href="index_inverse_header.html"&gt;Page with Inverse Header&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href="index_default_header.html"&gt;Page with White Header&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href="extra_element.html"&gt;Extra Element&lt;/a&gt;&lt;/li&gt;
-          &lt;/ul&gt;
-        &lt;/li&gt;
-        &lt;li&gt;&lt;a href="#about" data-click="scroll-to-target"&gt;ABOUT&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#team" data-click="scroll-to-target"&gt;TEAM&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#service" data-click="scroll-to-target"&gt;SERVICES&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#work" data-click="scroll-to-target"&gt;WORK&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#client" data-click="scroll-to-target"&gt;CLIENT&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#pricing" data-click="scroll-to-target"&gt;PRICING&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#contact" data-click="scroll-to-target"&gt;CONTACT&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
+    &lt;div class="tab-pane fade" id="default-tab-2"&gt;
+        &lt;blockquote&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+            &lt;small&gt;Someone famous in &lt;cite title="Source Title"&gt;Source Title&lt;/cite&gt;&lt;/small&gt;
+        &lt;/blockquote&gt;
+        &lt;h4&gt;Lorem ipsum dolor sit amet&lt;/h4&gt;
+        &lt;p&gt;
+            Nullam ac sapien justo.
+        &lt;/p&gt;
     &lt;/div&gt;
-    &lt;!-- end navbar-collapse --&gt;
-  &lt;/div&gt;
-  &lt;!-- end container --&gt;
-&lt;/div&gt;
-&lt;!-- end #header --&gt;
-</pre>
-                </div><!-- end span12 -->
-            </div><!-- end row-fluid -->
-            <div class="row-fluid">
-                <div class="span12">
-                    <div class="page-header">
-                        <h3 id="page-content"><strong>E) Page Content</strong> - <a href="#top">top</a></h3>
-                    </div>
-                    <p>
-                        There have 2 options of page content. HTML code of Content container as shown below:
-                    </p>
-                    <h4>Page Content with Background</h4>
-                    <pre class="prettyprint linenums">
-&lt;!-- begin content --&gt;
-&lt;div class="content has-bg"&gt;
-  &lt;!-- begin content-bg --&gt;
-  &lt;div class="content-bg"&gt;
-    &lt;img src="assets/img/home-bg.jpg" alt="" /&gt;
-  &lt;/div&gt;
-  &lt;!-- end content-bg --&gt;
-  &lt;!-- begin container --&gt;
-  &lt;div class="container"&gt;
-      &lt;h2 class="content-title"&gt;
-        &lt;!-- content title here ---&gt;
-      &lt;/h2&gt;
-      &lt;p class="content-desc"&gt;
-        &lt;!-- content desc here ---&gt;
-      &lt;/p&gt;
-    &lt;!-- your content here --&gt;
-  &lt;/div&gt;
-  &lt;!-- end container --&gt;
-&lt;/div&gt;
-&lt;!-- end content --&gt;
-</pre>
-                    <h4>Page Content without Background</h4>
-                    <pre class="prettyprint linenums">
-&lt;!-- begin content --&gt;
-&lt;div class="content"&gt;
-  &lt;!-- begin container --&gt;
-  &lt;div class="container"&gt;
-      &lt;h2 class="content-title"&gt;
-        &lt;!-- content title here ---&gt;
-      &lt;/h2&gt;
-      &lt;p class="content-desc"&gt;
-        &lt;!-- content desc here ---&gt;
-      &lt;/p&gt;
-    &lt;!-- your content here --&gt;
-  &lt;/div&gt;
-  &lt;!-- end container --&gt;
-&lt;/div&gt;
-&lt;!-- end content --&gt;
-</pre>
-                </div><!-- end span12 -->
-            </div><!-- end row-fluid -->
-            <div class="row-fluid">
-                <div class="span12">
-                    <div class="page-header">
-                        <h3 id="page-footer"><strong>F) Page Footer</strong> - <a href="#top">top</a></h3>
-                    </div>
-                    <pre class="prettyprint linenums">
-&lt;!-- begin #footer --&gt;
-&lt;div id="footer" class="footer"&gt;
-  &lt;div class="container"&gt;
-    &lt;div class="footer-brand"&gt;
-      &lt;div class="footer-brand-logo"&gt;&lt;/div&gt;
-      Color Admin
+    &lt;div class="tab-pane fade" id="default-tab-3"&gt;
+        &lt;p&gt;
+			&lt;span class="fa-stack fa-3x pull-left m-r-10"&gt;
+			    &lt;i class="fa fa-square-o fa-stack-2x"&gt;&lt;/i&gt;
+			&lt;/span&gt;
+            Praesent tincidunt nulla ut elit vestibulum viverra. Sed placerat magna eget eros accumsan elementum.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis lobortis neque.
+            Maecenas justo odio, bibendum fringilla quam nec, commodo rutrum quam.
+            Donec cursus erat in lacus congue sodales. Nunc bibendum id augue sit amet placerat.
+        &lt;/p&gt;
     &lt;/div&gt;
-    &lt;p&gt;
-                        &copy; Copyright Color Admin 2014 &lt;br /&gt;
-      An admin & front end theme with serious impact. Created by &lt;a href="#"&gt;SeanTheme&lt;/a&gt;
-    &lt;/p&gt;
-    &lt;p class="social-list"&gt;
-      &lt;a href="#"&gt;&lt;i class="fa fa-facebook fa-fw"&gt;&lt;/i&gt;&lt;/a&gt;
-      &lt;a href="#"&gt;&lt;i class="fa fa-instagram fa-fw"&gt;&lt;/i&gt;&lt;/a&gt;
-      &lt;a href="#"&gt;&lt;i class="fa fa-twitter fa-fw"&gt;&lt;/i&gt;&lt;/a&gt;
-      &lt;a href="#"&gt;&lt;i class="fa fa-google-plus fa-fw"&gt;&lt;/i&gt;&lt;/a&gt;
-      &lt;a href="#"&gt;&lt;i class="fa fa-dribbble fa-fw"&gt;&lt;/i&gt;&lt;/a&gt;
-    &lt;/p&gt;
-  &lt;/div&gt;
 &lt;/div&gt;
-&lt;!-- end #footer --&gt;
-</pre>
+&lt;!--End Default tab--&gt;
+
+&lt;!--Pills tab--&gt;
+&lt;ul class="nav nav-pills"&gt;
+    &lt;li class="active"&gt;&lt;a href="#nav-pills-tab-1" data-toggle="tab"&gt;Pills Tab 1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#nav-pills-tab-2" data-toggle="tab"&gt;Pills Tab 2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#nav-pills-tab-3" data-toggle="tab"&gt;Pills Tab 3&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#nav-pills-tab-4" data-toggle="tab"&gt;Pills Tab 4&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="tab-content"&gt;
+    &lt;div class="tab-pane fade active in" id="nav-pills-tab-1"&gt;
+        &lt;h3 class="m-t-10"&gt;Nav Pills Tab 1&lt;/h3&gt;
+        &lt;p&gt;
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Integer ac dui eu felis hendrerit lobortis. Phasellus elementum, nibh eget adipiscing porttitor,
+            est diam sagittis orci, a ornare nisi quam elementum tortor.
+        &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="tab-pane fade" id="nav-pills-tab-2"&gt;
+        &lt;h3 class="m-t-10"&gt;Nav Pills Tab 2&lt;/h3&gt;
+        &lt;p&gt;
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Integer ac dui eu felis hendrerit lobortis. Phasellus elementum, nibh eget adipiscing porttitor,
+            est diam sagittis orci, a ornare nisi quam elementum tortor.
+        &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="tab-pane fade" id="nav-pills-tab-3"&gt;
+        &lt;h3 class="m-t-10"&gt;Nav Pills Tab 3&lt;/h3&gt;
+        &lt;p&gt;
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Integer ac dui eu felis hendrerit lobortis. Phasellus elementum, nibh eget adipiscing porttitor,
+            est diam sagittis orci, a ornare nisi quam elementum tortor.
+        &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="tab-pane fade" id="nav-pills-tab-4"&gt;
+        &lt;h3 class="m-t-10"&gt;Nav Pills Tab 4&lt;/h3&gt;
+        &lt;p&gt;
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Integer ac dui eu felis hendrerit lobortis. Phasellus elementum, nibh eget adipiscing porttitor,
+            est diam sagittis orci, a ornare nisi quam elementum tortor.
+        &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!--End Pills tab--&gt;
+
+
+                    </pre>
                 </div><!-- end span12 -->
             </div><!-- end row-fluid -->
             <div class="row-fluid">
                 <div class="span12">
                     <div class="page-header">
-                        <h3 id="panel-theme"><strong>G) Panel Theme</strong> - <a href="#top">top</a></h3>
+                        <h3 id="icons"><strong>M) Icons</strong> - <a href="#top">top</a></h3>
                     </div>
-                    <p>
-                        Panel Theme used to customize the overall layout options.
-                    </p>
-                    <pre class="prettyprint linenums">
-&lt;!-- begin theme-panel --&gt;
-&lt;div class="theme-panel"&gt;
-  &lt;a href="javascript:;" data-click="theme-panel-expand" class="theme-collapse-btn"&gt;&lt;i class="fa fa-cog"&gt;&lt;/i&gt;&lt;/a&gt;
-  &lt;div class="theme-panel-content"&gt;
-    &lt;ul class="theme-list clearfix"&gt;
-      &lt;li&gt;
-        &lt;a href="javascript:;" class="bg-purple" 
-          data-theme="purple" 
-          data-click="theme-selector" 
-          data-toggle="tooltip" 
-          data-trigger="hover" 
-          data-container="body" 
-          data-title="Purple"&gt;&nbsp;&lt;/a&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;a href="javascript:;" class="bg-blue" 
-          data-theme="blue" 
-          data-click="theme-selector" 
-          data-toggle="tooltip" 
-          data-trigger="hover" 
-          data-container="body" 
-          data-title="Blue"&gt;&nbsp;&lt;/a&gt;
-      &lt;/li&gt;
-      &lt;li class="active"&gt;
-        &lt;a href="javascript:;" class="bg-green" 
-          data-theme="default" 
-          data-click="theme-selector" 
-          data-toggle="tooltip" 
-          data-trigger="hover" 
-          data-container="body" 
-          data-title="Default"&gt;&nbsp;&lt;/a&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;a href="javascript:;" class="bg-orange" 
-          data-theme="orange" 
-          data-click="theme-selector" 
-          data-toggle="tooltip" 
-          data-trigger="hover" 
-          data-container="body" 
-          data-title="Orange"&gt;&nbsp;&lt;/a&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;a href="javascript:;" class="bg-red" 
-          data-theme="red" 
-          data-click="theme-selector" 
-          data-toggle="tooltip" 
-          data-trigger="hover" 
-          data-container="body" 
-          data-title="Red"&gt;&nbsp;&lt;/a&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;!-- end theme-panel --&gt;
-</pre>
-                </div><!-- end span12 -->
-            </div><!-- end row-fluid -->
-            <div class="row-fluid">
-                <div class="span12">
-                    <div class="page-header">
-                        <h3 id="page-end"><strong>H) End of Page (Javascript)</strong> - <a href="#top">top</a></h3>
+                    <div class="well">
+                        <div class="row-fluid">
+                            <div class="span6">
+                                <h4 class="m-t-0">Icon Sizes</h4>
+                                <div class="alert alert-info">
+                                    <h4><i class="fa fa-info-circle"></i> Icon Sizes</h4>
+                                    <p>Increase the icon size by using the <b>fa-lg</b> (33% increase), <b>fa-2x</b>, <b>fa-3x</b>, or <b>fa-4x</b> classes.</p>
+                                </div>
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th>Example</th>
+                                        <th>CLASS=""</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td><i class="fa fa-android"></i></td>
+                                        <td>.fa<br />.fa-android (default)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa fa-android fa-lg"></i></td>
+                                        <td>.fa<br />.fa-android<br />.fa-lg</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa fa-android fa-2x"></i></td>
+                                        <td>.fa<br />.fa-android<br />.fa-2x</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa fa-android fa-3x"></i></td>
+                                        <td>.fa<br />.fa-android<br />.fa-3x</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa fa-android fa-4x"></i></td>
+                                        <td>.fa<br />.fa-android<br />.fa-4x</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <h4 class="m-t-20">Rotated & Flipped Icons</h4>
+                                <table class="table table-bordered">
+                                    <tbody>
+                                    <tr>
+                                        <td class="text-center">
+                                            <div><i class="fa fa-arrow-circle-o-right fa-3x text-inverse"></i></div>
+                                            <div>normal</div>
+                                        </td>
+                                        <td class="text-center">
+                                            <div><i class="fa fa-arrow-circle-o-right fa-3x text-inverse fa-rotate-90"></i></div>
+                                            <div>fa-rotate-90</div>
+                                        </td>
+                                        <td class="text-center">
+                                            <div><i class="fa fa-arrow-circle-o-right fa-3x text-inverse fa-rotate-180"></i></div>
+                                            <div>fa-rotate-180</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">
+                                            <div><i class="fa fa-arrow-circle-o-right fa-3x text-inverse fa-rotate-270"></i></div>
+                                            <div>fa-rotate-270</div>
+                                        </td>
+                                        <td class="text-center">
+                                            <div><i class="fa fa-arrow-circle-o-right fa-3x text-inverse fa-flip-horizontal"></i></div>
+                                            <div>fa-flip-horizontal</div>
+                                        </td>
+                                        <td class="text-center">
+                                            <div><i class="fa fa-arrow-circle-o-right fa-3x text-inverse icon-flip-vertical"></i></div>
+                                            <div>icon-flip-vertical</div>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="span6">
+                                <h4 class="m-t-0">Bullet List with Icons</h4>
+                                <div class="row-fluid">
+                                    <div class="span6">
+                                        <ul class="fa-ul">
+                                            <li><i class="fa-li fa fa-check-square"></i>List icons (like these)</li>
+                                            <li><i class="fa-li fa fa-check-square"></i>can be used</li>
+                                            <li><i class="fa-li fa fa-check-square text-success"></i>to easily replace</li>
+                                            <li><i class="fa-li fa fa-square"></i>default bullets in lists</li>
+                                        </ul>
+                                    </div>
+                                    <div class="span6">
+                                        <ul class="fa-ul">
+                                            <li><i class="fa-li fa fa-dot-circle-o"></i>List icons (like these)</li>
+                                            <li><i class="fa-li fa fa-dot-circle-o"></i>can be used</li>
+                                            <li><i class="fa-li fa fa-dot-circle-o text-success"></i>to easily replace</li>
+                                            <li><i class="fa-li fa fa-circle-o"></i>default bullets in lists</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <h4 class="m-t-20">Bordered & Pulled Icons</h4>
+                                <p>
+                                    <i class="fa fa-quote-left fa-4x pull-left muted"></i>
+                                    Use a few of the new styles together, and you've got easy pull quotes or a great introductory article image.
+                                    Or spinning icons for loading and refreshing content. Or fun big icons in multi-line buttons. You can combine all
+                                    of them in any combination to get lots of new possibilities.
+                                </p>
+                                <p>
+                                    <i class="fa fa-flag fa-4x pull-left fa-border"></i>
+                                    Use a few of the new styles together, and you've got easy pull quotes or a great introductory article image.
+                                    Or spinning icons for loading and refreshing content. Or fun big icons in multi-line buttons. You can combine all
+                                    of them in any combination to get lots of new possibilities.
+                                </p>
+                                <h4 class="m-t-20">Stacked Icons</h4>
+                                <p>
+								<span class="fa-stack fa-2x text-primary">
+									<i class="fa fa-square-o fa-stack-2x"></i>
+									<i class="fa fa-twitter fa-stack-1x"></i>
+								</span>
+                                    fa-twitter on fa-square-o
+                                </p>
+                                <p>
+								<span class="fa-stack fa-2x text-success">
+									<i class="fa fa-circle fa-stack-2x"></i>
+									<i class="fa fa-flag fa-stack-1x fa-inverse"></i>
+								</span>
+                                    fa-flag on fa-circle
+                                </p>
+                                <p>
+								<span class="fa-stack fa-2x text-inverse">
+									<i class="fa fa-square fa-stack-2x"></i>
+									<i class="fa fa-terminal fa-stack-1x fa-inverse"></i>
+								</span>
+                                    fa-terminal on fa-square
+                                </p>
+                                <p>
+								<span class="fa-stack fa-2x">
+									<i class="fa fa-camera fa-stack-1x"></i>
+									<i class="fa fa-ban fa-stack-2x text-danger"></i>
+								</span>
+                                    fa-ban on fa-camera
+                                </p>
+                                <p>
+								<span class="fa-stack fa-2x text-warning">
+									<i class="fa fa-circle-o fa-stack-2x"></i>
+									<i class="fa fa-cog fa-stack-1x"></i>
+								</span>
+                                    fa-cog on fa-circle-o
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row-fluid">
+                            <div class="span12">
+                                <h4 class="m-t-0">Web Application Icon</h4>
+                                <table class="table table-bordered m-b-0">
+                                    <tbody>
+                                    <tr>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-adjust"></i></div><div class="hidden-xs">fa-adjust</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-anchor"></i></div><div class="hidden-xs">fa-anchor</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-archive"></i></div><div class="hidden-xs">fa-archive</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-arrows"></i></div><div class="hidden-xs">fa-arrows</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-arrows-h"></i></div><div class="hidden-xs">fa-arrows-h</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-arrows-v"></i></div><div class="hidden-xs">fa-arrows-v</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-asterisk"></i></div><div class="hidden-xs">fa-asterisk</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-automobile"></i></div><div class="hidden-xs">fa-automobile <span class="text-muted">(alias)</span></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-ban"></i></div><div class="hidden-xs">fa-ban</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-bank"></i></div><div class="hidden-xs">fa-bank <span class="text-muted">(alias)</span></div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-bar-chart-o"></i></div><div class="hidden-xs">fa-bar-chart-o</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-barcode"></i></div><div class="hidden-xs">fa-barcode</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-bars"></i></div><div class="hidden-xs">fa-bars</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-beer"></i></div><div class="hidden-xs">fa-beer</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-bell"></i></div><div class="hidden-xs">fa-bell</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-bell-o"></i></div><div class="hidden-xs">fa-bell-o</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-bolt"></i></div><div class="hidden-xs">fa-bolt</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-bomb"></i></div><div class="hidden-xs">fa-bomb</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-book"></i></div><div class="hidden-xs">fa-book</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-bookmark"></i></div><div class="hidden-xs">fa-bookmark</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-bookmark-o"></i></div><div class="hidden-xs">fa-bookmark-o</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-briefcase"></i></div><div class="hidden-xs">fa-briefcase</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-bug"></i></div><div class="hidden-xs">fa-bug</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-building"></i></div><div class="hidden-xs">fa-building</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-building-o"></i></div><div class="hidden-xs">fa-building-o</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-bullhorn"></i></div><div class="hidden-xs">fa-bullhorn</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-bullseye"></i></div><div class="hidden-xs">fa-bullseye</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-cab"></i></div><div class="hidden-xs">fa-cab <span class="text-muted">(alias)</span></div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-calendar"></i></div><div class="hidden-xs">fa-calendar</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-calendar-o"></i></div><div class="hidden-xs">fa-calendar-o</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-camera"></i></div><div class="hidden-xs">fa-camera</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-camera-retro"></i></div><div class="hidden-xs">fa-camera-retro</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-car"></i></div><div class="hidden-xs">fa-car</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-caret-square-o-down"></i></div><div class="hidden-xs">fa-caret-square-o-down</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-caret-square-o-left"></i></div><div class="hidden-xs">fa-caret-square-o-left</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-caret-square-o-right"></i></div><div class="hidden-xs">fa-caret-square-o-right</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-caret-square-o-up"></i></div><div class="hidden-xs">fa-caret-square-o-up</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-certificate"></i></div><div class="hidden-xs">fa-certificate</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-check"></i></div><div class="hidden-xs">fa-check</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-check-circle"></i></div><div class="hidden-xs">fa-check-circle</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-check-circle-o"></i></div><div class="hidden-xs">fa-check-circle-o</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-check-square"></i></div><div class="hidden-xs">fa-check-square</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-check-square-o"></i></div><div class="hidden-xs">fa-check-square-o</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-child"></i></div><div class="hidden-xs">fa-child</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-circle"></i></div><div class="hidden-xs">fa-circle</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-circle-o"></i></div><div class="hidden-xs">fa-circle-o</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-circle-o-notch"></i></div><div class="hidden-xs">fa-circle-o-notch</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-circle-thin"></i></div><div class="hidden-xs">fa-circle-thin</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-clock-o"></i></div><div class="hidden-xs">fa-clock-o</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-cloud"></i></div><div class="hidden-xs">fa-cloud</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-cloud-download"></i></div><div class="hidden-xs">fa-cloud-download</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-cloud-upload"></i></div><div class="hidden-xs">fa-cloud-upload</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-code"></i></div><div class="hidden-xs">fa-code</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-code-fork"></i></div><div class="hidden-xs">fa-code-fork</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-coffee"></i></div><div class="hidden-xs">fa-coffee</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-cog"></i></div><div class="hidden-xs">fa-cog</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-cogs"></i></div><div class="hidden-xs">fa-cogs</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-comment"></i></div><div class="hidden-xs">fa-comment</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-comment-o"></i></div><div class="hidden-xs">fa-comment-o</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-comments"></i></div><div class="hidden-xs">fa-comments</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-comments-o"></i></div><div class="hidden-xs">fa-comments-o</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-compass"></i></div><div class="hidden-xs">fa-compass</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-credit-card"></i></div><div class="hidden-xs">fa-credit-card</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-crop"></i></div><div class="hidden-xs">fa-crop</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-crosshairs"></i></div><div class="hidden-xs">fa-crosshairs</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-cube"></i></div><div class="hidden-xs">fa-cube</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-cubes"></i></div><div class="hidden-xs">fa-cubes</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-cutlery"></i></div><div class="hidden-xs">fa-cutlery</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-dashboard"></i></div><div class="hidden-xs">fa-dashboard <span class="text-muted">(alias)</span></div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-database"></i></div><div class="hidden-xs">fa-database</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-desktop"></i></div><div class="hidden-xs">fa-desktop</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-dot-circle-o"></i></div><div class="hidden-xs">fa-dot-circle-o</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-download"></i></div><div class="hidden-xs">fa-download</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-edit"></i></div><div class="hidden-xs">fa-edit <span class="text-muted">(alias)</span></div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-ellipsis-h"></i></div><div class="hidden-xs">fa-ellipsis-h</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-ellipsis-v"></i></div><div class="hidden-xs">fa-ellipsis-v</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-envelope"></i></div><div class="hidden-xs">fa-envelope</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-envelope-o"></i></div><div class="hidden-xs">fa-envelope-o</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-envelope-square"></i></div><div class="hidden-xs">fa-envelope-square</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-eraser"></i></div><div class="hidden-xs">fa-eraser</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-exchange"></i></div><div class="hidden-xs">fa-exchange</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-exclamation"></i></div><div class="hidden-xs">fa-exclamation</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-exclamation-circle"></i></div><div class="hidden-xs">fa-exclamation-circle</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-exclamation-triangle"></i></div><div class="hidden-xs">fa-exclamation-triangle</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-external-link"></i></div><div class="hidden-xs">fa-external-link</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-external-link-square"></i></div><div class="hidden-xs">fa-external-link-square</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-eye"></i></div><div class="hidden-xs">fa-eye</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-eye-slash"></i></div><div class="hidden-xs">fa-eye-slash</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-fax"></i></div><div class="hidden-xs">fa-fax</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-female"></i></div><div class="hidden-xs">fa-female</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-fighter-jet"></i></div><div class="hidden-xs">fa-fighter-jet</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-file-archive-o"></i></div><div class="hidden-xs">fa-file-archive-o</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-file-audio-o"></i></div><div class="hidden-xs">fa-file-audio-o</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-file-code-o"></i></div><div class="hidden-xs">fa-file-code-o</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-file-excel-o"></i></div><div class="hidden-xs">fa-file-excel-o</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-file-image-o"></i></div><div class="hidden-xs">fa-file-image-o</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-file-movie-o"></i></div><div class="hidden-xs">fa-file-movie-o</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-file-pdf-o"></i></div><div class="hidden-xs">fa-file-pdf-o</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-file-photo-o"></i></div><div class="hidden-xs">fa-file-photo-o</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-file-picture-o"></i></div><div class="hidden-xs">fa-file-picture-o</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-file-powerpoint-o"></i></div><div class="hidden-xs">fa-file-powerpoint-o</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-file-sound-o"></i></div><div class="hidden-xs">fa-file-sound-o</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-file-video-o"></i></div><div class="hidden-xs">fa-file-video-o</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-file-word-o"></i></div><div class="hidden-xs">fa-file-word-o</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-file-zip-o"></i></div><div class="hidden-xs">fa-file-zip-o</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-film"></i></div><div class="hidden-xs">fa-film</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-filter"></i></div><div class="hidden-xs">fa-filter</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-fire"></i></div><div class="hidden-xs">fa-fire</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-fire-extinguisher"></i></div><div class="hidden-xs">fa-fire-extinguisher</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-flag"></i></div><div class="hidden-xs">fa-flag</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-flag-checkered"></i></div><div class="hidden-xs">fa-flag-checkered</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-flag-o"></i></div><div class="hidden-xs">fa-flag-o</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-flash"></i></div><div class="hidden-xs">fa-flash <span class="text-muted">(alias)</span></div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-flask"></i></div><div class="hidden-xs">fa-flask</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-folder"></i></div><div class="hidden-xs">fa-folder</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-folder-o"></i></div><div class="hidden-xs">fa-folder-o</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-folder-open"></i></div><div class="hidden-xs">fa-folder-open</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-folder-open-o"></i></div><div class="hidden-xs">fa-folder-open-o</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-frown-o"></i></div><div class="hidden-xs">fa-frown-o</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-gamepad"></i></div><div class="hidden-xs">fa-gamepad</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-gavel"></i></div><div class="hidden-xs">fa-gavel</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-gear"></i></div><div class="hidden-xs">fa-gear <span class="text-muted">(alias)</span></div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-gears"></i></div><div class="hidden-xs">fa-gears <span class="text-muted">(alias)</span></div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-gift"></i></div><div class="hidden-xs">fa-gift</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-glass"></i></div><div class="hidden-xs">fa-glass</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-globe"></i></div><div class="hidden-xs">fa-globe</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-group"></i></div><div class="hidden-xs">fa-group <span class="text-muted">(alias)</span></div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-hdd-o"></i></div><div class="hidden-xs">fa-hdd-o</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-headphones"></i></div><div class="hidden-xs">fa-headphones</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-heart"></i></div><div class="hidden-xs">fa-heart</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-heart-o"></i></div><div class="hidden-xs">fa-heart-o</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-history"></i></div><div class="hidden-xs">fa-history</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-home"></i></div><div class="hidden-xs">fa-home</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-inbox"></i></div><div class="hidden-xs">fa-inbox</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-info"></i></div><div class="hidden-xs">fa-info</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-info-circle"></i></div><div class="hidden-xs">fa-info-circle</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-institution"></i></div><div class="hidden-xs">fa-institution <span class="text-muted">alias</span></div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-key"></i></div><div class="hidden-xs">fa-key</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-keyboard-o"></i></div><div class="hidden-xs">fa-keyboard-o</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-language"></i></div><div class="hidden-xs">fa-language</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-laptop"></i></div><div class="hidden-xs">fa-laptop</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-leaf"></i></div><div class="hidden-xs">fa-leaf</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-legal"></i></div><div class="hidden-xs">fa-legal <span class="text-muted">(alias)</span></div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-lemon-o"></i></div><div class="hidden-xs">fa-lemon-o</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-level-down"></i></div><div class="hidden-xs">fa-level-down</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-level-up"></i></div><div class="hidden-xs">fa-level-up</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-life-bouy"></i></div><div class="hidden-xs">fa-life-bouy <span class="text-muted">(alias)</span></div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-life-ring"></i></div><div class="hidden-xs">fa-life-ring</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-life-saver"></i></div><div class="hidden-xs">fa-life-saver <span class="text-muted">(alias)</span></div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-lightbulb-o"></i></div><div class="hidden-xs">fa-lightbulb-o</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-location-arrow"></i></div><div class="hidden-xs">fa-location-arrow</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-lock"></i></div><div class="hidden-xs">fa-lock</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-magic"></i></div><div class="hidden-xs">fa-magic</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-magnet"></i></div><div class="hidden-xs">fa-magnet</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-mail-forward"></i></div><div class="hidden-xs">fa-mail-forward <span class="text-muted">(alias)</span></div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-mail-reply"></i></div><div class="hidden-xs">fa-mail-reply <span class="text-muted">(alias)</span></div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-mail-reply-all"></i></div><div class="hidden-xs">fa-mail-reply-all</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-male"></i></div><div class="hidden-xs">fa-male</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-map-marker"></i></div><div class="hidden-xs">fa-map-marker</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-meh-o"></i></div><div class="hidden-xs">fa-meh-o</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-microphone"></i></div><div class="hidden-xs">fa-microphone</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-microphone-slash"></i></div><div class="hidden-xs">fa-microphone-slash</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-minus"></i></div><div class="hidden-xs">fa-minus</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-minus-circle"></i></div><div class="hidden-xs">fa-minus-circle</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-minus-square"></i></div><div class="hidden-xs">fa-minus-square</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-minus-square-o"></i></div><div class="hidden-xs">fa-minus-square-o</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-mobile"></i></div><div class="hidden-xs">fa-mobile</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-mobile-phone"></i></div><div class="hidden-xs">fa-mobile-phone <span class="text-muted">(alias)</span></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-money"></i></div><div class="hidden-xs">fa-money</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-moon-o"></i></div><div class="hidden-xs">fa-moon-o</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-mortar-board"></i></div><div class="hidden-xs">fa-mortar-board</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-music"></i></div><div class="hidden-xs">fa-music</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-navicon"></i></div><div class="hidden-xs">fa-navicon <span class="text-muted">(alias)</span></div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-paper-plane"></i></div><div class="hidden-xs">fa-paper-plane</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-paper-plane-o"></i></div><div class="hidden-xs">fa-paper-plane-o</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-paw"></i></div><div class="hidden-xs">fa-paw</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-pencil"></i></div><div class="hidden-xs">fa-pencil</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-pencil-square"></i></div><div class="hidden-xs">fa-pencil-square</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-pencil-square-o"></i></div><div class="hidden-xs">fa-pencil-square-o</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-phone"></i></div><div class="hidden-xs">fa-phone</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-phone-square"></i></div><div class="hidden-xs">fa-phone-square</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-photo"></i></div><div class="hidden-xs">fa-photo <span class="text-muted">(alias)</span></div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-picture-o"></i></div><div class="hidden-xs">fa-picture-o</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-plane"></i></div><div class="hidden-xs">fa-plane</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-plus"></i></div><div class="hidden-xs">fa-plus</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-plus-circle"></i></div><div class="hidden-xs">fa-plus-circle</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-plus-square"></i></div><div class="hidden-xs">fa-plus-square</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-plus-square-o"></i></div><div class="hidden-xs">fa-plus-square-o</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-power-off"></i></div><div class="hidden-xs">fa-power-off</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-print"></i></div><div class="hidden-xs">fa-print</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-puzzle-piece"></i></div><div class="hidden-xs">fa-puzzle-piece</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-qrcode"></i></div><div class="hidden-xs">fa-qrcode</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-question"></i></div><div class="hidden-xs">fa-question</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-question-circle"></i></div><div class="hidden-xs">fa-question-circle</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-quote-left"></i></div><div class="hidden-xs">fa-quote-left</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-quote-right"></i></div><div class="hidden-xs">fa-quote-right</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-random"></i></div><div class="hidden-xs">fa-random</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-refresh"></i></div><div class="hidden-xs">fa-refresh</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-reorder"></i></div><div class="hidden-xs">fa-reorder <span class="text-muted">(alias)</span></div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-reply"></i></div><div class="hidden-xs">fa-reply</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-reply-all"></i></div><div class="hidden-xs">fa-reply-all</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-retweet"></i></div><div class="hidden-xs">fa-retweet</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-road"></i></div><div class="hidden-xs">fa-road</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-rocket"></i></div><div class="hidden-xs">fa-rocket</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-rss"></i></div><div class="hidden-xs">fa-rss</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-rss-square"></i></div><div class="hidden-xs">fa-rss-square</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-search"></i></div><div class="hidden-xs">fa-search</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-search-minus"></i></div><div class="hidden-xs">fa-search-minus</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-search-plus"></i></div><div class="hidden-xs">fa-search-plus</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-send"></i></div><div class="hidden-xs">fa-send <span class="text-muted">(alias)</span></div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-send-o"></i></div><div class="hidden-xs">fa-send-o <span class="text-muted">(alias)</span></div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-share"></i></div><div class="hidden-xs">fa-share</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-share-square"></i></div><div class="hidden-xs">fa-share-square</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-share-square-o"></i></div><div class="hidden-xs">fa-share-square-o</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-shield"></i></div><div class="hidden-xs">fa-shield</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-shopping-cart"></i></div><div class="hidden-xs">fa-shopping-cart</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-sign-in"></i></div><div class="hidden-xs">fa-sign-in</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-sign-out"></i></div><div class="hidden-xs">fa-sign-out</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-signal"></i></div><div class="hidden-xs">fa-signal</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-sitemap"></i></div><div class="hidden-xs">fa-sitemap</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-sliders"></i></div><div class="hidden-xs">fa-sliders</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-smile-o"></i></div><div class="hidden-xs">fa-smile-o</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-sort"></i></div><div class="hidden-xs">fa-sort</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-sort-alpha-asc"></i></div><div class="hidden-xs">fa-sort-alpha-asc</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-sort-alpha-desc"></i></div><div class="hidden-xs">fa-sort-alpha-desc</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-sort-amount-asc"></i></div><div class="hidden-xs">fa-sort-amount-asc</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-sort-amount-desc"></i></div><div class="hidden-xs">fa-sort-amount-desc</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-sort-asc"></i></div><div class="hidden-xs">fa-sort-asc</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-sort-desc"></i></div><div class="hidden-xs">fa-sort-desc</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-sort-down"></i></div><div class="hidden-xs">fa-sort-down <span class="text-muted">(alias)</span></div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-sort-numeric-asc"></i></div><div class="hidden-xs">fa-sort-numeric-asc</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-sort-numeric-desc"></i></div><div class="hidden-xs">fa-sort-numeric-desc</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-sort-up"></i></div><div class="hidden-xs">fa-sort-up <span class="text-muted">(alias)</span></div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-space-shuttle"></i></div><div class="hidden-xs">fa-space-shuttle</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-spinner"></i></div><div class="hidden-xs">fa-spinner</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-spoon"></i></div><div class="hidden-xs">fa-spoon</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-square"></i></div><div class="hidden-xs">fa-square</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-square-o"></i></div><div class="hidden-xs">fa-square-o</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-star"></i></div><div class="hidden-xs">fa-star</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-star-half"></i></div><div class="hidden-xs">fa-star-half</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-star-half-empty"></i></div><div class="hidden-xs">fa-star-half-empty <span class="text-muted">(alias)</span></div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-star-half-full"></i></div><div class="hidden-xs">fa-star-half-full <span class="text-muted">(alias)</span></div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-star-half-o"></i></div><div class="hidden-xs">fa-star-half-o</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-star-o"></i></div><div class="hidden-xs">fa-star-o</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-subscript"></i></div><div class="hidden-xs">fa-subscript</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-suitcase"></i></div><div class="hidden-xs">fa-suitcase</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-sun-o"></i></div><div class="hidden-xs">fa-sun-o</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-support"></i></div><div class="hidden-xs">fa-support <span class="text-muted">(alias)</span></div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-superscript"></i></div><div class="hidden-xs">fa-superscript</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-tablet"></i></div><div class="hidden-xs">fa-tablet</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-tachometer"></i></div><div class="hidden-xs">fa-tachometer</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-tag"></i></div><div class="hidden-xs">fa-tag</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-tags"></i></div><div class="hidden-xs">fa-tags</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-tasks"></i></div><div class="hidden-xs">fa-tasks</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-taxi"></i></div><div class="hidden-xs">fa-taxi</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-terminal"></i></div><div class="hidden-xs">fa-terminal</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-thumb-tack"></i></div><div class="hidden-xs">fa-thumb-tack</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-thumbs-down"></i></div><div class="hidden-xs">fa-thumbs-down</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-thumbs-o-down"></i></div><div class="hidden-xs">fa-thumbs-o-down</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-thumbs-o-up"></i></div><div class="hidden-xs">fa-thumbs-o-up</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-thumbs-up"></i></div><div class="hidden-xs">fa-thumbs-up</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-ticket"></i></div><div class="hidden-xs">fa-ticket</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-times"></i></div><div class="hidden-xs">fa-times</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-times-circle"></i></div><div class="hidden-xs">fa-times-circle</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-times-circle-o"></i></div><div class="hidden-xs">fa-times-circle-o</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-tint"></i></div><div class="hidden-xs">fa-tint</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-toggle-down"></i></div><div class="hidden-xs">fa-toggle-down <span class="text-muted">(alias)</span></div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-toggle-left"></i></div><div class="hidden-xs">fa-toggle-left <span class="text-muted">(alias)</span></div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-toggle-right"></i></div><div class="hidden-xs">fa-toggle-right <span class="text-muted">(alias)</span></div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-toggle-up"></i></div><div class="hidden-xs">fa-toggle-up <span class="text-muted">(alias)</span></div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-trash-o"></i></div><div class="hidden-xs">fa-trash-o</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-tree"></i></div><div class="hidden-xs">fa-tree</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-trophy"></i></div><div class="hidden-xs">fa-trophy</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-truck"></i></div><div class="hidden-xs">fa-truck</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-umbrella"></i></div><div class="hidden-xs">fa-umbrella</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-university"></i></div><div class="hidden-xs">fa-university</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-unlock"></i></div><div class="hidden-xs">fa-unlock</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-unlock-alt"></i></div><div class="hidden-xs">fa-unlock-alt</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-unsorted"></i></div><div class="hidden-xs">fa-unsorted <span class="text-muted">(alias)</span></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-upload"></i></div><div class="hidden-xs">fa-upload</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-user"></i></div><div class="hidden-xs">fa-user</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-users"></i></div><div class="hidden-xs">fa-users</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-video-camera"></i></div><div class="hidden-xs">fa-video-camera</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-volume-down"></i></div><div class="hidden-xs">fa-volume-down</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-volume-off"></i></div><div class="hidden-xs">fa-volume-off</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-volume-up"></i></div><div class="hidden-xs">fa-volume-up</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-warning"></i></div><div class="hidden-xs">fa-warning <span class="text-muted">(alias)</span></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-wheelchair"></i></div><div class="hidden-xs">fa-wheelchair</div></td>
+                                        <td class="text-center"><div><i class="fa fa-2x fa-wrench"></i></div><div class="hidden-xs">fa-wrench</div></td>
+                                        <td colspan="6"></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
-                    <p>
-                        Javascript files loaded in the end of page. This will reduce page load time.
-                    </p>
-                    <pre class="prettyprint linenums">
-  &lt;!-- ================== BEGIN BASE JS ================== --&gt;
-  &lt;script src="assets/plugins/jquery/jquery-1.9.1.min.js"&gt;&lt;/script&gt;
-  &lt;script src="assets/plugins/jquery/jquery-migrate-1.1.0.min.js"&gt;&lt;/script&gt;
-  &lt;script src="assets/plugins/bootstrap/js/bootstrap.min.js"&gt;&lt;/script&gt;
-  &lt;!--[if lt IE 9]&gt;
-    &lt;script src="assets/crossbrowserjs/html5shiv.js"&gt;&lt;/script&gt;
-    &lt;script src="assets/crossbrowserjs/respond.min.js"&gt;&lt;/script&gt;
-    &lt;script src="assets/crossbrowserjs/excanvas.min.js"&gt;&lt;/script&gt;
-  &lt;![endif]--&gt;
-  &lt;script src="assets/plugins/scrollMonitor/scrollMonitor.js"&gt;&lt;/script&gt;
-  &lt;script src="assets/js/apps.min.js"&gt;&lt;/script&gt;
-  &lt;!-- ================== END BASE JS ================== --&gt;
-  
-  &lt;script&gt;  
-    $(document).ready(function() {
-    App.init();
-    });
-  &lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</pre>
+
                 </div>
             </div><!-- end row-fluid -->
             <div class="row-fluid">
                 <div class="span12">
                     <div class="page-header">
-                        <h3 id="page-theme-options"><strong>I) Page Theme Options</strong> - <a href="#top">top</a></h3>
+                        <h3 id="predefined-css"><strong>M) Predefined CSS Class</strong> - <a href="#top">top</a></h3>
                     </div>
-                    <p>Select the css theme from the <code>assets/css/theme/</code> folder.</p>
-                    <h4>Available Theme Options</h4>
-                    <pre class="prettyprint linenums">
-&lt;!-- DEFAULT - GREEN --&gt;
-&lt;link href="assets/css/theme/default.css" rel="stylesheet" /&gt;
-&lt;!-- BLUE --&gt;
-&lt;link href="assets/css/theme/blue.css" rel="stylesheet" /&gt;
-&lt;!-- PURPLE --&gt;
-&lt;link href="assets/css/theme/purple.css" rel="stylesheet" /&gt;
-&lt;!-- RED --&gt;
-&lt;link href="assets/css/theme/red.css" rel="stylesheet" /&gt;
-&lt;!-- ORANGE --&gt;
-&lt;link href="assets/css/theme/orange.css" rel="stylesheet" /&gt;
-</pre>
-                </div><!-- end span12 -->
-            </div><!-- end row-fluid -->
-            <div class="row-fluid">
-                <div class="span12">
-                    <div class="page-header">
-                        <h3 id="page-options"><strong>J) Page Options</strong> - <a href="#top">top</a></h3>
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#general-tab" data-toggle="tab"><i class="fa fa-fw fa-cogs"></i>
+                            <span class="hidden-xs">General</span></a></li>
+                        <li class=""><a href="#text-font-tab" data-toggle="tab"><i class="fa fa-fw fa-font"></i> <span
+                                class="hidden-xs">Text & Font</span></a></li>
+                        <li class=""><a href="#margin-tab" data-toggle="tab"><i class="fa fa-fw fa-arrows"></i> <span
+                                class="hidden-xs">Margin</span></a></li>
+                        <li class=""><a href="#padding-tab" data-toggle="tab"><i class="fa fa-fw fa-expand"></i> <span
+                                class="hidden-xs">Padding</span></a></li>
+                        <li class=""><a href="#background-tab" data-toggle="tab"><i class="fa fa-fw fa-paint-brush"></i>
+                            <span class="hidden-xs">Background</span></a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active in" id="general-tab">
+                            <h4 class="m-t-5 m-b-5">General CSS Class</h4>
+                            <p class="m-b-15">
+                                All the predefined css classes will override the defined css styling in your classes,
+                                UNLESS the <code>!important</code> is declared in your defined css styling.
+                            </p>
+                            <div class="table-responsive">
+                                <table class="table table-condensed table-striped table-bordered text-center">
+                                    <thead>
+                                    <tr>
+                                        <th colspan="8" class="text-center">General CSS Class Name</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-center">Row Space</th>
+                                        <th class="text-center">Table</th>
+                                        <th class="text-center">Float</th>
+                                        <th class="text-center">Border Radius</th>
+                                        <th class="text-center">Width</th>
+                                        <th class="text-center">Height</th>
+                                        <th class="text-center">Vertical Box</th>
+                                        <th class="text-center">Overflow</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>.row.row-space-0</td>
+                                        <td>.table-valign-middle</td>
+                                        <td>.pull-left</td>
+                                        <td>.no-rounded-corner</td>
+                                        <td>.width-full (100%)</td>
+                                        <td>.height-full (100%)</td>
+                                        <td>.vertical-box</td>
+                                        <td>.overflow-auto</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.row.row-space-2</td>
+                                        <td>.table-th-valign-middle</td>
+                                        <td>.pull-right</td>
+                                        <td>.rounded-corner</td>
+                                        <td>.width-lg (600px)</td>
+                                        <td>.height-lg (600px)</td>
+                                        <td>.vertical-box-column</td>
+                                        <td>.overflow-visible</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.row.row-space-4</td>
+                                        <td>.table-td-valign-middle</td>
+                                        <td>.pull-none</td>
+                                        <td></td>
+                                        <td>.width-md (450px)</td>
+                                        <td>.height-md (450px)</td>
+                                        <td>.vertical-box-row</td>
+                                        <td>.overflow-scroll</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.row.row-space-6</td>
+                                        <td>.table-valign-top</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>.width-sm (300px)</td>
+                                        <td>.height-sm (300px)</td>
+                                        <td>.vertical-box-cell</td>
+                                        <td>.overflow-x-hidden</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.row.row-space-8</td>
+                                        <td>.table-th-valign-top</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>.width-xs (150px)</td>
+                                        <td>.height-xs (150px)</td>
+                                        <td>.vertical-box-inner-cell</td>
+                                        <td>.overflow-x-visible</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.row.row-space-10</td>
+                                        <td>.table-td-valign-top</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>.width-50 (50px)</td>
+                                        <td>.height-50 (50px)</td>
+                                        <td></td>
+                                        <td>.overflow-x-scroll</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.row.row-space-12</td>
+                                        <td>.table-valign-bottom</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>.width-100 (100px)</td>
+                                        <td>.height-100 (100px)</td>
+                                        <td></td>
+                                        <td>.overflow-y-hidden</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.row.row-space-14</td>
+                                        <td>.table-th-valign-bottom</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>.width-150 (150px)</td>
+                                        <td>.height-150 (150px)</td>
+                                        <td></td>
+                                        <td>.overflow-y-visible</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.row.row-space-16</td>
+                                        <td>.table-td-valign-bottom</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>.width-200 (200px)</td>
+                                        <td>.height-200 (200px)</td>
+                                        <td></td>
+                                        <td>.overflow-y-scroll</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.row.row-space-18</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>.width-250 (250px)</td>
+                                        <td>.height-250 (250px)</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>.row.row-space-20</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>.width-300 (300px)</td>
+                                        <td>.height-300 (300px)</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>.row.row-space-22</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>.width-350 (350px)</td>
+                                        <td>.height-350 (350px)</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>.row.row-space-24</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>.width-400 (400px)</td>
+                                        <td>.height-400 (400px)</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>.row.row-space-26</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>.width-450 (450px)</td>
+                                        <td>.height-450 (450px)</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>.row.row-space-28</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>.width-500 (500px)</td>
+                                        <td>.height-500 (500px)</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>.row.row-space-30</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>.width-550 (550px)</td>
+                                        <td>.height-550 (550px)</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>.width-600 (600px)</td>
+                                        <td>.height-600 (600px)</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="text-font-tab">
+                            <h4 class="m-t-5 m-b-5">Text & Font - Align / Color / Size</h4>
+                            <p class="m-b-15">
+                                All the predefined css classes will override the defined css styling in your classes,
+                                UNLESS the <code>!important</code> is declared in your defined css styling.
+                            </p>
+                            <div class="table-responsive">
+                                <table class="table table-condensed table-striped table-bordered text-center">
+                                    <thead>
+                                    <tr>
+                                        <th colspan="5" class="text-center">Text / Font Class Name</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-center">Font Size</th>
+                                        <th class="text-center">Font Weight</th>
+                                        <th class="text-center">Text Color</th>
+                                        <th class="text-center">Text Align</th>
+                                        <th class="text-center">Text Overflow</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>.f-s-8</td>
+                                        <td>.f-w-100</td>
+                                        <td>.text-inverse</td>
+                                        <td>.text-center</td>
+                                        <td>.text-ellipsis</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.f-s-9</td>
+                                        <td>.f-w-200</td>
+                                        <td>.text-primary</td>
+                                        <td>.text-left</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>.f-s-10</td>
+                                        <td>.f-w-300</td>
+                                        <td>.text-success</td>
+                                        <td>.text-right</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>.f-s-11</td>
+                                        <td>.f-w-400</td>
+                                        <td>.text-danger</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>.f-s-12</td>
+                                        <td>.f-w-500</td>
+                                        <td>.text-info</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>.f-s-13</td>
+                                        <td>.f-w-600</td>
+                                        <td>.text-warning</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>.f-s-14</td>
+                                        <td>.f-w-700</td>
+                                        <td>.text-white</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>.f-s-15</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>.f-s-16</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>.f-s-17</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>.f-s-18</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>.f-s-19</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>.f-s-20</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="margin-tab">
+                            <h4 class="m-t-5 m-b-5">Margin - All / Top / Right / Bottom / Left</h4>
+                            <p class="m-b-15">
+                                All the predefined css classes will override the defined css styling in your classes,
+                                UNLESS the <code>!important</code> is declared in your defined css styling.
+                            </p>
+                            <div class="table-responsive">
+                                <table class="table table-condensed table-striped table-bordered text-center">
+                                    <thead>
+                                    <tr>
+                                        <th colspan="5" class="text-center">Margin Class Name</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-center">Margin</th>
+                                        <th class="text-center">Margin Top</th>
+                                        <th class="text-center">Margin Right</th>
+                                        <th class="text-center">Margin Bottom</th>
+                                        <th class="text-center">Margin Left</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>.m-0</td>
+                                        <td>.m-t-0</td>
+                                        <td>.m-r-0</td>
+                                        <td>.m-b-0</td>
+                                        <td>.m-l-0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.m-1</td>
+                                        <td>.m-t-1</td>
+                                        <td>.m-r-1</td>
+                                        <td>.m-b-1</td>
+                                        <td>.m-l-1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.m-2</td>
+                                        <td>.m-t-2</td>
+                                        <td>.m-r-2</td>
+                                        <td>.m-b-2</td>
+                                        <td>.m-l-2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.m-3</td>
+                                        <td>.m-t-3</td>
+                                        <td>.m-r-3</td>
+                                        <td>.m-b-3</td>
+                                        <td>.m-l-3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.m-4</td>
+                                        <td>.m-t-4</td>
+                                        <td>.m-r-4</td>
+                                        <td>.m-b-4</td>
+                                        <td>.m-l-4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.m-5</td>
+                                        <td>.m-t-5</td>
+                                        <td>.m-r-5</td>
+                                        <td>.m-b-5</td>
+                                        <td>.m-l-5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.m-10</td>
+                                        <td>.m-t-10</td>
+                                        <td>.m-r-10</td>
+                                        <td>.m-b-10</td>
+                                        <td>.m-l-10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.m-15</td>
+                                        <td>.m-t-15</td>
+                                        <td>.m-r-15</td>
+                                        <td>.m-b-15</td>
+                                        <td>.m-l-15</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.m-20</td>
+                                        <td>.m-t-20</td>
+                                        <td>.m-r-20</td>
+                                        <td>.m-b-20</td>
+                                        <td>.m-l-20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.m-25</td>
+                                        <td>.m-t-25</td>
+                                        <td>.m-r-25</td>
+                                        <td>.m-b-25</td>
+                                        <td>.m-l-25</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.m-30</td>
+                                        <td>.m-t-30</td>
+                                        <td>.m-r-30</td>
+                                        <td>.m-b-30</td>
+                                        <td>.m-l-30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.m-35</td>
+                                        <td>.m-t-35</td>
+                                        <td>.m-r-35</td>
+                                        <td>.m-b-35</td>
+                                        <td>.m-l-35</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.m-40</td>
+                                        <td>.m-t-40</td>
+                                        <td>.m-r-40</td>
+                                        <td>.m-b-40</td>
+                                        <td>.m-l-40</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.m-auto</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="padding-tab">
+                            <h4 class="m-t-5 m-b-5">Padding - All / Top / Right / Bottom / Left</h4>
+                            <p class="m-b-15">
+                                All the predefined css classes will override the defined css styling in your classes,
+                                UNLESS the <code>!important</code> is declared in your defined css styling.
+                            </p>
+                            <div class="table-responsive">
+                                <table class="table table-condensed table-striped table-bordered text-center">
+                                    <thead>
+                                    <tr>
+                                        <th colspan="5" class="text-center">Padding Class Name</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-center">Padding</th>
+                                        <th class="text-center">Padding Top</th>
+                                        <th class="text-center">Padding Right</th>
+                                        <th class="text-center">Padding Bottom</th>
+                                        <th class="text-center">Padding Left</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>.p-0</td>
+                                        <td>.p-t-0</td>
+                                        <td>.p-r-0</td>
+                                        <td>.p-b-0</td>
+                                        <td>.p-l-0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.p-1</td>
+                                        <td>.p-t-1</td>
+                                        <td>.p-r-1</td>
+                                        <td>.p-b-1</td>
+                                        <td>.p-l-1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.p-2</td>
+                                        <td>.p-t-2</td>
+                                        <td>.p-r-2</td>
+                                        <td>.p-b-2</td>
+                                        <td>.p-l-2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.p-3</td>
+                                        <td>.p-t-3</td>
+                                        <td>.p-r-3</td>
+                                        <td>.p-b-3</td>
+                                        <td>.p-l-3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.p-4</td>
+                                        <td>.p-t-4</td>
+                                        <td>.p-r-4</td>
+                                        <td>.p-b-4</td>
+                                        <td>.p-l-4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.p-5</td>
+                                        <td>.p-t-5</td>
+                                        <td>.p-r-5</td>
+                                        <td>.p-b-5</td>
+                                        <td>.p-l-5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.p-10</td>
+                                        <td>.p-t-10</td>
+                                        <td>.p-r-10</td>
+                                        <td>.p-b-10</td>
+                                        <td>.p-l-10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.p-15 / .wrapper</td>
+                                        <td>.p-t-15</td>
+                                        <td>.p-r-15</td>
+                                        <td>.p-b-15</td>
+                                        <td>.p-l-15</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.p-20</td>
+                                        <td>.p-t-20</td>
+                                        <td>.p-r-20</td>
+                                        <td>.p-b-20</td>
+                                        <td>.p-l-20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.p-25</td>
+                                        <td>.p-t-25</td>
+                                        <td>.p-r-25</td>
+                                        <td>.p-b-25</td>
+                                        <td>.p-l-25</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.p-30</td>
+                                        <td>.p-t-30</td>
+                                        <td>.p-r-30</td>
+                                        <td>.p-b-30</td>
+                                        <td>.p-l-30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.p-35</td>
+                                        <td>.p-t-35</td>
+                                        <td>.p-r-35</td>
+                                        <td>.p-b-35</td>
+                                        <td>.p-l-35</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.p-40</td>
+                                        <td>.p-t-40</td>
+                                        <td>.p-r-40</td>
+                                        <td>.p-b-40</td>
+                                        <td>.p-l-40</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="background-tab">
+                            <h4 class="m-t-5 m-b-5">Background</h4>
+                            <p class="m-b-15">
+                                All the predefined css classes will override the defined css styling in your classes,
+                                UNLESS the <code>!important</code> is declared in your defined css styling.
+                            </p>
+                            <div class="table-responsive">
+                                <table class="table table-condensed table-th-valign-middle table-striped table-bordered text-center">
+                                    <thead>
+                                    <tr>
+                                        <th rowspan="2" class="text-center col-md-3">Color Name</th>
+                                        <th colspan="3" class="text-center">Background Class Name</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-center">Lighter</th>
+                                        <th class="text-center">Normal</th>
+                                        <th class="text-center">Darker</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>No Background</td>
+                                        <td> -</td>
+                                        <td>.no-bg</td>
+                                        <td> -</td>
+                                    </tr>
+                                    <tr>
+                                        <td>White</td>
+                                        <td> -</td>
+                                        <td>.bg-white</td>
+                                        <td> -</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Silver</td>
+                                        <td>.bg-silver-lighter</td>
+                                        <td>.bg-silver</td>
+                                        <td>.bg-silver-darker</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Black</td>
+                                        <td>.bg-black-lighter</td>
+                                        <td>.bg-black</td>
+                                        <td>.bg-black-darker</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Red</td>
+                                        <td>.bg-red-lighter</td>
+                                        <td>.bg-red</td>
+                                        <td>.bg-red-darker</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Orange</td>
+                                        <td>.bg-orange-lighter</td>
+                                        <td>.bg-orange</td>
+                                        <td>.bg-orange-darker</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Yellow</td>
+                                        <td>.bg-yellow-lighter</td>
+                                        <td>.bg-yellow</td>
+                                        <td>.bg-yellow-darker</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Green</td>
+                                        <td>.bg-green-lighter</td>
+                                        <td>.bg-green</td>
+                                        <td>.bg-green-darker</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Blue</td>
+                                        <td>.bg-blue-lighter</td>
+                                        <td>.bg-blue</td>
+                                        <td>.bg-blue-darker</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Aqua</td>
+                                        <td>.bg-aqua-lighter</td>
+                                        <td>.bg-aqua</td>
+                                        <td>.bg-aqua-darker</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Purple</td>
+                                        <td>.bg-purple-lighter</td>
+                                        <td>.bg-purple</td>
+                                        <td>.bg-purple-darker</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
-                    <p>Here is the general structure for the each case of page options.</p>
-                    <h4>Page with default small header navigation</h4>
-                    <pre class="prettyprint linenums">
-&lt;body class="page-navbar-fixed-top-sm"&gt;
-</pre>
-                </div><!-- end span12 -->
-            </div><!-- end row-fluid -->
-            <div class="row-fluid">
-                <div class="span12">
-                    <div class="page-header">
-                        <h3 id="plugins-resources"><strong>K) Plugins & Resources</strong> - <a href="#top">top</a></h3>
-                    </div>
-                    <p>
-                        Below is the list of all plugins and external resources used to power this template.
-                    </p>
-                    <table class="table table-bordered">
-                        <thead>
-                        <tr>
-                            <th style="width:100px;">Name</th>
-                            <th>CSS Files</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>jQuery v1.9.1</td>
-                            <td>
-                                <p><b>Required JS File</b></p>
-                                <pre class="prettyprint linenums">
-&lt;script src="assets/plugins/jquery/jquery-1.9.1.min.js"&gt;&lt;/script&gt;
-&lt;script src="assets/plugins/jquery/jquery-migrate-1.1.0.min.js"&gt;&lt;/script&gt;
-</pre>
-                                <p><b>Official Link:</b><br/> <a href="http://jquery.com/">http://jquery.com/</a></p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Bootstrap</td>
-                            <td>
-                                <p><b>Required CSS File</b></p>
-                                <pre class="prettyprint linenums">
-&lt;link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css" /&gt;
-</pre>
-                                <p><b>Required JS File</b></p>
-                                <pre class="prettyprint linenums">
-&lt;script src="assets/plugins/bootstrap/js/bootstrap.min.js"&gt;&lt;/script&gt;
-</pre>
-                                <p><b>Official Link:</b><br/> <a href="http://getbootstrap.com/">http://getbootstrap.com/</a>
-                                </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Font Awesome</td>
-                            <td>
-                                <p><b>Required CSS File</b></p>
-                                <pre class="prettyprint linenums">
-&lt;link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css" /&gt;
-</pre>
-                                <p><b>Official Link:</b><br/> <a href="http://fortawesome.github.io/Font-Awesome/">http://fortawesome.github.io/Font-Awesome/</a>
-                                </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Animate.css</td>
-                            <td>
-                                <p><b>Required CSS File</b></p>
-                                <pre class="prettyprint linenums">
-&lt;link rel="stylesheet" href="assets/css/animate.min.css" /&gt;
-</pre>
-                                <p><b>Official Link:</b><br/> <a href="http://daneden.github.io/animate.css/">http://daneden.github.io/animate.css/</a>
-                                </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>jQuery Cookie</td>
-                            <td>
-                                <p><b>Required JS File</b></p>
-                                <pre class="prettyprint linenums">
-&lt;script src="assets/plugins/jquery-cookie/jquery.cookie.js"&gt;&lt;/script&gt;
-</pre>
-                                <p><b>Official Link:</b><br/> <a href="https://github.com/carhartl/jquery-cookie">https://github.com/carhartl/jquery-cookie</a>
-                                </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>scrollMonitor</td>
-                            <td>
-                                <p><b>Required JS File</b></p>
-                                <pre class="prettyprint linenums">
-&lt;script src="assets/plugins/scrollMonitor/scrollMonitor.js"&gt;&lt;/script&gt;
-</pre>
-                                <p><b>Official Link:</b><br/> <a href="https://github.com/sakabako/scrollMonitor">https://github.com/sakabako/scrollMonitor</a>
-                                </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Pace</td>
-                            <td>
-                                <p><b>Required JS File</b></p>
-                                <pre class="prettyprint linenums">
-&lt;script src="assets/plugins/pace/pace.min.js"&gt;&lt;/script&gt;
-</pre>
-                                <p><b>Official Link:</b><br/> <a href="http://github.hubspot.com/pace/">http://github.hubspot.com/pace/</a>
-                                </p>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div><!-- end row-fluid -->
-            <div class="row-fluid">
-                <div class="span12">
-                    <div class="page-header">
-                        <h3 id="references"><strong>L) References</strong> - <a href="#top">top</a></h3>
-                    </div>
-                    <p>
-                        I've used the following images, icons or other files as listed.
-                    </p>
-                    <p><b>jQuery Plugins</b></p>
-                    <ol>
-                        <li><b>jQuery</b>:<a href="http://jquery.com/">http://jquery.com/</a></li>
-                        <li><b>jQuery UI</b>:<a href="http://jqueryui.com/">http://jqueryui.com/</a></li>
-                        <li><b>Bootstrap</b>:<a href="http://getbootstrap.com/">http://getbootstrap.com/</a></li>
-                        <li><b>Font Awesome</b>:<a href="http://fortawesome.github.io/Font-Awesome/">http://fortawesome.github.io/Font-Awesome/</a>
-                        </li>
-                        <li><b>Animate.css</b>:<a href="http://daneden.github.io/animate.css/">http://daneden.github.io/animate.css/</a>
-                        </li>
-                        <li><b>scrollMonitor</b>:<a href="https://github.com/sakabako/scrollMonitor">https://github.com/sakabako/scrollMonitor</a>
-                        </li>
-                        <li><b>Pace</b>:<a href="http://github.hubspot.com/pace/">http://github.hubspot.com/pace/</a>
-                        </li>
-                        <li><b>jQuery Cookie</b>:<a href="https://github.com/carhartl/jquery-cookie">https://github.com/carhartl/jquery-cookie</a>
-                        </li>
-                    </ol>
-                </div>
-            </div><!-- end row-fluid -->
-            <div class="row-fluid">
-                <div class="span12">
-                    <div class="page-header">
-                        <h3 id="change-log"><strong>M) Change Log</strong> - <a href="#top">top</a></h3>
-                    </div>
-                    <h5>Version 2.0.0 - 30 April 2016</h5>
-                    <ul>
-                        <li>
-                            UPDATE: Bootstrap 3.3.5 to Bootstrap 3.3.6
-                            <ul>
-                                <li>Updated Directory: <code>/assets/plugins/bootstrap/</code></li>
-                            </ul>
-                        </li>
-                        <li>
-                            UPDATE: FontAwesome 4.3.0 to 4.6.1
-                            <ul>
-                                <li>Updated Directory: <code>/assets/plugins/bootstrap/</code></li>
-                            </ul>
-                        </li>
-                        <li>
-                            FIX: Missing Panel Styling in LESS file
-                            <ul>
-                                <li>Updated Directory: <code>/assets/less/</code></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <h5>Version 1.8.0 - 30 June 2015</h5>
-                    <ul>
-                        <li>
-                            FIX: Youtube video full screen issues
-                            <ul>
-                                <li>Modified CSS Files: <code>/assets/css/style.css</code></li>
-                                <li>Modified CSS Files: <code>/assets/css/style.min.css</code></li>
-                                <li>Modified JS Files: <code>/assets/js/apps.css</code></li>
-                                <li>Modified JS Files: <code>/assets/js/apps.min.css</code></li>
-                            </ul>
-                        </li>
-                        <li>
-                            UPDATE: Include Bootstrap LESS
-                            <ul>
-                                <li>Added Directory: <code>/assets/less/bootstrap/</code></li>
-                            </ul>
-                        </li>
-                        <li>
-                            UPDATE: Bootstrap 3.3.4 to Bootstrap 3.3.5
-                            <ul>
-                                <li>Updated Directory: <code>/assets/plugins/bootstrap/</code></li>
-                            </ul>
-                        </li>
-                        <li>
-                            UPDATE: Less 1.7.4 to Less 2.5.1
-                            <ul>
-                                <li>Updated Directory: <code>/assets/plugins/less/</code></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <h5>Version 1.7.0 - 1 May 2015</h5>
-                    <ul>
-                        <li>
-                            UPDATE: Bootstrap 3.3.3 to Bootstrap 3.3.4
-                            <ul>
-                                <li>Updated Directory: <code>/assets/plugins/bootstrap/</code></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <h5>Version 1.6.0 - 23 January 2015</h5>
-                    <ul>
-                        <li>
-                            UPDATE: Bootstrap 3.3.1 to Bootstrap 3.3.2
-                            <ul>
-                                <li>Updated Directory: <code>/assets/plugins/bootstrap/</code></li>
-                            </ul>
-                        </li>
-                        <li>
-                            UPDATE: FontAwesome 4.2.0 to Bootstrap 4.3.0
-                            <ul>
-                                <li>Updated Directory: <code>/assets/plugins/font-awesome/</code></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <h5>Version 1.5.0 - 30 November 2014</h5>
-                    <ul>
-                        <li>
-                            UPDATE: Bootstrap 3.2.0 to Bootstrap 3.3.1
-                            <ul>
-                                <li>Modified Directory files: <code>/assets/plugins/bootstrap-3.2.0/</code> to <code>/assets/plugins/bootstrap/</code>
-                                </li>
-                                <li>Modified CSS Files: <code>/assets/plugins/bootstrap/css/bootstrap.min.js</code></li>
-                                <li>Modified JS Files: <code>/assets/plugins/bootstrap/js/bootstrap.min.js</code></li>
-                            </ul>
-                        </li>
-                        <li>
-                            UPDATE: jQuery 1.8.2 to jQuery 1.9.1
-                            <ul>
-                                <li>Modified Directory files: <code>/assets/plugins/jquery-1.8.1/</code> to <code>/assets/plugins/jquery</code>
-                                </li>
-                                <li>Added JS Files: <code>/assets/plugins/jquery/jquery-1.9.1.js</code></li>
-                                <li>Added JS Files: <code>/assets/plugins/jquery/jquery-1.9.1.min.js</code></li>
-                                <li>Added JS Files: <code>/assets/plugins/jquery/jquery-migrate-1.1.0.js</code></li>
-                                <li>Added JS Files: <code>/assets/plugins/jquery/jquery-migrate-1.1.0.min.js</code></li>
-                            </ul>
-                        </li>
-                        <li>
-                            MODIFY: FontAwesome Directory
-                            <ul>
-                                <li>Modified Directory files: <code>/assets/plugins/font-awesome-4.2.0/</code> to <code>/assets/plugins/font-awesome/</code>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <h5>Version 1.4.0 - 31 October 2014</h5>
-                    <ul>
-                        <li>
-                            Initial Released
-                        </li>
-                    </ul>
                 </div>
             </div><!-- end row-fluid -->
 
