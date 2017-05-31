@@ -70,6 +70,7 @@
                 <li><a href="#tab-accordion"><i class="icon-chevron-right"></i>Tabs & Accordions</a></li>
                 <li><a href="#modal-notification"><i class="icon-chevron-right"></i>Modal & Notification</a></li>
                 <li><a href="#icons"><i class="icon-chevron-right"></i>Icons</a></li>
+                <li><a href="#echarts"><i class="icon-chevron-right"></i>Echarts</a></li>
                 <li><a href="#predefined-css"><i class="icon-chevron-right"></i>Predefined CSS Class</a></li>
             </ul>
         </div>
@@ -5449,7 +5450,165 @@ return false;
             <div class="row-fluid">
                 <div class="span12">
                     <div class="page-header">
-                        <h3 id="predefined-css"><strong>J) Predefined CSS Class</strong> - <a href="#top">top</a></h3>
+                        <h3 id="echarts"><strong>J) Echarts</strong> - <a href="#top">top</a></h3>
+                    </div>
+                    <div class="well m-t-20">
+                        <h4>Echarts demo</h4>
+                    </div>
+                    <div class="well m-t-20">
+                        <h5>1.示例目录结构</h5>
+                    </div>
+                    <div>
+                        <img src="assets/img/echarts-demo1.jpg">
+                    </div>
+                    <div class="well m-t-20">
+                        <h5>2.echarts-demo/module.js</h5>
+                    </div>
+                     <pre class="prettyprint linenums">
+
+  angular
+    .module('vboxApp')
+    .config(routeConfig);
+
+   /** @ngInject */
+  function routeConfig($stateProvider) {
+    $stateProvider
+      .state('app.echarts', {
+      url: '/echarts',
+      templateUrl: 'app/modules/echarts-demo/index.html',
+      controller: 'echartsDemoCtrl',
+      resolve: {
+        loadPlugin: function ($ocLazyLoad) {
+          return $ocLazyLoad.load([
+            {
+              insertBefore: '#loadBefore',
+              files: ['app/assets/plugins/echarts/echarts.min.js']
+            }
+          ]);
+        }
+      }
+    });
+  }
+  </pre>
+                    <div class="well m-t-20">
+                        <h5>3.echarts-demo/controller.js</h5>
+                    </div>
+                    <pre class="prettyprint linenums">
+angular
+    .module('app')
+    .controller('echartsDemoCtrl', echartsDemoCtrl);
+
+  /** @ngInject */
+function echartsDemoCtrl($scope, $timeout) {
+
+  $timeout(function(){
+       demoFun()
+           },1000);
+
+  function demoFun(){
+  var option = {
+    title: {
+        text: '未来一周气温变化',
+        subtext: '纯属虚构'
+    },
+    tooltip: {
+        trigger: 'axis'
+    },
+    legend: {
+        data:['最高气温','最低气温']
+    },
+    toolbox: {
+        show: true,
+        feature: {
+            dataZoom: {
+                yAxisIndex: 'none'
+            },
+            dataView: {readOnly: false},
+            magicType: {type: ['line', 'bar']},
+            restore: {},
+            saveAsImage: {}
+        }
+    },
+    xAxis:  {
+        type: 'category',
+        boundaryGap: false,
+        data: ['周一','周二','周三','周四','周五','周六','周日']
+    },
+    yAxis: {
+        type: 'value',
+        axisLabel: {
+            formatter: '{value} °C'
+        }
+    },
+    series: [
+        {
+            name:'最高气温',
+            type:'line',
+            data:[11, 11, 15, 13, 12, 13, 10],
+            markPoint: {
+                data: [
+                    {type: 'max', name: '最大值'},
+                    {type: 'min', name: '最小值'}
+                ]
+            },
+            markLine: {
+                data: [
+                    {type: 'average', name: '平均值'}
+                ]
+            }
+        },
+        {
+            name:'最低气温',
+            type:'line',
+            data:[1, -2, 2, 5, 3, 2, 0],
+            markPoint: {
+                data: [
+                    {name: '周最低', value: -2, xAxis: 1, yAxis: -1.5}
+                ]
+            },
+            markLine: {
+                data: [
+                    {type: 'average', name: '平均值'},
+                    [{
+                        symbol: 'none',
+                        x: '90%',
+                        yAxis: 'max'
+                    }, {
+                        symbol: 'circle',
+                        label: {
+                            normal: {
+                                position: 'start',
+                                formatter: '最大值'
+                            }
+                        },
+                        type: 'max',
+                        name: '最高点'
+                    }]
+                ]
+            }
+        }
+    ]
+};
+
+var demoChart = echarts.init(document.getElementById('demo'), 'theme');
+
+demoChart.setOption(option);
+}
+
+}
+                        </pre>
+                    <div class="well m-t-20" >
+                        <h5>4.echarts-demo/index.html</h5>
+                    </div>
+                    <pre class="prettyprint linenums">
+ &lt;div id="demo" style="height: 350px;"&gt;&lt;/div&gt;
+                    </pre>
+                </div>
+            </div><!-- end row-fluid -->
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="page-header">
+                        <h3 id="predefined-css"><strong>K) Predefined CSS Class</strong> - <a href="#top">top</a></h3>
                     </div>
                     <ul class="nav nav-tabs">
                         <li class="active"><a href="#general-tab" data-toggle="tab"><i class="fa fa-fw fa-cogs"></i>
